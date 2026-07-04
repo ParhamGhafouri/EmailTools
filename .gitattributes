@@ -1,0 +1,11 @@
+# Treat binary assets as binary so git never rewrites their bytes
+# (line-ending "normalization" corrupts PNGs — their signature contains 0D 0A).
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.exe binary
+*.zip binary
+*.pdf binary
+*.docx binary
