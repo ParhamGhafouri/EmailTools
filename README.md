@@ -12,7 +12,7 @@
 [![Outlook](https://img.shields.io/badge/Microsoft%20Outlook-2016%20%7C%202019%20%7C%202021%20%7C%20365-0072C6)](#requirements)
 [![License](https://img.shields.io/badge/license-Freeware-brightgreen)](LICENSE)
 
-### [⬇ &nbsp;Download the latest installer](https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.exe)
+### [⬇ &nbsp;Download the latest installer](https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.zip)
 
 <sub>Installs for your account only • No admin rights • Updates itself automatically</sub>
 
@@ -63,9 +63,10 @@ Email Tools checks for new versions in the background and installs them **silent
 
 ## Installation
 
-1. **[Download `EmailTools_Setup.exe`](https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.exe)** from the latest release.
-2. Run it. Setup installs for **your account only** and needs **no administrator rights**.
-3. Start Outlook. The **Email Tools** tab appears on the ribbon, and background indexing begins automatically.
+1. **[Download `EmailTools_Setup.zip`](https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.zip)** from the latest release.
+2. Extract it and run **`EmailTools_Setup.exe`**. Setup installs for **your account only** and needs **no administrator rights**.
+3. Once installed, Email Tools keeps itself up to date automatically — you won't need to download it again.
+4. Start Outlook. The **Email Tools** tab appears on the ribbon, and background indexing begins automatically.
 
 > **First launch:** Email Tools builds a local search index of your message bodies in small idle batches. Search works immediately for what's already indexed and gets more complete over the first few minutes.
 
@@ -119,7 +120,9 @@ See the [Releases page](https://github.com/ParhamGhafouri/EmailTools/releases) f
 
 <div align="center">
 
-**Designed and developed by [Parham Ghafouri](https://www.linkedin.com/in/parhaam/)**
+**Designed and developed by Parham Ghafouri**
+
+[![GitHub](https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?logo=github)](https://github.com/ParhamGhafouri) &nbsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?logo=linkedin)](https://www.linkedin.com/in/parhaam/)
 
 © 2026 Parham Ghafouri. All rights reserved.
 
