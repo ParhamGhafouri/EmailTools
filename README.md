@@ -1,5 +1,8 @@
 <div align="center">
 
+**English** | [فارسی](README.fa.md)
+
+
 <img src="assets/banner.png" alt="Email Tools for Microsoft Outlook" width="300" />
 
 # Email Tools for Microsoft Outlook
