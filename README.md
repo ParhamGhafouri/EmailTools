@@ -2,12 +2,11 @@
 
 **English** | [فارسی](README.fa.md)
 
-
-<img src="assets/banner.png" alt="Email Tools for Microsoft Outlook" width="300" />
+<img src="assets/logo.png" alt="Email Tools" width="118" />
 
 # Email Tools for Microsoft Outlook
 
-**A powerful companion for Microsoft Outlook — advanced indexed search, smart archiving, bulk actions, attachment &amp; meeting preview, and reminder cleanup. Free, and no administrator rights required.**
+**A dedicated search window, one-click attachment replies, and hands-off mailbox archiving — added straight to the Outlook ribbon. Free, per-user, no administrator rights, and it keeps itself up to date.**
 
 [![Latest release](https://img.shields.io/github/v/release/ParhamGhafouri/EmailTools?label=version&color=2D7DD2)](https://github.com/ParhamGhafouri/EmailTools/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?color=2D7DD2)](https://github.com/ParhamGhafouri/EmailTools/releases)
@@ -19,18 +18,20 @@
 
 <sub>Installs for your account only • No admin rights • Updates itself automatically</sub>
 
+<sub>⭐ If Email Tools saves you time, please <a href="https://github.com/ParhamGhafouri/EmailTools">star the repo</a> — it takes a second and helps others find it.</sub>
+
 </div>
 
 ---
 
 ## What is Email Tools?
 
-**Email Tools** is a lightweight add-in that adds a dedicated **Email Tools** tab to the Outlook ribbon, plus a global `Ctrl+F3` shortcut. It brings fast body-indexed search, background mailbox archiving, one-click attachment helpers, and a set of quality-of-life fixes to everyday Outlook — all in a single, self-updating install that needs no administrator rights.
+**Email Tools** is a lightweight add-in that installs in under a minute (no administrator password, ever). It adds a dedicated **Email Tools** tab to the Outlook ribbon, three attachment buttons on the **Home** tab, and a global **`Ctrl+F3`** shortcut. Everything runs locally on your computer — nothing leaves your machine except the once-a-day check for a new version.
 
 <div align="center">
-<img src="assets/advanced-search.png" alt="Advanced Search with bulk actions" width="720" />
+<img src="assets/advanced-search.png" alt="Advanced Search with live preview and bulk actions" width="760" />
 <br />
-<sub>Advanced Search — search every mailbox and archive at once, with instant results and bulk actions.</sub>
+<sub>Advanced Search — search every mailbox and archive at once, with a live preview and right-click bulk actions.</sub>
 </div>
 
 ---
@@ -38,53 +39,61 @@
 ## Features
 
 ### 🔍 Advanced Search &nbsp;`Ctrl+F3`
-Search the current mailbox or any season archive by **sender, recipient, subject, body, date range, or flag**. Matches appear instantly in an Outlook-style list with a **live reading-pane preview** — including message bodies, meeting details, and inline images, faithful to how Outlook itself renders them.
+A dedicated search window with the fields on top, results below, and a **live Outlook-style preview** on the right.
+
+- Combine any of **From / To / Cc / Subject / Body**, choose where to look with **Search in** (current folder, whole mailbox, or your archives), and narrow by **Attachment**, **Time** (Today, last 7/30 days, or a custom date range), or **Flagged only**.
+- Results show flag &amp; attachment indicators, sender, subject and date; unread rows are bold and every column is sortable.
+- The preview renders messages faithfully — inline images, meeting details, and clickable **attachment chips** you can open in place.
+- Double-click or press **Enter** to open a message in Outlook.
 
 ### 📋 Bulk Actions, Saved Searches &amp; Export
-Select many results at once to **flag, move, copy, delete, or export them to CSV**. Save any query as a reusable template and reopen it later with a single click.
+Select one or many results and right-click for a full action menu: **Open, Reply, Reply All, Forward, Forward as Attachment, Find Related** (messages in the same conversation, or everything from that sender), **Flag / Clear flag, Mark read / unread, Categorize, Move, Delete**, and **Export selected to CSV**. Save any query as a reusable **Saved Search**, or **Export** the whole result set to CSV for Excel.
+
+### 📎 Attachment Helpers
+Three one-click buttons on the Home tab (and on an open message's ribbon), enabled only when the message actually has attachments:
+- **Reply with Attachment(s)** — reply and keep the original files.
+- **Reply All with Attachment(s)** — same, to everyone.
+- **Forward without Attachment(s)** — forward but strip file attachments, keeping inline signature images.
 
 ### 🗂️ Smart Archive
-Quietly files mail older than ~90 days into **quarterly PST archives** in the background, sized to your real mailbox quota — the fullness level that triggers it is adjustable. Migrates older loose PST files in one pass. **Nothing is ever deleted**, and protected folders (Calendar, Contacts, Conversation History, and more) are never touched. A one-click **Vacation Mode** clears most of your Inbox before time off.
+Keeps your mailbox lean by moving older mail into local **quarterly seasonal archives** (e.g. `2025-Season4`, `2026-Season1`) — a separate folder per email account, fully searchable inside Outlook. **Nothing is deleted — mail is moved, not removed.**
 
-### 📎 Attachment &amp; Meeting Preview
-Click an attachment in the preview to **open it in place** — nested `.msg` messages, images, and text render inline, just like Outlook. Meeting items show **Required / Optional attendees** and a clean when-and-where bar instead of a raw field dump.
+- **Automatic:** a few seconds after Outlook starts (once a day), it quietly files mail older than ~90 days. If your mailbox nears full it archives more aggressively to free space — and the fullness level that triggers this is adjustable (**20–80%**, default **80%**). It works in tiny background steps so Outlook never freezes, and turns off Outlook's own AutoArchive so only Email Tools manages your archives.
+- **Absorbs old archives:** drop in or open any old `.pst` and Smart Archive migrates its contents into the right seasonal archive, verifies the source is empty, then removes the leftover file.
+- **Safe by design:** an old archive is only deleted after **every** item has been moved out and the source is confirmed empty.
 
-### ↩️ Attachment Helpers
-Three one-click ribbon buttons: **Reply** and **Reply All** that keep the original attachments, and **Forward** that strips file attachments while preserving inline signature images.
-
-### 🔔 Reminder Cleanup
-Silently dismisses overdue meeting and appointment reminders as Outlook starts — no more wall of stale reminder pop-ups every morning.
-
-### 🔄 Automatic Updates
-Email Tools checks for new versions in the background and installs them **silently after you close Outlook**. Every update is verified by SHA-256 hash and a pinned code-signing signature before it is ever run. You can also check manually any time from **About → Check for Updates**.
+Open **Email Tools → Smart Archive** for:
+- **Archive Now** — run the full archive immediately in the background and report how many items moved.
+- **Vacation Mode** — clears most of your Inbox before time off: keeps the newest part and archives the rest. Runs once, in the background. Nothing is deleted.
+- **Status** — shows the archive root, how many accounts are being archived, mailbox size, how many archives are mounted, any legacy archives pending migration, and when it last ran.
+- **Settings** — set the mailbox-fullness level (20–80%) at which archiving steps up.
 
 <div align="center">
-<img src="assets/about-card.png" alt="Email Tools feature overview" width="440" />
+<img src="assets/smart-archive-menu.png" alt="Smart Archive menu" width="300" />
+&nbsp;&nbsp;
+<img src="assets/smart-archive.png" alt="Smart Archive settings" width="380" />
+<br />
+<sub>The Smart Archive menu, and the adjustable fullness threshold in Settings.</sub>
 </div>
+
+### 🔔 Reminder Cleanup
+Quietly dismisses overdue meeting reminders — the ones for events that already passed — so they don't pile up and nag you every morning. Fully automatic, nothing to configure.
+
+### 🔄 Automatic Updates
+Email Tools checks for new versions in the background and installs them **silently after you close Outlook**. Every update is verified by SHA-256 hash **and** a pinned code-signing signature before it is ever run. You can also check any time from the ribbon.
 
 ---
 
 ## Installation
 
 1. **[Download `EmailTools_Setup.zip`](https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.zip)** from the latest release.
-2. Extract it and run **`EmailTools_Setup.exe`**. Setup installs for **your account only** and needs **no administrator rights**.
-3. Once installed, Email Tools keeps itself up to date automatically — you won't need to download it again.
-4. Start Outlook. The **Email Tools** tab appears on the ribbon, and background indexing begins automatically.
+2. Extract it and run **`EmailTools_Setup.exe`**. Setup installs for your account only, needs **no administrator rights**, and closes Outlook automatically if it's open.
+3. Once installed, Email Tools keeps itself up to date — you won't need to download it again.
+4. Start Outlook. The **Email Tools** tab appears on the ribbon and the attachment buttons appear on the **Home** tab.
 
-> **First launch:** Email Tools builds a local search index of your message bodies in small idle batches. Search works immediately for what's already indexed and gets more complete over the first few minutes.
+> **First start:** a few seconds after Outlook opens, Smart Archive may run a quiet background tidy and the search index begins building — both in tiny steps so Outlook never freezes.
 
----
-
-## How automatic updates work
-
-Once installed, Email Tools keeps itself current with no effort on your part:
-
-1. Once a day, in the background, it checks this repository for a newer release. If it can't reach the server, it simply tries again later — Outlook is never blocked or slowed.
-2. When a newer version exists, the installer is downloaded and **verified** (SHA-256 hash **and** the publisher's code-signing certificate).
-3. The verified update installs **automatically after you close Outlook**, so your session is never interrupted.
-4. The next time you open Outlook, a short note confirms the new version.
-
-You can trigger a check any time from **Email Tools → About → Check for Updates**.
+To **repair or remove**, run `EmailTools_Setup.exe` again for the Maintenance page, or uninstall from **Settings → Apps**. No administrator rights required.
 
 ---
 
@@ -102,22 +111,29 @@ You can trigger a check any time from **Email Tools → About → Check for Upda
 ## Frequently asked questions
 
 **Does it move or delete my email?**
-Smart Archive only *moves* old mail into local PST archives and never deletes anything. Protected folders (Calendar, Contacts, Tasks, Notes, Conversation History, Drafts, Outbox, Deleted Items, and more) are never archived.
+Smart Archive only *moves* old mail into local archives and never deletes anything. Protected folders (Calendar, Contacts, Tasks, Notes, Conversation History, Drafts, Outbox, Deleted Items, and more) are never archived.
 
 **Will it work without admin rights?**
 Yes. Everything installs under your own user account.
 
 **Is my data sent anywhere?**
-No. Search indexing is entirely local. The only network calls are the daily update check to this GitHub repository.
-
-**How do I uninstall it?**
-Use **Settings → Apps → Email Tools → Uninstall** (or the Start-menu uninstaller). Your mail and archives are left untouched.
+No. Search indexing and archiving are entirely local. The only network call is the daily update check.
 
 ---
 
 ## Changelog
 
 See the [Releases page](https://github.com/ParhamGhafouri/EmailTools/releases) for the full version history and notes.
+
+---
+
+<div align="center">
+
+### ⭐ Enjoying Email Tools?
+
+**[Star it on GitHub](https://github.com/ParhamGhafouri/EmailTools)** — it's the easiest way to support the project and help more people discover it.
+
+</div>
 
 ---
 
