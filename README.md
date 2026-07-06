@@ -1,99 +1,129 @@
-<div align="center">
+<p align="center">
+  <a href="README.md"><strong>English</strong></a> &nbsp;|&nbsp;
+  <a href="README.fa.md">فارسی</a>
+</p>
 
-**English** | [فارسی](README.fa.md)
+<p align="center">
+  <img src="assets/logo.png" alt="Email Tools logo" width="124">
+</p>
 
-<img src="assets/logo.png" alt="Email Tools" width="118" />
+<h1 align="center">Email Tools for Microsoft Outlook</h1>
 
-# Email Tools for Microsoft Outlook
+<p align="center">
+  <strong>Search faster. Archive safely. Reply with attachments in one click.</strong><br>
+  A polished, per-user Outlook add-in for advanced search, Smart Archive, bulk mail actions, attachment workflows, reminder cleanup, and silent verified updates.
+</p>
 
-**A dedicated search window, one-click attachment replies, and hands-off mailbox archiving — added straight to the Outlook ribbon. Free, per-user, no administrator rights, and it keeps itself up to date.**
+<p align="center">
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ParhamGhafouri/EmailTools?label=version&color=2D7DD2"></a>
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?color=2D7DD2"></a>
+  <a href="#requirements"><img alt="Windows" src="https://img.shields.io/badge/platform-Windows-0078D6"></a>
+  <a href="#requirements"><img alt="Outlook" src="https://img.shields.io/badge/Outlook-2016%20%7C%202019%20%7C%202021%20%7C%20365-0072C6"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Freeware-brightgreen"></a>
+</p>
 
-[![Latest release](https://img.shields.io/github/v/release/ParhamGhafouri/EmailTools?label=version&color=2D7DD2)](https://github.com/ParhamGhafouri/EmailTools/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?color=2D7DD2)](https://github.com/ParhamGhafouri/EmailTools/releases)
-[![Platform](https://img.shields.io/badge/platform-Windows-0078D6)](#requirements)
-[![Outlook](https://img.shields.io/badge/Microsoft%20Outlook-2016%20%7C%202019%20%7C%202021%20%7C%20365-0072C6)](#requirements)
-[![License](https://img.shields.io/badge/license-Freeware-brightgreen)](LICENSE)
+<p align="center">
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><strong>Download the latest installer package</strong></a>
+  <br>
+  <sub>Installs for your Windows account only. No admin rights. Auto-updates after Outlook closes.</sub>
+</p>
 
-### [⬇ &nbsp;Download the latest installer](https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.zip)
-
-<sub>Installs for your account only • No admin rights • Updates itself automatically</sub>
-
-<sub>⭐ If Email Tools saves you time, please <a href="https://github.com/ParhamGhafouri/EmailTools">star the repo</a> — it takes a second and helps others find it.</sub>
-
-</div>
-
----
-
-## What is Email Tools?
-
-**Email Tools** is a lightweight add-in that installs in under a minute (no administrator password, ever). It adds a dedicated **Email Tools** tab to the Outlook ribbon, three attachment buttons on the **Home** tab, and a global **`Ctrl+F3`** shortcut. Everything runs locally on your computer — nothing leaves your machine except the once-a-day check for a new version.
-
-<div align="center">
-<img src="assets/advanced-search.png" alt="Advanced Search with live preview and bulk actions" width="760" />
-<br />
-<sub>Advanced Search — search every mailbox and archive at once, with a live preview and right-click bulk actions.</sub>
-</div>
+<p align="center">
+  <a href="https://github.com/ParhamGhafouri/EmailTools">Star the repo</a> if Email Tools saves you time. It helps other Outlook users find it.
+</p>
 
 ---
 
-## Features
+## Why It Exists
 
-### 🔍 Advanced Search &nbsp;`Ctrl+F3`
-A dedicated search window with the fields on top, results below, and a **live Outlook-style preview** on the right.
+Outlook is excellent at mail, but painful at repeated mailbox work: finding old conversations across archives, replying while keeping attachments, clearing a mailbox before time away, and keeping PST archives organized. **Email Tools** adds those missing workflows directly to the Outlook ribbon without requiring administrator access or a server component.
 
-- Combine any of **From / To / Cc / Subject / Body**, choose where to look with **Search in** (current folder, whole mailbox, or your archives), and narrow by **Attachment**, **Time** (Today, last 7/30 days, or a custom date range), or **Flagged only**.
-- Results show flag &amp; attachment indicators, sender, subject and date; unread rows are bold and every column is sortable.
-- The preview renders messages faithfully — inline images, meeting details, and clickable **attachment chips** you can open in place.
-- Double-click or press **Enter** to open a message in Outlook.
+<p align="center">
+  <img src="assets/outlook-ribbon-tab.png" alt="Email Tools ribbon tab in Microsoft Outlook" width="520">
+</p>
 
-### 📋 Bulk Actions, Saved Searches &amp; Export
-Select one or many results and right-click for a full action menu: **Open, Reply, Reply All, Forward, Forward as Attachment, Find Related** (messages in the same conversation, or everything from that sender), **Flag / Clear flag, Mark read / unread, Categorize, Move, Delete**, and **Export selected to CSV**. Save any query as a reusable **Saved Search**, or **Export** the whole result set to CSV for Excel.
+## Product Tour
 
-### 📎 Attachment Helpers
-Three one-click buttons on the Home tab (and on an open message's ribbon), enabled only when the message actually has attachments:
-- **Reply with Attachment(s)** — reply and keep the original files.
-- **Reply All with Attachment(s)** — same, to everyone.
-- **Forward without Attachment(s)** — forward but strip file attachments, keeping inline signature images.
+### Advanced Search
 
-### 🗂️ Smart Archive
-Keeps your mailbox lean by moving older mail into local **quarterly seasonal archives** (e.g. `2025-Season4`, `2026-Season1`) — a separate folder per email account, fully searchable inside Outlook. **Nothing is deleted — mail is moved, not removed.**
+A dedicated search window for real mailbox investigations: fields at the top, sortable results on the left, and a live Outlook-style preview on the right.
 
-- **Automatic:** a few seconds after Outlook starts (once a day), it quietly files mail older than ~90 days. If your mailbox nears full it archives more aggressively to free space — and the fullness level that triggers this is adjustable (**20–80%**, default **80%**). It works in tiny background steps so Outlook never freezes, and turns off Outlook's own AutoArchive so only Email Tools manages your archives.
-- **Absorbs old archives:** drop in or open any old `.pst` and Smart Archive migrates its contents into the right seasonal archive, verifies the source is empty, then removes the leftover file.
-- **Safe by design:** an old archive is only deleted after **every** item has been moved out and the source is confirmed empty.
+<p align="center">
+  <img src="assets/advanced-search-results.png" alt="Advanced Search results with preview and context actions" width="920">
+  <br>
+  <sub>Search every mailbox and archive, preview messages, then act on one result or hundreds.</sub>
+</p>
 
-Open **Email Tools → Smart Archive** for:
-- **Archive Now** — run the full archive immediately in the background and report how many items moved.
-- **Vacation Mode** — clears most of your Inbox before time off: keeps the newest part and archives the rest. Runs once, in the background. Nothing is deleted.
-- **Status** — shows the archive root, how many accounts are being archived, mailbox size, how many archives are mounted, any legacy archives pending migration, and when it last ran.
-- **Settings** — set the mailbox-fullness level (20–80%) at which archiving steps up.
+- Combine **From**, **To**, **Cc**, **Subject**, and **Body** filters.
+- Search the current folder, the whole mailbox, or mounted archives.
+- Narrow by attachments, date range, flagged state, or saved searches.
+- Right-click results to open, reply, forward, flag, categorize, move, delete, find related messages, or export to CSV.
 
-<div align="center">
-<img src="assets/smart-archive-menu.png" alt="Smart Archive menu" width="300" />
-&nbsp;&nbsp;
-<img src="assets/smart-archive.png" alt="Smart Archive settings" width="380" />
-<br />
-<sub>The Smart Archive menu, and the adjustable fullness threshold in Settings.</sub>
-</div>
+### Attachment Actions
 
-### 🔔 Reminder Cleanup
-Quietly dismisses overdue meeting reminders — the ones for events that already passed — so they don't pile up and nag you every morning. Fully automatic, nothing to configure.
+The Home tab gets three focused buttons that appear where people already work.
 
-### 🔄 Automatic Updates
-Email Tools checks for new versions in the background and installs them **silently after you close Outlook**. Every update is verified by SHA-256 hash **and** a pinned code-signing signature before it is ever run. You can also check any time from the ribbon.
+<p align="center">
+  <img src="assets/attachment-actions.png" alt="Reply with attachments, Reply All with attachments, Forward without attachments, and Advanced Search buttons" width="420">
+</p>
+
+- **Reply with Attachment(s)** keeps the original files in your reply.
+- **Reply All with Attachment(s)** keeps the original files for every recipient.
+- **Forward without Attachment(s)** strips file attachments while preserving inline signature images.
+
+### Smart Archive
+
+Smart Archive keeps mailboxes lean by moving older mail into local seasonal archives such as `2026-Season1`. Mail is moved, never deleted, and protected Outlook folders stay untouched.
+
+<p align="center">
+  <img src="assets/smart-archive-menu.png" alt="Smart Archive menu in the Outlook ribbon" width="360">
+</p>
+
+- Runs quietly after Outlook starts, once per day.
+- Files older mail into dated archives in small background steps so Outlook stays responsive.
+- Steps up automatically when a mailbox is close to full.
+- Migrates legacy PST archives into the right seasonal archive, then removes the empty source only after verification.
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/smart-archive-status.png" alt="Smart Archive status window" width="340"><br>
+      <sub>Status shows archive health, mounted PSTs, quota, free space, last run, and search index readiness.</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/smart-archive-settings.png" alt="Smart Archive settings window" width="420"><br>
+      <sub>Settings let you choose when archiving should step up as the mailbox approaches quota.</sub>
+    </td>
+  </tr>
+</table>
+
+### Vacation Mode
+
+Clear the inbox before time away without losing anything. Vacation Mode keeps the newest slice of the Inbox and archives the older mail into dated archives.
+
+<p align="center">
+  <img src="assets/vacation-mode.png" alt="Vacation Mode dialog" width="460">
+</p>
+
+### Reminder Cleanup
+
+Overdue reminders for meetings that already passed are dismissed quietly so they do not pile up every morning.
+
+### Verified Auto-Updates
+
+Email Tools checks GitHub Releases once a day and installs new versions silently after Outlook closes. The updater verifies the downloaded installer with SHA-256 and a pinned Authenticode certificate before it can run.
 
 ---
 
 ## Installation
 
-1. **[Download `EmailTools_Setup.zip`](https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.zip)** from the latest release.
-2. Extract it and run **`EmailTools_Setup.exe`**. Setup installs for your account only, needs **no administrator rights**, and closes Outlook automatically if it's open.
-3. Once installed, Email Tools keeps itself up to date — you won't need to download it again.
-4. Start Outlook. The **Email Tools** tab appears on the ribbon and the attachment buttons appear on the **Home** tab.
+1. Download `EmailTools_Setup.rar` from the [latest release](https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar).
+2. Extract the archive and run `EmailTools_Setup.exe`.
+3. Start Outlook. The **Email Tools** ribbon tab appears, and the attachment buttons are added to the Home tab.
 
-> **First start:** a few seconds after Outlook opens, Smart Archive may run a quiet background tidy and the search index begins building — both in tiny steps so Outlook never freezes.
+Setup installs per-user, needs no administrator rights, and closes Outlook automatically if Outlook is running. To repair or remove Email Tools later, run `EmailTools_Setup.exe` again or uninstall it from **Settings → Apps**.
 
-To **repair or remove**, run `EmailTools_Setup.exe` again for the Maintenance page, or uninstall from **Settings → Apps**. No administrator rights required.
+> On first start, Smart Archive may do a short background tidy and the search index may begin building. Both run in small steps so Outlook remains usable.
 
 ---
 
@@ -102,47 +132,53 @@ To **repair or remove**, run `EmailTools_Setup.exe` again for the Maintenance pa
 | | |
 |---|---|
 | **Operating system** | Windows 10 or Windows 11 |
-| **Outlook** | Microsoft Outlook 2016, 2019, 2021, or Microsoft 365 (desktop) |
-| **Framework** | .NET Framework 4.8 (already present on current Windows) |
-| **Privileges** | None — installs per-user |
+| **Outlook** | Microsoft Outlook 2016, 2019, 2021, or Microsoft 365 desktop |
+| **Framework** | .NET Framework 4.8 |
+| **Privileges** | None. Installs per-user. |
 
 ---
 
-## Frequently asked questions
+## Privacy And Safety
 
-**Does it move or delete my email?**
-Smart Archive only *moves* old mail into local archives and never deletes anything. Protected folders (Calendar, Contacts, Tasks, Notes, Conversation History, Drafts, Outbox, Deleted Items, and more) are never archived.
+- Mail search, archiving, and indexing run locally on your PC.
+- No mailbox content is uploaded.
+- The only network call is the update check against GitHub Releases.
+- Updates are accepted only when the installer hash and pinned code-signing certificate match.
 
-**Will it work without admin rights?**
-Yes. Everything installs under your own user account.
+---
 
-**Is my data sent anywhere?**
-No. Search indexing and archiving are entirely local. The only network call is the daily update check.
+## FAQ
+
+**Does Smart Archive delete email?**  
+No. It moves older mail into local archives. Protected folders such as Calendar, Contacts, Tasks, Notes, Drafts, Outbox, Deleted Items, and Conversation History are not archived.
+
+**Does it need admin rights?**  
+No. Email Tools installs under your own Windows account.
+
+**Can I still search archived mail?**  
+Yes. Seasonal archives remain mounted in Outlook and are searchable from Advanced Search.
 
 ---
 
 ## Changelog
 
-See the [Releases page](https://github.com/ParhamGhafouri/EmailTools/releases) for the full version history and notes.
+See the [Releases page](https://github.com/ParhamGhafouri/EmailTools/releases) for version history and release notes.
 
 ---
 
-<div align="center">
+<h2 align="center">Enjoying Email Tools?</h2>
 
-### ⭐ Enjoying Email Tools?
-
-**[Star it on GitHub](https://github.com/ParhamGhafouri/EmailTools)** — it's the easiest way to support the project and help more people discover it.
-
-</div>
+<p align="center">
+  <a href="https://github.com/ParhamGhafouri/EmailTools"><strong>Star it on GitHub</strong></a><br>
+  <sub>It is the easiest way to support the project and help more people discover it.</sub>
+</p>
 
 ---
 
-<div align="center">
-
-**Designed and developed by Parham Ghafouri**
-
-[![GitHub](https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?logo=github)](https://github.com/ParhamGhafouri) &nbsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?logo=linkedin)](https://www.linkedin.com/in/parhaam/)
-
-© 2026 Parham Ghafouri. All rights reserved.
-
-</div>
+<p align="center">
+  <strong>Designed and developed by Parham Ghafouri</strong><br>
+  <a href="https://github.com/ParhamGhafouri"><img alt="GitHub: ParhamGhafouri" src="https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?logo=github"></a>
+  <a href="https://www.linkedin.com/in/parhaam/"><img alt="LinkedIn: parhaam" src="https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?logo=linkedin"></a>
+  <br>
+  <sub>© 2026 Parham Ghafouri. All rights reserved.</sub>
+</p>
