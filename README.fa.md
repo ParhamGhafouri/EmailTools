@@ -155,12 +155,14 @@ Email Tools روزی یک‌بار GitHub Releases را بررسی می‌کند
 
 <h2 id="پیشنیازها" dir="rtl" align="right">پیش‌نیازها</h2>
 
-<table dir="rtl" align="right">
+<table dir="rtl" width="100%">
   <tr><td><strong>سیستم‌عامل</strong></td><td>ویندوز ۱۰ یا ویندوز ۱۱</td></tr>
   <tr><td><strong>اوت‌لوک</strong></td><td>Microsoft Outlook 2016، 2019، 2021 یا Microsoft 365 نسخهٔ دسکتاپ</td></tr>
   <tr><td><strong>فریم‌ورک</strong></td><td>.NET Framework 4.8</td></tr>
   <tr><td><strong>سطح دسترسی</strong></td><td>هیچ. نصب در سطح کاربر انجام می‌شود.</td></tr>
 </table>
+
+<br clear="all">
 
 ---
 
