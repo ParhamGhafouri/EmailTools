@@ -11,7 +11,7 @@
 
 <p align="center">
   <strong>Search faster. Archive safely. Reply with attachments in one click.</strong><br>
-  A polished, per-user Outlook add-in for advanced search, Smart Archive, bulk mail actions, attachment workflows, reminder cleanup, and silent verified updates.
+  A polished, per-user Outlook add-in for indexed body search, Smart Archive, bulk mail actions, attachment workflows, reminder cleanup, and silent verified updates.
 </p>
 
 <p align="center">
@@ -48,6 +48,8 @@ Outlook is excellent at mail, but painful at repeated mailbox work: finding old 
 
 A dedicated search window for real mailbox investigations: fields at the top, sortable results on the left, and a live Outlook-style preview on the right.
 
+**The big reason it exists:** Outlook's built-in search can miss message bodies when Windows indexing is stale, archives are mounted late, or a mailbox has years of PST history. Email Tools builds its own local, per-user body index so searching the actual contents of messages stays fast and predictable across mailboxes and seasonal archives.
+
 <p align="center">
   <img src="assets/advanced-search-results.png" alt="Advanced Search results with preview and context actions" width="920">
   <br>
@@ -55,6 +57,8 @@ A dedicated search window for real mailbox investigations: fields at the top, so
 </p>
 
 - Combine **From**, **To**, **Cc**, **Subject**, and **Body** filters.
+- Search the **indexed message body**, not only headers or whatever Outlook's current index happens to expose.
+- Keep archive search useful: seasonal PST archives remain searchable even when Outlook's native indexing lags behind.
 - Search the current folder, the whole mailbox, or mounted archives.
 - Narrow by attachments, date range, flagged state, or saved searches.
 - Right-click results to open, reply, forward, flag, categorize, move, delete, find related messages, or export to CSV.
@@ -157,6 +161,9 @@ No. Email Tools installs under your own Windows account.
 
 **Can I still search archived mail?**  
 Yes. Seasonal archives remain mounted in Outlook and are searchable from Advanced Search.
+
+**Why does Email Tools build its own body index?**  
+Because the feature was built for real support and audit work where "maybe Outlook indexed it" is not good enough. The local body index makes old messages, archived PSTs, and body-text searches behave consistently without uploading mailbox content anywhere.
 
 ---
 
