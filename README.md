@@ -125,7 +125,7 @@ Email Tools checks GitHub Releases once a day and installs new versions silently
 2. Extract the archive and run `EmailTools_Setup.exe`.
 3. Start Outlook. The **Email Tools** ribbon tab appears, and the attachment buttons are added to the Home tab.
 
-Setup installs per-user, needs no administrator rights, and closes Outlook automatically if Outlook is running. To repair or remove Email Tools later, run `EmailTools_Setup.exe` again or uninstall it from **Settings → Apps**.
+Already have Email Tools installed? **Do not uninstall it first.** Run the new installer over the existing version and setup upgrades it in place. Setup installs per-user, needs no administrator rights, and closes Outlook automatically if Outlook is running. To repair or remove Email Tools later, run `EmailTools_Setup.exe` again or uninstall it from **Settings → Apps**.
 
 > On first start, Smart Archive may do a short background tidy and the search index may begin building. Both run in small steps so Outlook remains usable.
 
@@ -164,6 +164,9 @@ Yes. Seasonal archives remain mounted in Outlook and are searchable from Advance
 
 **Why does Email Tools build its own body index?**  
 Because the feature was built for real support and audit work where "maybe Outlook indexed it" is not good enough. The local body index makes old messages, archived PSTs, and body-text searches behave consistently without uploading mailbox content anywhere.
+
+**Will the first body-index build slow Outlook down?**  
+No. The first build can take time on a large mailbox because it reads your existing messages and archives, but it deliberately works in short background slices. You can continue using Outlook while Email Tools builds and then maintains the index.
 
 ---
 
