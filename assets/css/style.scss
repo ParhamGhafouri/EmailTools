@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body,
+.page-header,
+.main-content {
+  font-family: Calibri, "Segoe UI", Tahoma, Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.main-content [dir="rtl"] {
+  font-family: Calibri, Tahoma, "Segoe UI", Arial, sans-serif;
+  line-height: 1.9;
+}
