@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="README.md">English</a> &nbsp;|&nbsp;
-  <a href="README.fa.md"><strong>فارسی</strong></a>
+  <a href="https://parhamghafouri.github.io/EmailTools/">English</a> &nbsp;|&nbsp;
+  <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html"><strong>فارسی</strong></a>
 </p>
 
 <p align="center">
