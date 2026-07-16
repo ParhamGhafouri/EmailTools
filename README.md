@@ -10,8 +10,8 @@
 <h1 align="center">Email Tools for Microsoft Outlook</h1>
 
 <p align="center">
-  <strong>Search faster. Archive safely. Reply with attachments in one click.</strong><br>
-  A polished, per-user Outlook add-in for indexed body search, Smart Archive, bulk mail actions, attachment workflows, reminder cleanup, and silent verified updates.
+  <strong>Search deeper. Keep names current. Archive safely. Handle attachments in one click.</strong><br>
+  A polished, per-user Outlook add-in for indexed body search, GAL display-name synchronization, Smart Archive, bulk mail actions, attachment workflows, reminder cleanup, and verified updates.
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@
 
 ## Why It Exists
 
-Outlook is excellent at mail, but painful at repeated mailbox work: finding old conversations across archives, replying while keeping attachments, clearing a mailbox before time away, and keeping PST archives organized. **Email Tools** adds those missing workflows directly to the Outlook ribbon without requiring administrator access or a server component.
+Outlook is excellent at mail, but painful at repeated mailbox work: finding old conversations across archives, repairing stale names after directory changes, replying while keeping attachments, clearing a mailbox before time away, and keeping PST archives organized. **Email Tools** adds those missing workflows directly to the Outlook ribbon without requiring administrator access or an additional server component.
 
 <p align="center">
   <img src="assets/outlook-ribbon-tab.png" alt="Email Tools ribbon tab in Microsoft Outlook" width="520">
@@ -62,6 +62,18 @@ A dedicated search window for real mailbox investigations: fields at the top, so
 - Search the current folder, the whole mailbox, or mounted archives.
 - Narrow by attachments, date range, flagged state, or saved searches.
 - Right-click results to open, reply, forward, flag, categorize, move, delete, find related messages, or export to CSV.
+
+### GAL Display-Name Synchronization
+
+When a person is renamed in the Global Address List (GAL), Outlook can keep the old display name inside historical messages, rules, views, and Search Folders. That leaves the same mailbox identity appearing under different names and can make name-based filters stop matching. Email Tools reconciles those recognized identities with the current GAL while protecting Outlook's visible interface.
+
+- Updates historical **From**, **Sender**, **To**, **Cc**, and **Bcc** display names.
+- Covers normal mailbox folders, shared stores, and mounted archive/PST folders.
+- Matches by mailbox address and updates a name only when it maps safely to one current GAL identity.
+- Leaves external, deleted, unknown, or ambiguous recipients unchanged.
+- Repairs messages during idle background time; rules, views, and Exchange Search Folder criteria are handled only after Outlook closes, avoiding disruptive rule prompts or broken folder views.
+- Checkpoints progress and resumes automatically after Outlook or Windows restarts.
+- Runs without prompts and does not produce mailbox-content or recipient diagnostic logs.
 
 ### Attachment Actions
 
@@ -127,7 +139,7 @@ Email Tools checks GitHub Releases once a day and installs new versions silently
 
 Already have Email Tools installed? **Do not uninstall it first.** Run the new installer over the existing version and setup upgrades it in place. Setup installs per-user, needs no administrator rights, and closes Outlook automatically if Outlook is running. To repair or remove Email Tools later, run `EmailTools_Setup.exe` again or uninstall it from **Settings → Apps**.
 
-> On first start, Smart Archive may do a short background tidy and the search index may begin building. Both run in small steps so Outlook remains usable.
+> On first start, Smart Archive may do a short background tidy, the search index may begin building, and GAL name synchronization may inspect historical items. The jobs are coordinated, run in small background steps, and resume automatically so Outlook remains usable.
 
 ---
 
@@ -144,9 +156,10 @@ Already have Email Tools installed? **Do not uninstall it first.** Run the new i
 
 ## Privacy And Safety
 
-- Mail search, archiving, and indexing run locally on your PC.
+- Mail search, archiving, indexing, and GAL reconciliation run on your PC against your configured Outlook and Exchange profile.
 - No mailbox content is uploaded.
-- The only network call is the update check against GitHub Releases.
+- Network access is limited to your configured Exchange/GAL services and the update check against GitHub Releases; Email Tools uses no third-party mailbox service.
+- No mailbox-content, recipient, search-index, updater, or GAL diagnostic log is produced.
 - Updates are accepted only when the installer hash and pinned code-signing certificate match.
 
 ---
@@ -161,6 +174,9 @@ No. Email Tools installs under your own Windows account.
 
 **Can I still search archived mail?**  
 Yes. Seasonal archives remain mounted in Outlook and are searchable from Advanced Search.
+
+**What does GAL synchronization change?**  
+It updates recognized Outlook display names to the current name in your organization's Global Address List. It does not change email addresses, message bodies, attachments, or unknown recipients. Rules, views, and Search Folders are repaired only while visible Outlook is closed.
 
 **Why does Email Tools build its own body index?**  
 Because the feature was built for real support and audit work where "maybe Outlook indexed it" is not good enough. The local body index makes old messages, archived PSTs, and body-text searches behave consistently without uploading mailbox content anywhere.
