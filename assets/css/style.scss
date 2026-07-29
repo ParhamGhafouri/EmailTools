@@ -3,6 +3,18 @@
 
 @import "{{ site.theme }}";
 
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body,
 .page-header,
 .main-content {
@@ -10,7 +22,94 @@ body,
   letter-spacing: 0;
 }
 
+.main-content {
+  width: 100%;
+  max-width: 72rem;
+  padding: 2rem 1.5rem;
+  overflow-wrap: anywhere;
+}
+
+.main-content img,
+.main-content video,
+.main-content iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-content table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  -webkit-overflow-scrolling: touch;
+}
+
+.main-content th,
+.main-content td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.main-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.main-content code {
+  unicode-bidi: isolate;
+}
+
+.main-content .language-switch {
+  margin-block: 0 1rem;
+  text-align: center;
+}
+
 .main-content [dir="rtl"] {
   font-family: Calibri, Tahoma, "Segoe UI", Arial, sans-serif;
   line-height: 1.9;
+  direction: rtl;
+  text-align: right;
+}
+
+.main-content [dir="rtl"] ul,
+.main-content [dir="rtl"] ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+.main-content [dir="rtl"] code,
+.main-content [dir="rtl"] a {
+  unicode-bidi: isolate;
+}
+
+@media screen and (max-width: 42rem) {
+  .page-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .project-name {
+    font-size: 1.75rem;
+  }
+
+  .project-tagline {
+    font-size: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .main-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .main-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .main-content h3 {
+    font-size: 1.15rem;
+  }
 }
