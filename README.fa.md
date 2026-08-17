@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="آخرین نسخه" src="https://img.shields.io/github/v/release/ParhamGhafouri/EmailTools?label=%D9%86%D8%B3%D8%AE%D9%87&color=2D7DD2"></a>
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="دانلودها" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF&color=2D7DD2"></a>
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="دانلودها" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/latest/total?label=%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF&color=2D7DD2"></a>
   <a href="#پیشنیازها"><img alt="Windows" src="https://img.shields.io/badge/platform-Windows-0078D6"></a>
   <a href="#پیشنیازها"><img alt="Outlook" src="https://img.shields.io/badge/Outlook-2016%20%7C%202019%20%7C%202021%20%7C%20365-0072C6"></a>
   <a href="LICENSE"><img alt="مجوز" src="https://img.shields.io/badge/license-Freeware-brightgreen"></a>
