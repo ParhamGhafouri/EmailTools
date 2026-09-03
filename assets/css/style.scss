@@ -185,7 +185,11 @@ body {
 }
 
 .main-content h1,
-.main-content [dir="rtl"] h1 {
+.main-content [dir="rtl"] h1,
+.main-content [align="center"],
+.main-content [align="center"] *,
+.main-content [dir="rtl"][align="center"],
+.main-content [dir="rtl"][align="center"] * {
   text-align: center !important;
 }
 

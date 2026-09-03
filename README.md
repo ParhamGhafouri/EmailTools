@@ -1,26 +1,18 @@
-<p align="center">
-  <a href="https://parhamghafouri.github.io/EmailTools/"><strong>English</strong></a> &nbsp;|&nbsp;
-  <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html"><strong>فارسی</strong></a>
-</p>
-
-<p align="center">
-  <img src="assets/logo.png" alt="Email Tools Logo" width="128">
-</p>
-
-<h1 align="center">Email Tools for Microsoft Outlook</h1>
-
-<p align="center">
-  <strong>Sub-10ms Indexed Search &bull; Wildcard Attachment Filtering &bull; Automated Seasonal Archiving &bull; GAL Name Sync</strong><br>
-  <em>The high-performance, privacy-first productivity suite built natively for Microsoft Outlook.</em>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="Download Installer (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Release Notes v1.1.2" src="https://img.shields.io/badge/Release%20Notes-v1.1.2-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Total Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><img alt="Windows 10 / 11" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows">&nbsp;<img alt="Outlook 2016-365" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook">&nbsp;<img alt="Signed Authenticode" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square">
-</p>
-
-<p align="center">
-  <sub><strong>Per-User Installation</strong> &bull; No administrator privileges required &bull; 100% Offline & Private &bull; Seamless background self-updates</sub>
-</p>
+<div align="center" style="text-align: center;">
+  <p><a href="https://parhamghafouri.github.io/EmailTools/"><strong>English</strong></a> &nbsp;|&nbsp; <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html"><strong>فارسی</strong></a></p>
+  <p><img src="assets/logo.png" alt="Email Tools Logo" width="128"></p>
+  <h1 align="center" style="text-align: center;">Email Tools for Microsoft Outlook</h1>
+  <p align="center" style="text-align: center;">
+    <strong>Sub-10ms Indexed Search &bull; Wildcard Attachment Filtering &bull; Automated Seasonal Archiving &bull; GAL Name Sync</strong><br>
+    <em>The high-performance, privacy-first productivity suite built natively for Microsoft Outlook.</em>
+  </p>
+  <p align="center" style="text-align: center;">
+    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="Download Installer (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Release Notes v1.1.2" src="https://img.shields.io/badge/Release%20Notes-v1.1.2-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Total Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="Windows 10 / 11" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="Outlook 2016-365" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="Signed Authenticode" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
+  </p>
+  <p align="center" style="text-align: center;">
+    <sub><strong>Per-User Installation</strong> &bull; No administrator privileges required &bull; 100% Offline & Private &bull; Seamless background self-updates</sub>
+  </p>
+</div>
 
 ---
 
@@ -143,7 +135,7 @@ When colleagues change roles, departments, or surnames in the corporate Active D
 
 ---
 
-## 💻 System Requirements
+<h2 id="requirements">💻 System Requirements</h2>
 
 | Specification | Requirement |
 | :--- | :--- |
@@ -154,7 +146,7 @@ When colleagues change roles, departments, or surnames in the corporate Active D
 
 ---
 
-## 🛡️ Privacy, Security & Architecture
+<h2 id="security">🛡️ Privacy, Security & Architecture</h2>
 
 Email Tools was engineered with an uncompromising commitment to enterprise data sovereignty and privacy:
 
@@ -166,22 +158,24 @@ Email Tools was engineered with an uncompromising commitment to enterprise data 
 
 ---
 
-## 🌟 Support & Community
+<div align="center" style="text-align: center;">
+  <h2 align="center" style="text-align: center;">🌟 Support & Community</h2>
 
-If Email Tools saves you time or frees up your mailbox, please consider giving the repository a star!
+  <p align="center" style="text-align: center;">
+    If Email Tools saves you time or frees up your mailbox, please consider giving the repository a star!
+  </p>
 
-<p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools">
-    <img src="https://img.shields.io/badge/Star%20on%20GitHub-★%20EmailTools-yellow?style=for-the-badge&logo=github" alt="Star on GitHub">
-  </a>
-</p>
+  <p align="center">
+    <a href="https://github.com/ParhamGhafouri/EmailTools">
+      <img src="https://img.shields.io/github/stars/ParhamGhafouri/EmailTools?style=for-the-badge&label=Star%20on%20GitHub&color=yellow&logo=github" alt="Star on GitHub">
+    </a>
+  </p>
 
----
+  <hr>
 
-<p align="center">
-  <strong>Architected & Developed by Parham Ghafouri</strong><br>
-  <a href="https://github.com/ParhamGhafouri"><img alt="GitHub: ParhamGhafouri" src="https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?style=flat-square&logo=github"></a>
-  <a href="https://www.linkedin.com/in/parhaam/"><img alt="LinkedIn: parhaam" src="https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?style=flat-square&logo=linkedin"></a>
-  <br>
-  <sub>&copy; 2026 Parham Ghafouri. Released as Freeware under the MIT-compatible open software license.</sub>
-</p>
+  <p align="center" style="text-align: center;">
+    <strong>Architected & Developed by Parham Ghafouri</strong><br>
+    <a href="https://github.com/ParhamGhafouri"><img alt="GitHub: ParhamGhafouri" src="https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?style=flat-square&logo=github"></a>&nbsp;<a href="https://www.linkedin.com/in/parhaam/"><img alt="LinkedIn: parhaam" src="https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?style=flat-square&logo=linkedin"></a><br>
+    <sub>&copy; 2026 Parham Ghafouri. Released as Freeware under the MIT-compatible open software license.</sub>
+  </p>
+</div>

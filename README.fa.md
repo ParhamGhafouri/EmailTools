@@ -1,26 +1,18 @@
-<p align="center">
-  <a href="https://parhamghafouri.github.io/EmailTools/">English</a> &nbsp;|&nbsp;
-  <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html"><strong>فارسی</strong></a>
-</p>
-
-<p align="center">
-  <img src="assets/logo.png" alt="لوگوی Email Tools" width="128">
-</p>
-
-<h1 align="center" style="text-align: center;" dir="rtl">ابزارهای ایمیل برای مایکروسافت اوت‌لوک</h1>
-
-<p align="center" dir="rtl">
-  <strong>جست‌وجوی زیر ۱۰ میلی‌ثانیه &bull; فیلتر پیشرفتهٔ فایل‌های پیوست &bull; بایگانی فصلی خودکار &bull; همگام‌سازی نام‌های سازمانی GAL</strong><br>
-  <em>مجموعه ابزارهای حرفه‌ای، با کارایی فوق‌العاده بالا و کاملاً محلی (حفظ ۱۰۰٪ حریم خصوصی) برای مایکروسافت اوت‌لوک.</em>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="دانلود بسته نصب (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="یادداشت‌های نسخه v1.1.2" src="https://img.shields.io/badge/Release%20Notes-v1.1.2-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="تعداد دانلود" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><img alt="ویندوز ۱۰ و ۱۱" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows">&nbsp;<img alt="اوت‌لوک ۲۰۱۶ تا ۳۶۵" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook">&nbsp;<img alt="امضای دیجیتال معتبر" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square">
-</p>
-
-<p align="center" dir="rtl">
-  <sub><strong>نصب اختصاصی برای هر کاربر</strong> &bull; بدون نیاز به دسترسی ادمین (Administrator) &bull; ۱۰۰٪ آفلاین و محلی &bull; به‌روزرسانی هوشمند و بدون اختلال</sub>
-</p>
+<div align="center" style="text-align: center;">
+  <p><a href="https://parhamghafouri.github.io/EmailTools/">English</a> &nbsp;|&nbsp; <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html"><strong>فارسی</strong></a></p>
+  <p><img src="assets/logo.png" alt="لوگوی Email Tools" width="128"></p>
+  <h1 align="center" style="text-align: center;" dir="rtl">ابزارهای ایمیل برای مایکروسافت اوت‌لوک</h1>
+  <p align="center" style="text-align: center;" dir="rtl">
+    <strong>جست‌وجوی زیر ۱۰ میلی‌ثانیه &bull; فیلتر پیشرفتهٔ فایل‌های پیوست &bull; بایگانی فصلی خودکار &bull; همگام‌سازی نام‌های سازمانی GAL</strong><br>
+    <em>مجموعه ابزارهای حرفه‌ای، با کارایی فوق‌العاده بالا و کاملاً محلی (حفظ ۱۰۰٪ حریم خصوصی) برای مایکروسافت اوت‌لوک.</em>
+  </p>
+  <p align="center" style="text-align: center;">
+    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="دانلود بسته نصب (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="یادداشت‌های نسخه v1.1.2" src="https://img.shields.io/badge/Release%20Notes-v1.1.2-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="تعداد دانلود" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="ویندوز ۱۰ و ۱۱" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="اوت‌لوک ۲۰۱۶ تا ۳۶۵" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="امضای دیجیتال معتبر" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
+  </p>
+  <p align="center" style="text-align: center;" dir="rtl">
+    <sub><strong>نصب اختصاصی برای هر کاربر</strong> &bull; بدون نیاز به دسترسی ادمین (Administrator) &bull; ۱۰۰٪ آفلاین و محلی &bull; به‌روزرسانی هوشمند و بدون اختلال</sub>
+  </p>
+</div>
 
 ---
 
@@ -218,7 +210,7 @@
 
 ---
 
-<h2 dir="rtl" align="right">💻 پیش‌نیازهای سیستمی</h2>
+<h2 id="requirements" dir="rtl" align="right">💻 پیش‌نیازهای سیستمی</h2>
 
 <table dir="rtl" align="right" width="100%">
   <thead>
@@ -249,7 +241,7 @@
 
 ---
 
-<h2 dir="rtl" align="right">🛡️ امنیت، حریم خصوصی و معماری</h2>
+<h2 id="security" dir="rtl" align="right">🛡️ امنیت، حریم خصوصی و معماری</h2>
 
 <ul dir="rtl" align="right">
   <li><strong>اجرای ۱۰۰٪ محلی:</strong> کلیهٔ فرآیندهای دیتابیس، ایندکس‌گذاری FTS5 و منطق آرشیو تنها روی رایانه شما اجرا می‌شود.</li>
@@ -261,25 +253,27 @@
 
 ---
 
-<h2 dir="rtl" align="right">🌟 حمایت از پروژه</h2>
+<div align="center" style="text-align: center;">
+  <h2 align="center" style="text-align: center;" dir="rtl">🌟 حمایت از پروژه</h2>
 
-<p align="center" dir="rtl">
-اگر Email Tools به کارایی و سرعت کار شما در اوت‌لوک کمک کرده است، با دادن ستاره (Star) در گیت‌هاب از توسعهٔ آن حمایت کنید!
-</p>
+  <p align="center" style="text-align: center;" dir="rtl">
+    اگر Email Tools به کارایی و سرعت کار شما در اوت‌لوک کمک کرده است، با دادن ستاره (Star) در گیت‌هاب از توسعهٔ آن حمایت کنید!
+  </p>
 
-<p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools">
-    <img src="https://img.shields.io/badge/%D8%B3%D8%AA%D8%A7%D8%B1%D9%87%20%D8%AF%D8%B1%20%DA%AF%DB%8C%D8%AA%E2%80%8C%D9%87%D8%A7%D8%A8-%E2%98%85%20EmailTools-yellow?style=for-the-badge&logo=github" alt="دادن ستاره به مخزن در گیت‌هاب">
-  </a>
-</p>
+  <p align="center">
+    <a href="https://github.com/ParhamGhafouri/EmailTools">
+      <img src="https://img.shields.io/github/stars/ParhamGhafouri/EmailTools?style=for-the-badge&label=Star%20on%20GitHub&color=yellow&logo=github" alt="Star on GitHub">
+    </a>
+  </p>
 
----
+  <hr>
 
-<p align="center" dir="rtl">
-  <strong>طراحی و توسعه توسط پرهام غفوری</strong><br>
-  <a href="https://github.com/ParhamGhafouri"><img alt="GitHub: ParhamGhafouri" src="https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?style=flat-square&logo=github"></a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/parhaam/"><img alt="LinkedIn: parhaam" src="https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?style=flat-square&logo=linkedin"></a>
-  <br>
-  <sub>&copy; 2026 Parham Ghafouri. تمامی حقوق محفوظ است. منتشرشده به صورت نرم‌افزار رایگان (Freeware).</sub>
-</p>
+  <p align="center" style="text-align: center;" dir="rtl">
+    <strong>طراحی و توسعه توسط پرهام غفوری</strong><br>
+    <a href="https://github.com/ParhamGhafouri"><img alt="GitHub: ParhamGhafouri" src="https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?style=flat-square&logo=github"></a>
+    &nbsp;
+    <a href="https://www.linkedin.com/in/parhaam/"><img alt="LinkedIn: parhaam" src="https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?style=flat-square&logo=linkedin"></a>
+    <br>
+    <sub>&copy; 2026 Parham Ghafouri. تمامی حقوق محفوظ است. منتشرشده به صورت نرم‌افزار رایگان (Freeware).</sub>
+  </p>
+</div>
