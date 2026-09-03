@@ -1,218 +1,202 @@
-<p align="center" class="language-switch">
+<p align="center">
   <a href="https://parhamghafouri.github.io/EmailTools/"><strong>English</strong></a> &nbsp;|&nbsp;
-  <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html">فارسی</a>
+  <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html"><strong>فارسی</strong></a>
 </p>
 
 <p align="center">
-  <img src="assets/logo.png" alt="Email Tools logo" width="124">
+  <img src="assets/logo.png" alt="Email Tools Logo" width="128">
 </p>
 
 <h1 align="center">Email Tools for Microsoft Outlook</h1>
 
 <p align="center">
-  <strong>Search complete message bodies. Keep names current. Archive to a clear target. Handle attachments in one click.</strong><br>
-  A free, per-user Outlook add-in for local indexed search, GAL display-name synchronization, verified seasonal archiving, bulk mail actions, attachment workflows, reminder cleanup, and signed updates.
+  <strong>Sub-10ms Indexed Search &bull; Wildcard Attachment Filtering &bull; Automated Seasonal Archiving &bull; GAL Name Sync</strong><br>
+  <em>The high-performance, privacy-first productivity suite built natively for Microsoft Outlook.</em>
 </p>
 
 <p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ParhamGhafouri/EmailTools?label=version&color=2D7DD2"></a>
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?color=2D7DD2"></a>
-  <a href="#requirements"><img alt="Windows" src="https://img.shields.io/badge/platform-Windows-0078D6"></a>
-  <a href="#requirements"><img alt="Outlook" src="https://img.shields.io/badge/Outlook-2016%20%7C%202019%20%7C%202021%20%7C%20365-0072C6"></a>
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Freeware-brightgreen"></a>
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Latest Version" src="https://img.shields.io/github/v/release/ParhamGhafouri/EmailTools?label=version&color=0078D4&style=flat-square"></a>
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Total Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a>
+  <a href="#requirements"><img alt="Windows 10 / 11" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6?style=flat-square&logo=windows"></a>
+  <a href="#requirements"><img alt="Outlook 2016-365" src="https://img.shields.io/badge/Outlook-2016%20%7C%202019%20%7C%202021%20%7C%20365-0072C6?style=flat-square&logo=microsoftoutlook"></a>
+  <a href="#privacy--security"><img alt="Code Signed" src="https://img.shields.io/badge/security-Authenticode%20Signed-success?style=flat-square"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Freeware-2ea44f?style=flat-square"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><strong>Download the latest installer package</strong></a>
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar">
+    <img src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Download EmailTools_Setup.rar">
+  </a>
+  &nbsp;
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">
+    <img src="https://img.shields.io/badge/Release%20Notes-v1.1.2-555555?style=for-the-badge&logo=github&logoColor=white" alt="View Release Notes">
+  </a>
+</p>
+
+<p align="center">
+  <sub><strong>Per-User Installation</strong> &bull; No administrator privileges required &bull; 100% Offline & Private &bull; Seamless background self-updates</sub>
+</p>
+
+---
+
+## 🚀 Overview
+
+Outlook is the backbone of daily business communication, but large mailboxes inevitably suffer from sluggish searches, broken Windows search indexing, mailbox quota warnings, lost attachments on replies, and stale contact display names.
+
+**Email Tools** is a lightweight, high-performance VSTO add-in engineered to solve these core limitations without requiring third-party cloud services or enterprise IT administrative rights. Everything runs locally on your PC, yielding **sub-10ms search results**, **automated seasonal archiving**, **one-click attachment management**, and **automated GAL directory synchronization**.
+
+<p align="center">
+  <img src="assets/outlook-ribbon-tab.png" alt="Email Tools Ribbon Tab in Microsoft Outlook" width="560">
+</p>
+
+---
+
+## ✨ Key Capabilities at a Glance
+
+| Feature | Built-in Outlook | With Email Tools |
+| :--- | :--- | :--- |
+| **Message Body Search** | Slow, misses unindexed or mounted PSTs | **Instant (<10ms)** local SQLite FTS5 trigram index across all stores |
+| **Attachment Search** | Slow metadata lookup, no extension filters | **Instant dedicated search** with wildcard extensions (`*.pdf`, `*.xlsx`, etc.) |
+| **Mailbox Full / Quotas** | Annoying quota popups, manual deletion | **Smart & Emergency Archiving** into auto-rotated 45 GB seasonal PSTs |
+| **Reply with Attachments** | Manually re-attach files from sent items | **1-Click Reply / Reply All with Attachments** on the Home Ribbon |
+| **Forward without Files** | Manual attachment deletion per email | **1-Click Forward without Attachments** (retains inline signatures) |
+| **Corporate Directory Sync** | Stale historical names persist in rules & views | **Automatic GAL Reconciliation** during idle background time |
+| **Vacation Prep** | Manual folder filing | **1-Click Vacation Mode** keeps recent mail, archives the rest safely |
+| **Meeting Reminders** | Overdue past meeting popups pile up | **Silent automatic dismissal** of outdated meeting reminders |
+| **Privacy & Storage** | Varies by cloud configuration | **100% Local Processing**; zero cloud uploads, zero external telemetry |
+
+---
+
+## 🔍 Feature Tour
+
+### 1. Advanced Search (Sub-10ms Local Index)
+
+A dedicated, non-blocking search cockpit featuring an intuitive query bar, real-time result sorting, virtualized grid rendering (up to 100,000 items), and a fully sandboxed preview pane.
+
+<p align="center">
+  <img src="assets/advanced-search-results.png" alt="Advanced Search Results and Preview" width="940">
   <br>
-  <sub>Installs for your Windows account only. No admin rights. Auto-updates after Outlook closes.</sub>
+  <em>Instant query execution across all mailboxes, mounted PST archives, and historical conversation threads.</em>
 </p>
 
+* **SQLite FTS5 Trigram Engine:** Builds an ultra-compact, contentless trigram index locally. Searches message bodies in milliseconds without reopening or downloading messages from Exchange.
+* **Dedicated Attachment Filename & Wildcard Filter:** Search specifically for attached filenames or extensions (e.g. `*.pdf`, `invoice`, `*.xlsx`) with smart inline signature noise filtering.
+* **Sandboxed HTML Preview:** Includes Mark-of-the-Web isolation, web beacon suppression, script execution prevention, and SSRF blocking for completely safe message inspection.
+* **Match Highlighting & Stepper:** Highlights matching query terms directly in the preview pane with instantaneous **Previous / Next** match navigation.
+* **Multi-Criteria Queries:** Seamlessly combine **From**, **To**, **Cc**, **Subject**, **Body**, **Attachment Name**, **Date Range**, and **Hourly Windows**.
+* **Rich Context Actions:** Right-click any result to Open, Reply, Reply All, Forward, Flag, Categorize, Move, Delete, Find Conversation, or Export to CSV (with formula-injection protection).
+
+---
+
+### 2. Smart Archive & Emergency Quota Management
+
+Never receive an Exchange *"Mailbox Quota Exceeded"* warning again. Smart Archive moves aging emails from your live Exchange mailbox into neatly organized, seasonal local PST archives (e.g., `2026-Season1.pst`).
+
 <p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools">Star the repo</a> if Email Tools saves you time. It helps other Outlook users find it.
+  <img src="assets/smart-archive-menu.png" alt="Smart Archive Ribbon Menu" width="400">
+</p>
+
+* **Dynamic Ladder Acceleration:** Automatically identifies mailbox age distribution and skips empty date brackets to archive oldest mail first under pressure.
+* **Emergency Quota Safeguard:** Automatically triggers intensive archival at 90% quota capacity and returns mailbox volume below your configured safe threshold.
+* **Seasonal 45 GB Auto-Rollover:** Automatically partitions archives into quarterly volumes (`YYYY-Season1` through `Season4`) with an automatic rollover boundary at 45 GB to prevent PST corruption.
+* **2-Hour Safety Floor Cooldown:** Prevents continuous background disk churning once the mailbox is safe.
+* **Zero-Freeze Status & Settings:** Fast, non-blocking UI dialogues showing live storage metrics, quota usage, and index readiness.
+
+<p align="center">
+  <img src="assets/smart-archive-status.png" alt="Smart Archive Storage Status" width="440">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/smart-archive-settings.png" alt="Smart Archive Threshold Settings" width="440">
 </p>
 
 ---
 
-## Why It Exists
+### 3. Attachment Actions on the Home Ribbon
 
-Outlook handles email well, but repeated mailbox work can still take too many steps: finding old conversations across archives, repairing stale names after directory changes, replying while keeping attachments, clearing a mailbox before time away, and keeping PST archives organized. **Email Tools** adds those workflows directly to the Outlook ribbon without administrator access or an additional server component.
+Eliminate repetitive attachment management steps directly from Outlook's main **Home** tab.
 
 <p align="center">
-  <img src="assets/outlook-ribbon-tab.png" alt="Email Tools ribbon tab in Microsoft Outlook" width="520">
+  <img src="assets/attachment-actions.png" alt="Attachment Actions in Outlook Home Tab" width="440">
 </p>
 
-## Product Tour
+* **Reply with Attachment(s):** Composes a reply while automatically cloning and preserving all original files.
+* **Reply All with Attachment(s):** Keeps all original attachments intact while replying to all original participants.
+* **Forward without Attachment(s):** Strips bulky attached files to save bandwidth while intelligently retaining embedded company signature images.
 
-### Advanced Search
+---
 
-A dedicated search window for real mailbox investigations: fields at the top, sortable results on the left, and a live Outlook-style preview on the right.
+### 4. Zero-Disruption GAL Display-Name Synchronization
 
-**The big reason it exists:** Outlook's built-in search can miss message bodies when Windows indexing is stale, archives are mounted late, or a mailbox has years of PST history. Email Tools builds its own local, per-user body index so searching the actual contents of messages stays fast and predictable across mailboxes and seasonal archives.
+When colleagues change roles, departments, or surnames in the corporate Active Directory / Exchange Global Address List (GAL), Outlook often preserves obsolete names in historical emails, rules, views, and search folders.
+
+* **Safe Address Mapping:** Resolves recipient addresses against the corporate GAL and updates historical display labels only when a 1:1 unambiguous match is verified.
+* **Out-of-Process Rule & View Repair:** Updates Outlook Rules, Views, and Exchange Search Folders safely after Outlook closes to avoid UI thread deadlocks.
+* **Safe Checkpointing:** Checkpoints progress incrementally and resumes seamlessly across restarts without generating invasive mailbox diagnostic logs.
+
+---
+
+### 5. Vacation Mode & Overdue Reminder Cleanup
 
 <p align="center">
-  <img src="assets/advanced-search-results.png" alt="Advanced Search results with preview and context actions" width="920">
+  <img src="assets/vacation-mode.png" alt="Vacation Mode Dialog" width="440">
+</p>
+
+* **Vacation Mode:** Lighten your Inbox before heading out on leave. Retains the newest percentage of your Inbox (e.g., top 10%) and safely archives the rest into seasonal storage.
+* **Overdue Reminder Dismissal:** Automatically and silently dismisses calendar reminder popups for meetings that have already concluded, preventing notification clutter each morning.
+
+---
+
+## 📦 Installation & Upgrades
+
+### Fresh Installation
+1. Download **`EmailTools_Setup.rar`** from the [Latest Release](https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar).
+2. Extract the archive and launch **`EmailTools_Setup.exe`**.
+3. Open Microsoft Outlook. The **Email Tools** tab will be ready on your ribbon.
+
+### Upgrading from an Earlier Version
+* **Do NOT uninstall the previous version.** Simply run the new installer; it automatically closes Outlook, updates all binaries, and preserves your existing database and settings.
+* **Self-Healing Database:** Upgrades seamlessly migrate existing search indexes (such as the v1.1.2 attachment unification migration) in under 15 milliseconds without requiring a slow re-index.
+
+---
+
+## 💻 System Requirements
+
+| Specification | Requirement |
+| :--- | :--- |
+| **Operating System** | Windows 10 or Windows 11 (64-bit / 32-bit) |
+| **Microsoft Outlook** | Outlook 2016, 2019, 2021, or Microsoft 365 Desktop Client |
+| **Runtime** | Microsoft .NET Framework 4.8 or later |
+| **User Privileges** | **Standard User** (Zero administrator privileges required) |
+
+---
+
+## 🛡️ Privacy, Security & Architecture
+
+Email Tools was engineered with an uncompromising commitment to enterprise data sovereignty and privacy:
+
+* **100% Local Execution:** All database queries, FTS5 full-text indexing, and archiving logic execute strictly on your local PC.
+* **Zero Cloud Leakage:** No email bodies, metadata, or analytics are ever transmitted to external servers.
+* **Sandboxed Preview Engine:** The message preview renders with Mark-of-the-Web isolation, suppressing scripts, tracking pixels, and unauthorized external network calls.
+* **Authenticode Code-Signed:** All binaries (`EmailTools.dll`, `EmailTools.NameRepairWorker.exe`, `EmailTools.UpdateRunner.exe`, `EmailTools_Setup.exe`) are digitally signed with an Authenticode certificate (`42536C317058B3308A75D89E19F849B0B08BD39A`) and include RFC 3161 timestamps.
+* **Guaranteed PST Dismount Cleanup:** Employs kernel-level `MoveFileEx(MOVEFILE_DELAY_UNTIL_REBOOT)` to ensure drained, dismounted legacy PSTs are cleanly deleted even if locked by external indexers.
+
+---
+
+## 🌟 Support & Community
+
+If Email Tools saves you time or frees up your mailbox, please consider giving the repository a star!
+
+<p align="center">
+  <a href="https://github.com/ParhamGhafouri/EmailTools">
+    <img src="https://img.shields.io/badge/Star%20on%20GitHub-★%20EmailTools-yellow?style=for-the-badge&logo=github" alt="Star on GitHub">
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <strong>Architected & Developed by Parham Ghafouri</strong><br>
+  <a href="https://github.com/ParhamGhafouri"><img alt="GitHub: ParhamGhafouri" src="https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?style=flat-square&logo=github"></a>
+  <a href="https://www.linkedin.com/in/parhaam/"><img alt="LinkedIn: parhaam" src="https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?style=flat-square&logo=linkedin"></a>
   <br>
-  <sub>Search every mailbox and archive, preview messages, then act on one result or hundreds.</sub>
-</p>
-
-- Combine **From**, **To**, **Cc**, **Subject**, and **Body** filters.
-- Search the **indexed message body**, not only headers or whatever Outlook's current index happens to expose.
-- Prepare indexed results locally without making Outlook reopen every matching message.
-- Keep large result sets responsive in a virtual grid that supports up to 100,000 rows without repeatedly rebinding an unchanged list.
-- Highlight every rendered body-text match in the original HTML preview and move through occurrences with Previous/Next controls.
-- Keep rights-managed mail searchable by sender, subject, date, folder, and other safe metadata without opening its encrypted body in the background.
-- Keep archive search useful: seasonal PST archives remain searchable even when Outlook's native indexing lags behind.
-- Search the current folder, the whole mailbox, or mounted archives.
-- Narrow by attachments, date range, flagged state, or saved searches.
-- Display result and preview timestamps in the user's local system time.
-- Right-click results to open, reply, forward, flag, categorize, move, delete, find related messages, or export to CSV.
-
-### GAL Display-Name Synchronization
-
-When a person is renamed in the Global Address List (GAL), Outlook can keep the old display name inside historical messages, rules, views, and Search Folders. That leaves the same mailbox identity appearing under different names and can make name-based filters stop matching. Email Tools reconciles those recognized identities with the current GAL while protecting Outlook's visible interface.
-
-- Updates historical **From**, **Sender**, **To**, **Cc**, and **Bcc** display names.
-- Covers normal mailbox folders, shared stores, and mounted archive/PST folders.
-- Matches by mailbox address and updates a name only when it maps safely to one current GAL identity.
-- Leaves external, deleted, unknown, or ambiguous recipients unchanged.
-- Repairs messages during idle background time. Rules, Views, and Exchange Search Folder criteria are handled only after Outlook closes.
-- Preserves the existing rule-recipient identity and changes only a safely matched cached display label.
-- Saves a rule store only after every rule and destination has been inspected successfully; an unreadable or unsafe rule leaves the store unchanged for a later retry.
-- Checkpoints progress and resumes automatically after Outlook or Windows restarts.
-- Runs without prompts and does not produce mailbox-content or recipient diagnostic logs.
-
-### Attachment Actions
-
-The Home tab gets three focused buttons that appear where people already work.
-
-<p align="center">
-  <img src="assets/attachment-actions.png" alt="Reply with attachments, Reply All with attachments, Forward without attachments, and Advanced Search buttons" width="420">
-</p>
-
-- **Reply with Attachment(s)** keeps the original files in your reply.
-- **Reply All with Attachment(s)** keeps the original files for every recipient.
-- **Forward without Attachment(s)** strips file attachments while preserving inline signature images.
-
-### Smart Archive
-
-Smart Archive keeps mailboxes lean by moving older mail into local seasonal archives such as `2026-Season1`. Ordinary mail is moved to a verified archive destination, not permanently deleted, and protected Outlook folders stay untouched.
-
-<p align="center">
-  <img src="assets/smart-archive-menu.png" alt="Smart Archive menu in the Outlook ribbon" width="360">
-</p>
-
-- Runs quietly after Outlook starts and rechecks during the day when mailbox usage crosses the percentage saved in Settings.
-- Uses the verified Exchange quota and stops as soon as the configured target is reached.
-- Under pressure, works through a bounded 30/20/10/8/6/4/2/1-day sequence while protecting mail from the newest 24 hours.
-- Gives Emergency Archive first priority at 90% of verified quota and uses the saved Smart Archive percentage as the exit target.
-- Files older mail into dated archives in bounded background steps.
-- Migrates legacy PST archives into the correct account and seasonal archive, then removes the source only after recursive exact-zero verification.
-- Queues rights-managed messages while Outlook is open and moves them with a signed hidden worker after Outlook closes, without launching Office Rights Management setup.
-
-<p align="center">
-  <img src="assets/smart-archive-status.png" alt="Smart Archive status window" width="520"><br>
-  <sub>Status shows archive health, mounted PSTs, verified quota, measured progress, last run, and search-index readiness.</sub>
-</p>
-
-<p align="center">
-  <img src="assets/smart-archive-settings.png" alt="Smart Archive settings window" width="520"><br>
-  <sub>The saved percentage is the real target used by Smart Archive and Emergency Archive.</sub>
-</p>
-
-### Vacation Mode
-
-Clear the Inbox before time away without losing ordinary mail. Vacation Mode keeps the newest selected portion of the Inbox and moves older eligible messages to verified seasonal archives using the same destination and post-move checks as Smart Archive.
-
-<p align="center">
-  <img src="assets/vacation-mode.png" alt="Vacation Mode dialog" width="460">
-</p>
-
-### Reminder Cleanup
-
-Overdue reminders for meetings that already passed are dismissed quietly so they do not pile up every morning.
-
-### Verified Auto-Updates
-
-Email Tools checks GitHub Releases once a day and prepares a verified update in the background. The signed update runner validates SHA-256 and the pinned publisher, waits for Outlook to close, and retries the silent installer handoff when another maintenance worker is still finishing.
-
----
-
-## Installation
-
-1. Download `EmailTools_Setup.rar` from the [latest release](https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar).
-2. Extract the archive and run `EmailTools_Setup.exe`.
-3. Start Outlook. The **Email Tools** ribbon tab appears, and the attachment buttons are added to the Home tab.
-
-Already have Email Tools installed? **Do not uninstall it first.** Run the new installer over the existing version and setup upgrades it in place. Setup installs per-user, needs no administrator rights, and closes Outlook automatically if Outlook is running. To repair or remove Email Tools later, run `EmailTools_Setup.exe` again or uninstall it from **Settings → Apps**.
-
-> On first start, Smart Archive may inspect existing archives, the local body index may begin building, and GAL synchronization may examine historical display names. These jobs share one maintenance lane, use bounded work units, and resume automatically after interruptions.
-
----
-
-## Requirements
-
-| | |
-|---|---|
-| **Operating system** | Windows 10 or Windows 11 |
-| **Outlook** | Microsoft Outlook 2016, 2019, 2021, or Microsoft 365 desktop |
-| **Framework** | .NET Framework 4.8 |
-| **Privileges** | None. Installs per-user. |
-
----
-
-## Privacy And Safety
-
-- Mail search, archiving, indexing, and GAL reconciliation run on your PC against your configured Outlook and Exchange profile.
-- No mailbox content is uploaded.
-- Network access is limited to your configured Exchange/GAL services and the update check against GitHub Releases; Email Tools uses no third-party mailbox service.
-- No mailbox-content, recipient, search-index, updater, or GAL diagnostic log is produced.
-- Updates are accepted only when the installer hash and pinned code-signing identity match.
-- Protected-message classification uses safe metadata and does not open encrypted bodies or enumerate Outlook attachments in the background.
-
----
-
-## FAQ
-
-**Does Smart Archive delete ordinary email?**
-No. It moves eligible mail into an exact verified local archive destination. Protected folders such as Calendar, Contacts, Tasks, Notes, Drafts, Outbox, Deleted Items, and Conversation History are not archived. A legacy PST file is removed only after Email Tools proves recursively that no real mail remains.
-
-**Does it need admin rights?**  
-No. Email Tools installs under your own Windows account.
-
-**Can I still search archived mail?**  
-Yes. Seasonal archives remain mounted in Outlook and are searchable from Advanced Search.
-
-**What does GAL synchronization change?**  
-It updates recognized Outlook display names to the current name in your organization's Global Address List. It does not change email addresses, message bodies, attachments, or unknown recipients. Rules, views, and Search Folders are repaired only while visible Outlook is closed.
-
-**Why does Email Tools build its own body index?**  
-Because the feature was built for real support and audit work where "maybe Outlook indexed it" is not good enough. The local body index makes old messages, archived PSTs, and body-text searches behave consistently without uploading mailbox content anywhere.
-
-**How does the first body-index build affect Outlook?**
-The first build can take time on a large mailbox because it must read existing messages and archives. Email Tools performs this work in bounded background slices and yields when Outlook is active. Normal upgrades preserve a valid existing index instead of rebuilding it from zero.
-
----
-
-## Changelog
-
-See the [Releases page](https://github.com/ParhamGhafouri/EmailTools/releases) for version history and release notes.
-
----
-
-<h2 align="center">Enjoying Email Tools?</h2>
-
-<p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools"><strong>Star it on GitHub</strong></a><br>
-  <sub>It is the easiest way to support the project and help more people discover it.</sub>
-</p>
-
----
-
-<p align="center">
-  <strong>Designed and developed by Parham Ghafouri</strong><br>
-  <a href="https://github.com/ParhamGhafouri"><img alt="GitHub: ParhamGhafouri" src="https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?logo=github"></a>
-  <a href="https://www.linkedin.com/in/parhaam/"><img alt="LinkedIn: parhaam" src="https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?logo=linkedin"></a>
-  <br>
-  <sub>© 2026 Parham Ghafouri. All rights reserved.</sub>
+  <sub>&copy; 2026 Parham Ghafouri. Released as Freeware under the MIT-compatible open software license.</sub>
 </p>

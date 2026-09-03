@@ -2,11 +2,13 @@
 ---
 
 @import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap');
 
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -15,66 +17,191 @@ html {
   box-sizing: border-box;
 }
 
-body,
-.page-header,
-.main-content {
-  font-family: Calibri, "Segoe UI", Tahoma, Arial, sans-serif;
-  letter-spacing: 0;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #24292f;
+  background-color: #ffffff;
+  line-height: 1.65;
+}
+
+.page-header {
+  background-color: #0078D4;
+  background-image: linear-gradient(135deg, #004578 0%, #0078D4 55%, #106ebe 100%);
+  padding: 3rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 69, 120, 0.2);
+  text-align: center;
+}
+
+.project-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.project-tagline {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 50rem;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.5;
 }
 
 .main-content {
   width: 100%;
-  max-width: 72rem;
-  padding: 2rem 1.5rem;
+  max-width: 68rem;
+  padding: 2.5rem 1.5rem;
+  margin: 0 auto;
   overflow-wrap: anywhere;
 }
 
-.main-content img,
-.main-content video,
-.main-content iframe {
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4 {
+  color: #004578;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.5rem;
+}
+
+.main-content h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.4rem;
+}
+
+.main-content h3 {
+  font-size: 1.25rem;
+}
+
+/* Image styling */
+.main-content img {
   max-width: 100%;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.main-content img:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Badges and button icons: clean display without shadows */
+.main-content p img,
+.main-content a img {
+  box-shadow: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.main-content a img:hover {
+  box-shadow: none;
+  opacity: 0.92;
+}
+
+/* Modern tables */
 .main-content table {
-  display: block;
+  display: table;
   width: 100%;
   max-width: 100%;
-  overflow-x: auto;
-  border-collapse: collapse;
-  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.main-content th,
+.main-content th {
+  background-color: #f6f8fa;
+  color: #24292f;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-bottom: 2px solid #d0d7de;
+  text-align: left;
+}
+
 .main-content td {
-  white-space: normal;
-  overflow-wrap: anywhere;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eaecef;
+  vertical-align: top;
+}
+
+.main-content tr:last-child td {
+  border-bottom: none;
+}
+
+.main-content tr:nth-child(even) td {
+  background-color: #fbfcfd;
 }
 
 .main-content pre {
   max-width: 100%;
   overflow-x: auto;
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 1rem;
 }
 
 .main-content code {
   unicode-bidi: isolate;
+  background-color: rgba(175, 184, 193, 0.2);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 85%;
 }
 
 .main-content .language-switch {
-  margin-block: 0 1rem;
+  margin-block: 0 1.25rem;
   text-align: center;
+  font-size: 1.05rem;
 }
 
+.main-content .language-switch a {
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #0078D4;
+}
+
+.main-content .language-switch a:hover {
+  background-color: rgba(0, 120, 212, 0.08);
+}
+
+/* RTL / Persian Typography */
 .main-content [dir="rtl"] {
-  font-family: Calibri, Tahoma, "Segoe UI", Arial, sans-serif;
-  line-height: 1.9;
+  font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, Calibri, "Segoe UI", Tahoma, Arial, sans-serif;
+  line-height: 2;
   direction: rtl;
+  text-align: right;
+}
+
+.main-content [dir="rtl"] h1,
+.main-content [dir="rtl"] h2,
+.main-content [dir="rtl"] h3 {
+  font-family: 'Vazirmatn', Calibri, "Segoe UI", Tahoma, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.main-content [dir="rtl"] th {
   text-align: right;
 }
 
 .main-content [dir="rtl"] ul,
 .main-content [dir="rtl"] ol {
-  padding-right: 1.5rem;
+  padding-right: 1.75rem;
   padding-left: 0;
 }
 
@@ -83,13 +210,13 @@ body,
   unicode-bidi: isolate;
 }
 
-@media screen and (max-width: 42rem) {
+@media screen and (max-width: 48rem) {
   .page-header {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .project-name {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
   }
 
   .project-tagline {
@@ -97,19 +224,11 @@ body,
   }
 
   .main-content {
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 1.25rem 1rem;
   }
 
-  .main-content h1 {
-    font-size: 1.75rem;
-  }
-
-  .main-content h2 {
-    font-size: 1.4rem;
-  }
-
-  .main-content h3 {
-    font-size: 1.15rem;
+  .main-content table {
+    display: block;
+    overflow-x: auto;
   }
 }
