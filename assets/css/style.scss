@@ -25,11 +25,7 @@ body {
 }
 
 .page-header {
-  background-color: #0078D4;
-  background-image: linear-gradient(135deg, #004578 0%, #0078D4 55%, #106ebe 100%);
-  padding: 3rem 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 69, 120, 0.2);
-  text-align: center;
+  display: none;
 }
 
 .project-name {
@@ -186,6 +182,11 @@ body {
   line-height: 2;
   direction: rtl;
   text-align: right;
+}
+
+.main-content h1,
+.main-content [dir="rtl"] h1 {
+  text-align: center !important;
 }
 
 .main-content [dir="rtl"] h1,

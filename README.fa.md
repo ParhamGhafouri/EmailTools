@@ -7,7 +7,7 @@
   <img src="assets/logo.png" alt="لوگوی Email Tools" width="128">
 </p>
 
-<h1 align="center" dir="rtl">ابزارهای ایمیل برای مایکروسافت اوت‌لوک</h1>
+<h1 align="center" style="text-align: center;" dir="rtl">ابزارهای ایمیل برای مایکروسافت اوت‌لوک</h1>
 
 <p align="center" dir="rtl">
   <strong>جست‌وجوی زیر ۱۰ میلی‌ثانیه &bull; فیلتر پیشرفتهٔ فایل‌های پیوست &bull; بایگانی فصلی خودکار &bull; همگام‌سازی نام‌های سازمانی GAL</strong><br>
@@ -15,11 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="آخرین نسخه" src="https://img.shields.io/github/v/release/ParhamGhafouri/EmailTools?label=%D9%86%D8%B3%D8%AE%D9%87&color=0078D4&style=flat-square"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="تعداد دانلود" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF&color=0078D4&style=flat-square"></a>&nbsp;<a href="LICENSE"><img alt="رایگان" src="https://img.shields.io/badge/%D9%85%D8%AC%D9%88%D8%B2-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-2ea44f?style=flat-square"></a><br><a href="#پیشنیازهای-سیستمی"><img alt="ویندوز ۱۰ و ۱۱" src="https://img.shields.io/badge/%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#پیشنیازهای-سیستمی"><img alt="اوت‌لوک ۲۰۱۶ تا ۳۶۵" src="https://img.shields.io/badge/%D8%A7%D9%88%D8%AA%E2%80%8C%D9%84%D9%88%DA%A9-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#امنیت-و-حفظ-حریم-خصوصی"><img alt="امضای دیجیتال" src="https://img.shields.io/badge/%D8%A7%D9%85%D8%B6%D8%A7-Authenticode-success?style=flat-square"></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img src="https://img.shields.io/badge/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%D8%A8%D8%B3%D8%AA%D9%87%20%D9%86%D8%B5%D8%A8%20(.rar)-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="دانلود بسته نصب"></a>&nbsp;&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img src="https://img.shields.io/badge/%DB%8C%D8%A7%D8%AF%D8%AF%D8%A7%D8%B4%D8%AA%20%D9%86%D8%B3%D8%AE%D9%87-v1.1.2-555555?style=for-the-badge&logo=github&logoColor=white" alt="مشاهده یادداشت انتشار"></a>
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="دانلود بسته نصب (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="یادداشت‌های نسخه v1.1.2" src="https://img.shields.io/badge/Release%20Notes-v1.1.2-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="تعداد دانلود" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><img alt="ویندوز ۱۰ و ۱۱" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows">&nbsp;<img alt="اوت‌لوک ۲۰۱۶ تا ۳۶۵" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook">&nbsp;<img alt="امضای دیجیتال معتبر" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square">
 </p>
 
 <p align="center" dir="rtl">
