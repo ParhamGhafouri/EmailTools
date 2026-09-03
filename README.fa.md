@@ -121,7 +121,7 @@
 <h3 dir="rtl" align="right">۲. بایگانی هوشمند (Smart Archive) و مدیریت سهمیه</h3>
 
 <p dir="rtl" align="right">
-پایان قطعی اخطارهای پر شدن سهمیهٔ صندوق. ایمیل‌های قدیمی به طور منظم و خودکار به فایل‌های آرشیو فصلی محلی (مانند <code>Season1.pst</code>) منتقل می‌شوند.
+پایان قطعی اخطارهای پر شدن سهمیهٔ صندوق. ایمیل‌های قدیمی به طور منظم و خودکار به فایل‌های آرشیو فصلی محلی (مانند <code>2026-Season1.pst</code>) منتقل می‌شوند.
 </p>
 
 <p align="center">
@@ -273,6 +273,6 @@
     &nbsp;
     <a href="https://www.linkedin.com/in/parhaam/"><img alt="LinkedIn: parhaam" src="https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?style=flat-square&logo=linkedin"></a>
     <br>
-    <sub>&copy; Parham Ghafouri. تمامی حقوق محفوظ است. منتشرشده به صورت نرم‌افزار رایگان (Freeware).</sub>
+    <sub dir="rtl"><span dir="ltr">&copy; 2026 Parham Ghafouri</span>. تمامی حقوق محفوظ است. منتشرشده به صورت نرم‌افزار رایگان (<span dir="ltr">Freeware</span>).</sub>
   </p>
 </div>

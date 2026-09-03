@@ -67,7 +67,7 @@ A dedicated, non-blocking search cockpit featuring an intuitive query bar, real-
 
 ### 2. Smart Archive & Emergency Quota Management
 
-Never receive an Exchange *"Mailbox Quota Exceeded"* warning again. Smart Archive moves aging emails from your live Exchange mailbox into neatly organized, seasonal local PST archives (e.g., `Season1.pst`).
+Never receive an Exchange *"Mailbox Quota Exceeded"* warning again. Smart Archive moves aging emails from your live Exchange mailbox into neatly organized, seasonal local PST archives (e.g., `2026-Season1.pst`).
 
 <p align="center">
   <img src="assets/smart-archive-menu.png" alt="Smart Archive Ribbon Menu" width="400">
@@ -175,6 +175,6 @@ Email Tools was engineered with an uncompromising commitment to enterprise data 
   <p align="center" style="text-align: center;">
     <strong>Architected & Developed by Parham Ghafouri</strong><br>
     <a href="https://github.com/ParhamGhafouri"><img alt="GitHub: ParhamGhafouri" src="https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?style=flat-square&logo=github"></a>&nbsp;<a href="https://www.linkedin.com/in/parhaam/"><img alt="LinkedIn: parhaam" src="https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?style=flat-square&logo=linkedin"></a><br>
-    <sub>&copy; Parham Ghafouri. Released as Freeware under the MIT-compatible open software license.</sub>
+    <sub>&copy; 2026 Parham Ghafouri. Released as Freeware under the MIT-compatible open software license.</sub>
   </p>
 </div>
