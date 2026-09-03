@@ -154,7 +154,6 @@ Email Tools was engineered with an uncompromising commitment to enterprise data 
 * **Zero Cloud Leakage:** No email bodies, metadata, or analytics are ever transmitted to external servers.
 * **Sandboxed Preview Engine:** The message preview renders with Mark-of-the-Web isolation, suppressing scripts, tracking pixels, and unauthorized external network calls.
 * **Authenticode Code-Signed:** All binaries (`EmailTools.dll`, `EmailTools.NameRepairWorker.exe`, `EmailTools.UpdateRunner.exe`, `EmailTools_Setup.exe`) are digitally signed with an Authenticode certificate (`42536C317058B3308A75D89E19F849B0B08BD39A`) and include RFC 3161 timestamps.
-* **Guaranteed PST Dismount Cleanup:** Employs kernel-level `MoveFileEx(MOVEFILE_DELAY_UNTIL_REBOOT)` to ensure drained, dismounted legacy PSTs are cleanly deleted even if locked by external indexers.
 
 ---
 
