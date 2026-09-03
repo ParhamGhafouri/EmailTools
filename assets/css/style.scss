@@ -199,6 +199,22 @@ body {
   text-align: right;
 }
 
+table[dir="rtl"],
+.main-content table[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+table[dir="rtl"] th,
+.main-content table[dir="rtl"] th {
+  text-align: right;
+}
+
+table[dir="rtl"] td,
+.main-content table[dir="rtl"] td {
+  text-align: right;
+}
+
 .main-content [dir="rtl"] ul,
 .main-content [dir="rtl"] ol {
   padding-right: 1.75rem;
