@@ -15,27 +15,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Latest Version" src="https://img.shields.io/github/v/release/ParhamGhafouri/EmailTools?label=version&color=0078D4&style=flat-square"></a>
-  &nbsp;
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Total Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a>
-  &nbsp;
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Freeware-2ea44f?style=flat-square"></a>
-  <br>
-  <a href="#requirements"><img alt="Windows 10 / 11" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6?style=flat-square&logo=windows"></a>
-  &nbsp;
-  <a href="#requirements"><img alt="Outlook 2016-365" src="https://img.shields.io/badge/Outlook-2016%20%7C%202019%20%7C%202021%20%7C%20365-0072C6?style=flat-square&logo=microsoftoutlook"></a>
-  &nbsp;
-  <a href="#privacy--security"><img alt="Code Signed" src="https://img.shields.io/badge/security-Authenticode%20Signed-success?style=flat-square"></a>
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Latest Version" src="https://img.shields.io/github/v/release/ParhamGhafouri/EmailTools?label=version&color=0078D4&style=flat-square"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Total Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a>&nbsp;<a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Freeware-2ea44f?style=flat-square"></a><br><a href="#requirements"><img alt="Windows 10 / 11" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="Outlook 2016-365" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#privacy--security"><img alt="Code Signed" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar">
-    <img src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Download EmailTools_Setup.rar">
-  </a>
-  &nbsp;
-  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">
-    <img src="https://img.shields.io/badge/Release%20Notes-v1.1.2-555555?style=for-the-badge&logo=github&logoColor=white" alt="View Release Notes">
-  </a>
+  <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Download EmailTools_Setup.rar"></a>&nbsp;&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img src="https://img.shields.io/badge/Release%20Notes-v1.1.2-555555?style=for-the-badge&logo=github&logoColor=white" alt="View Release Notes"></a>
 </p>
 
 <p align="center">
