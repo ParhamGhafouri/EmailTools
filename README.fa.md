@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/outlook-ribbon-tab.png" alt="زبانهٔ Email Tools در ریبون اوت‌لوک" width="600">
+  <img src="assets/outlook-ribbon-tab.png" alt="زبانهٔ Email Tools در ریبون اوت‌لوک" width="260">
 </p>
 
 ---
@@ -163,7 +163,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/smart-archive-menu.png" alt="منوی بایگانی هوشمند در ریبون" width="400">
+  <img src="assets/smart-archive-menu.png" alt="منوی بایگانی هوشمند در ریبون" width="280">
 </p>
 
 <ul dir="rtl" align="right">
@@ -183,20 +183,21 @@
 
 ---
 
-<h3 dir="rtl" align="right">۴. عملیات یک‌کلیکی فایل‌های پیوست در ریبون Home</h3>
+<h3 dir="rtl" align="right">۴. عملیات یک‌کلیکی فایل‌های پیوست و گردش کار در ریبون Home</h3>
 
 <p dir="rtl" align="right">
-سه دکمهٔ پرکاربرد مستقیماً در زبانهٔ اصلی اوت‌لوک برای افزایش سرعت مکاتبات روزمره:
+دکمه‌های پرکاربرد مستقیماً در زبانهٔ اصلی اوت‌لوک برای افزایش سرعت مکاتبات و پیگیری وظایف روزمره:
 </p>
 
 <p align="center">
-  <img src="assets/attachment-actions.png" alt="دکمه‌های مدیریت پیوست در زبانهٔ Home" width="440">
+  <img src="assets/attachment-actions.png" alt="دکمه‌های مدیریت پیوست و گردش کار در زبانهٔ Home" width="420">
 </p>
 
 <ul dir="rtl" align="right">
   <li><strong>پاسخ با پیوست‌ها (Reply with Attachment):</strong> ایجاد ایمیل پاسخ در حالی که تمام فایل‌های پیوست پیام اصلی عینا تکثیر و حفظ می‌شوند.</li>
   <li><strong>پاسخ به همه با پیوست‌ها (Reply All with Attachment):</strong> ارسال پاسخ برای تمام افراد حاضر در رونوشت همراه با فایل‌های اصلی.</li>
   <li><strong>فوروارد بدون پیوست (Forward without Attachment):</strong> حذف فایل‌های حجیم برای صرفه‌جویی در پهنای باند با حفظ هوشمندانهٔ تصاویر امضای شرکتی.</li>
+  <li><strong>ثبت سریع به عنوان وظیفه (Track as Task):</strong> تبدیل یک‌کلیکی ایمیل به وظیفه و همگام‌سازی فوری با پنل مدیریت وظایف (Task Tracker).</li>
 </ul>
 
 ---

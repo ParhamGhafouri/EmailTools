@@ -23,7 +23,7 @@ Outlook is the backbone of daily business communication, but large mailboxes ine
 **Email Tools** is a lightweight, high-performance VSTO add-in engineered to solve these core limitations without requiring third-party cloud services or enterprise IT administrative rights. Everything runs locally on your PC, yielding **sub-10ms search results**, **automated email-to-task workflow management**, **smart seasonal archiving**, **one-click attachment actions**, and **automated GAL directory synchronization**.
 
 <p align="center">
-  <img src="assets/outlook-ribbon-tab.png" alt="Email Tools Ribbon Tab in Microsoft Outlook" width="600">
+  <img src="assets/outlook-ribbon-tab.png" alt="Email Tools Ribbon Tab in Microsoft Outlook" width="260">
 </p>
 
 ---
@@ -96,7 +96,7 @@ Never let critical commitments, pending customer requests, or follow-ups slip th
 Never receive an Exchange *"Mailbox Quota Exceeded"* warning again. Smart Archive moves aging emails from your live Exchange mailbox into neatly organized, seasonal local PST archives (e.g., `2026-Season1.pst`).
 
 <p align="center">
-  <img src="assets/smart-archive-menu.png" alt="Smart Archive Ribbon Menu" width="400">
+  <img src="assets/smart-archive-menu.png" alt="Smart Archive Ribbon Menu" width="280">
 </p>
 
 * **Fluent 2 Status & Health Cockpit:** Visual progress gauges showing live Exchange mailbox quota usage (with dynamic green/orange/red capacity thresholds) and archive drive free/total capacity meters.
@@ -114,17 +114,18 @@ Never receive an Exchange *"Mailbox Quota Exceeded"* warning again. Smart Archiv
 
 ---
 
-### 4. Attachment Actions on the Home Ribbon
+### 4. Attachment & Quick Workflow Actions on the Home Ribbon
 
-Eliminate repetitive attachment management steps directly from Outlook's main **Home** tab.
+Eliminate repetitive attachment and workflow steps directly from Outlook's main **Home** tab.
 
 <p align="center">
-  <img src="assets/attachment-actions.png" alt="Attachment Actions in Outlook Home Tab" width="440">
+  <img src="assets/attachment-actions.png" alt="Attachment and Workflow Actions in Outlook Home Tab" width="420">
 </p>
 
 * **Reply with Attachment(s):** Composes a reply while automatically cloning and preserving all original files.
 * **Reply All with Attachment(s):** Keeps all original attachments intact while replying to all original participants.
 * **Forward without Attachment(s):** Strips bulky attached files to save bandwidth while intelligently retaining embedded company signature images.
+* **Track as Task:** Instant 1-click email-to-task conversion with direct synchronization into the Task Tracker dashboard.
 
 ---
 
