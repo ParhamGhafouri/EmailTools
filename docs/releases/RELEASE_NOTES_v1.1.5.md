@@ -9,27 +9,21 @@
 
 # Email Tools v1.1.5
 
-Version 1.1.5 delivers **seamless Deleted Items native Recovery banner compatibility**, a revamped **Fluent 2 Status & Indexing Dashboard** with live items counts, active folder progress, and queue metrics, an **ultra-fast 1-column Reconcile engine** eliminating post-indexing write storms and I/O bloat, and **multi-conditional search acceleration** with zero hiccups or query drops.
+Version 1.1.5 delivers the new **"Track as Task" Ribbon & Inspector integration**, an **ultra-fast 1-column Reconcile engine** eliminating post-indexing write storms and disk spikes, **multi-conditional search acceleration** with sub-50ms execution, **seamless Deleted Items native Recovery banner compatibility**, a revamped **Fluent 2 Visual Status Dashboard** with live items counts and queue metrics, and a **theme-adaptive SearchBand** across all Outlook themes.
 
 ### Highlights (Ordered by Priority)
 
-1. **Deleted Items & Native Exchange Recovery Banner Protection:**
-   - **Native Recovery Infobar Restored:** Fixed an issue where the embedded message list search band physically overlapped and obscured Outlook's native recovery notification bar (*"Recover items recently removed from this folder"*).
-   - **Multi-Language Awareness:** Added comprehensive detection for Deleted Items across 10+ languages (English, Persian, German, French, Spanish, Italian, Dutch, Polish, Russian, Arabic) via folder path, MAPI `CompareEntryIDs`, parent hierarchy, and native window text scanning.
-   - **Automatic Band Suppression & Grid Realignment:** The embedded search band automatically hides when navigating to Deleted Items or when native recovery banners are detected, restoring the message list grid flush against the folder header so deleted items can be restored without obstruction.
+1. **Intelligent "Track as Task" Ribbon & Inspector Integration:**
+   - **One-Click Instant Tracking:** Integrated a dedicated *"Track as Task"* action directly into Outlook's main Explorer ribbon (`TabMail` alongside Respond and Search) and the message read inspector (`TabReadMessage`).
+   - **Preserved Context & Metadata:** Instantly converts the selected or open email into a tracked task, automatically capturing sender, recipient, subject, thread context, and timestamps into the Intelligent Task Tracker.
+   - **Unified Workflow:** Seamlessly synchronizes with the Task Tracker dashboard (`Ctrl+F4`), enabling multi-condition rule filtering, deadline detection, priority tagging, and follow-up tracking without leaving Outlook.
 
-2. **Revamped Windows 11 Fluent 2 Visual Status Dashboard:**
-   - **Two-Tier Real-Time Metrics:** Upgraded the Search Index & Engine card in the Status window (`ThemedStatusForm`) to display live two-tier metrics instead of generic status text:
-     - **Primary Metric:** Shows exact progress (`12,450 of 15,200 indexed (82%)` or `15,200 indexed • Up to date`).
-     - **Live Sub-Details:** Displays the active folder being scanned (`Folder: Inbox (120 of 300)`), writer queue depth (`Queue: 140`), and precise pause reasons (`Paused: Outlook is in use (resumes in 2.5s)`).
-   - **Fluent Colored Badge Pills:** Real-time visual status pills with theme-adaptive styling: Green (`Ready`), Orange (`Indexing`), Blue (`Paused`), and Gray (`Unavailable`).
-
-3. **High-Speed 1-Column Reconcile Engine (Zero Write Storms):**
-   - **Optimized Reconcile Pass:** In `BodyIndexBuilder.StepReconcile`, once store metadata is already prepared, the background pass opens the MAPI table requesting only **1 column** (`PR_ENTRYID`) instead of querying all 13 metadata properties.
-   - **Eliminated Write Storms & High Disk I/O:** Compares entry IDs directly against SQLite `mail_meta` without allocating tens of thousands of duplicate metadata objects. Missing and purged items are removed directly via indexed lookups, completely skipping expensive full FTS scans.
+2. **High-Speed 1-Column Reconcile Engine (Zero Write Storms & Zero Disk Thrashing):**
+   - **Optimized Reconcile Pass:** In `BodyIndexBuilder.StepReconcile`, once store metadata is already prepared, the background reconciliation pass queries the MAPI table requesting only **1 column** (`PR_ENTRYID`) instead of querying all 13 metadata properties.
+   - **Eliminated Write Storms & High Disk I/O:** Compares entry IDs directly in memory against SQLite `mail_meta` without allocating tens of thousands of duplicate metadata objects. Missing and purged items are purged directly via indexed lookups, completely skipping expensive full FTS scans.
    - **Non-Blocking Checkpoints:** Replaced runtime `wal_checkpoint(TRUNCATE)` calls with non-blocking `PASSIVE` checkpoints, preventing database lockouts and disk spikes while indexing completes.
 
-4. **Multi-Conditional Search Acceleration & Hiccup Elimination:**
+3. **Multi-Conditional Search Acceleration & Hiccup Elimination:**
    - **Fixed 100,000 Cap Escalation Bug:** Resolved an issue where combining header filters (`From:`, `Subject:`, `To:`, exclusions) escalated the internal query limit to 100,000 rows, causing SQLite to omit its `ORDER BY` clause and overloading memory with unsorted records. Queries now execute with strict bounding to `planCap` directly inside SQLite in under 50ms.
    - **Fixed Attachment-Only & Time-Only Queries:** Resolved a condition where searches specifying only attachment names or specific hour ranges were mistakenly dismissed as empty forms.
    - **Eliminated Search Interruption Loops:** `RefreshBodySearchAfterIndexCommit` no longer restarts or aborts in-flight searches when background indexing commits new revisions, and never interrupts the user while inspecting the results grid or reading pane.
@@ -37,7 +31,25 @@ Version 1.1.5 delivers **seamless Deleted Items native Recovery banner compatibi
    - **Smooth UI Interaction:** Debounced grid row selection (`CellClick`) to eliminate synchronous COM reading pane stutter, and added Enter key handling to Exclude text boxes for immediate execution.
    - **Database Index Optimization:** Added composite SQLite indexes on `(storekey, folderid, received_ticks)`, unread status, attachments, and flagged items, while setting `wal_autocheckpoint=1000` to prevent WAL file bloat.
 
-5. **Production Build & Authenticode Verification:**
+4. **Deleted Items & Native Exchange Recovery Banner Compatibility:**
+   - **Native Recovery Infobar Restored:** Fixed an issue where the embedded message list search band physically overlapped and obscured Outlook's native recovery notification bar (*"Recover items recently removed from this folder"*).
+   - **Multi-Language Awareness:** Added comprehensive detection for Deleted Items across 10+ languages (English, Persian, German, French, Spanish, Italian, Dutch, Polish, Russian, Arabic) via folder path, MAPI `CompareEntryIDs`, parent hierarchy, and native window text scanning.
+   - **Automatic Band Suppression & Grid Realignment:** The embedded search band automatically hides when navigating to Deleted Items or when native recovery banners are detected, restoring the message list grid flush against the folder header so deleted items can be restored without obstruction.
+
+5. **Revamped Windows 11 Fluent 2 Visual Status Dashboard:**
+   - **Two-Tier Real-Time Metrics:** Upgraded the Search Index & Engine card in the Status window (`ThemedStatusForm`) to display live two-tier metrics instead of generic status text:
+     - **Primary Metric:** Shows exact progress (`12,450 of 15,200 indexed (82%)` or `15,200 indexed • Up to date`).
+     - **Live Sub-Details:** Displays the active folder being scanned (`Folder: Inbox (120 of 300)`), writer queue depth (`Queue: 140`), and precise pause reasons (`Paused: Outlook is in use (resumes in 2.5s)`).
+   - **Fluent Colored Badge Pills:** Real-time visual status pills with theme-adaptive styling: Green (`Ready`), Orange (`Indexing`), Blue (`Paused`), and Gray (`Unavailable`).
+
+6. **Theme-Adaptive SearchBand & Golden Keycaps:**
+   - **Dynamic Theme Palette:** SearchBand pill background, borders, and typography adapt automatically to the active Outlook theme:
+     - **Black Theme:** Dark slate pill (`#2A303A`, hover `#363E4C`), electric blue glyph (`#55B5FF`), crisp light text (`#F0F0F0`).
+     - **Dark Gray Theme:** Slate pill (`#3E444E`, hover `#4A525E`), electric blue glyph (`#55B5FF`).
+     - **Light / White Theme:** Fluent light pill (`#F3F6FA`, hover `#EBF2FA`), Office blue glyph (`#0078D4`), dark charcoal text (`#202020`).
+   - **Tactile Golden Buttons:** The signature tactile `[ Ctrl ] + [ F3 ]` keycaps maintain their warm cream/gold contrast (`#F6E9BF`), border (`#CAA855`), and physical bottom rim bevel (`#BA9846`) across all themes.
+
+7. **Production Build & Authenticode Verification:**
    - Binaries and installer packages are fully obfuscated (`ConfuserEx strong` preset) and Authenticode signed with developer certificate (`42536C317058B3308A75D89E19F849B0B08BD39A`).
    - Verified 100% clean in Windows Defender and passes all production contract test suites.
 
@@ -49,26 +61,15 @@ Version 1.1.5 delivers **seamless Deleted Items native Recovery banner compatibi
 <h2 dir="rtl" align="right">فارسی</h2>
 
 <div dir="rtl" align="right">
-  <p>نسخه ۱.۱.۵ شامل <strong>سازگاری کامل با بنر بازیابی آیتم‌های حذف‌شده (Recover Items) در اوت‌لوک</strong>، ارتقای چشمگیر <strong>داشبورد وضعیت و نمایش زنده جزئیات ایندکس‌گذاری</strong>، موتور بهینه‌سازی‌شده <strong>همگام‌سازی تک‌ستونه (Reconcile) جهت حذف فشار دیسک و پردازش‌های سنگین پس از ایندکس</strong>، و <strong>شتاب‌بخشی به جست‌وجوهای چندشرطی و رفع هرگونه مکث یا توقف</strong> است.</p>
+  <p>نسخه ۱.۱.۵ شامل <strong>قابلیت جدید پیگیری ایمیل‌ها به عنوان وظیفه (Track as Task) در ریبون و پنجره پیام اوت‌لوک</strong>، موتور بهینه‌سازی‌شده <strong>همگام‌سازی تک‌ستونه (Reconcile) جهت حذف کامل فشار دیسک و پردازش‌های سنگین پس از ایندکس</strong>، <strong>شتاب‌بخشی به جست‌وجوهای چندشرطی زیر ۵۰ میلی‌ثانیه و رفع هرگونه مکث</strong>، <strong>سازگاری کامل با بنر بازیابی آیتم‌های حذف‌شده (Recover Items)</strong>، <strong>داشبورد نوین وضعیت و نمایش زنده جزئیات ایندکس‌گذاری فلوئنت ۲</strong>، و <strong>نوار جست‌وجوی هماهنگ با تم‌های تیره و روشن اوت‌لوک</strong> است.</p>
 
   <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>
-    <li><strong>پوشش و سازگاری کامل با بخش پیام‌های حذف‌شده (Deleted Items) و لینک بازیابی:</strong>
+    <li><strong>قابلیت هوشمند "پیگیری به عنوان وظیفه" (Track as Task) در ریبون اصلی و پنجره خواندن پیام:</strong>
       <ul>
-        <li><strong>نمایش کامل بنر بومی بازیابی:</strong> رفع مشکلی که در آن نوار جست‌وجوی تعبیه‌شده در بالای لیست پیام‌ها، روی بنر رسمی اوت‌لوک (<em>"Recover items recently removed from this folder"</em> یا <em>"بازیابی موارد اخیراً حذف شده از این پوشه"</em>) قرار می‌گرفت و مانع از دیده شدن یا کلیک روی آن می‌شد.</li>
-        <li><strong>پشتیبانی از بیش از ۱۰ زبان مختلف:</strong> تشخیص دقیق پوشه Deleted Items و معادل‌های آن در زبان‌های مختلف (انگلیسی، فارسی، آلمانی، فرانسوی، اسپانیایی، ایتالیایی، هلندی، لهستانی، روسی و عربی) از طریق مسیر پوشه، توابع MAPI و بررسی متن پنجره‌های سیستمی.</li>
-        <li><strong>تنظیم خودکار موقعیت جدول:</strong> نوار جست‌وجو در این پوشه به‌صورت خودکار مخفی شده و بالای جدول پیام‌ها دقیقاً زیر نوار ابزار اصلی قرار می‌گیرد تا بنر بازیابی بدون کوچک‌ترین تداخل در دسترس باشد.</li>
-      </ul>
-    </li>
-    <li><strong>داشبورد نوین وضعیت و ایندکس‌گذاری (Windows 11 Fluent 2):</strong>
-      <ul>
-        <li><strong>نمایش دوسطحی و زنده وضعیت:</strong> کارت ایندکس و موتور جست‌وجو در پنجره وضعیت افزونه (ThemedStatusForm) ارتقا یافته و اکنون آمار دقیق را در دو سطح ارائه می‌دهد:
-          <ul>
-            <li><strong>آمار اصلی:</strong> نمایش دقیق تعداد ایمیل‌های ایندکس‌شده نسبت به کل صندوق (مانند <code>12,450 of 15,200 indexed</code> همراه با درصد پیشرفت یا <code>All stores synchronized • Up to date</code>).</li>
-            <li><strong>جزئیات زنده و پویا:</strong> نمایش نام پوشه در حال پردازش (مانند <code>Folder: Inbox (120 of 300)</code>)، حجم صف نویسنده (<code>Queue: 140</code>) و علت دقیق مکث ایندکس (مانند <code>Paused: Outlook is in use (resumes in 2.5s)</code>).</li>
-          </ul>
-        </li>
-        <li><strong>نشان‌های رنگی هوشمند (Badge Pills):</strong> نمایش وضعیت ایندکس با کپسول‌های رنگی استاندارد فلوئنت شامل سبز (<code>Ready</code>)، نارنجی (<code>Indexing</code>)، آبی (<code>Paused</code>) و خاکستری (<code>Unavailable</code>).</li>
+        <li><strong>ثبت سریع با یک کلیک:</strong> اضافه شدن دکمه اختصاصی <em>Track as Task</em> به ریبون اصلی اوت‌لوک (تب Home / TabMail در کنار دکمه‌های پاسخ و جست‌وجو) و پنجره خواندن پیام (TabReadMessage).</li>
+        <li><strong>حفظ کامل زمینه و متادیتای پیام:</strong> تبدیل فوری ایمیل انتخاب‌شده یا در حال مطالعه به وظیفه، همراه با ذخیره خودکار فرستنده، موضوع، تاریخ و پیوند به زنجیره مکاتبات در سیستم ردیاب وظایف (Task Tracker).</li>
+        <li><strong>یکپارچگی با داشبورد وظایف:</strong> همگام‌سازی مستقیم با پنجره Task Tracker (کلید میانبر <code>Ctrl+F4</code>) جهت فیلتر هوشمند، تعیین مهلت اقدام (Deadline)، اولویت‌بندی و دسته‌بندی بدون نیاز به ترک محیط اوت‌لوک.</li>
       </ul>
     </li>
     <li><strong>موتور همگام‌سازی تک‌ستونه فوق‌سریع (حذف فشار دیسک و هارد پس از اتمام ایندکس):</strong>
@@ -86,6 +87,30 @@ Version 1.1.5 delivers **seamless Deleted Items native Recovery banner compatibi
         <li><strong>واچ‌داگ سراسری عدم پاسخ‌دهی:</strong> تایمر محافظ ۳۰ ثانیه‌ای برای کلیه حالت‌های جست‌وجو فعال شد تا پنل جست‌وجو هیچ‌گاه در حالت Searching باقی نماند.</li>
         <li><strong>روان‌سازی کلیک و پیش‌نمایش ایمیل‌ها:</strong> ایجاد تأخیر کنترل‌شده (Debounce) در رویداد کلیک ماوس روی جدول جهت حذف فریز لحظه‌ای رابط کاربری هنگام خواندن پیش‌نمایش، و اتصال کلید اینتر به کادرهای کلمات مستثنی‌شده (Exclude).</li>
         <li><strong>ایندکس‌های ترکیبی دیتابیس:</strong> ایجاد ایندکس‌های تخصصی در SQLite برای وضعیت پرچم‌دار (Flagged)، خوانده‌نشده (Unread) و پیوست‌ها، همراه با تنظیم نقطه بازرسی لاگ WAL روی ۱۰۰۰ صفحه جهت جلوگیری از افزایش حجم فایل.</li>
+      </ul>
+    </li>
+    <li><strong>پوشش و سازگاری کامل با بخش پیام‌های حذف‌شده (Deleted Items) و لینک بازیابی:</strong>
+      <ul>
+        <li><strong>نمایش کامل بنر بومی بازیابی:</strong> رفع مشکلی که در آن نوار جست‌وجوی تعبیه‌شده در بالای لیست پیام‌ها، روی بنر رسمی اوت‌لوک (<em>"Recover items recently removed from this folder"</em> یا <em>"بازیابی موارد اخیراً حذف شده از این پوشه"</em>) قرار می‌گرفت و مانع از دیده شدن یا کلیک روی آن می‌شد.</li>
+        <li><strong>پشتیبانی از بیش از ۱۰ زبان مختلف:</strong> تشخیص دقیق پوشه Deleted Items و معادل‌های آن در زبان‌های مختلف (انگلیسی، فارسی، آلمانی، فرانسوی، اسپانیایی، ایتالیایی، هلندی، لهستانی، روسی و عربی) از طریق مسیر پوشه، توابع MAPI و بررسی متن پنجره‌های سیستمی.</li>
+        <li><strong>تنظیم خودکار موقعیت جدول:</strong> نوار جست‌وجو در این پوشه به‌صورت خودکار مخفی شده و بالای جدول پیام‌ها دقیقاً زیر نوار ابزار اصلی قرار می‌گیرد تا بنر بازیابی بدون کوچک‌ترین تداخل در دسترس باشد.</li>
+      </ul>
+    </li>
+    <li><strong>داشبورد نوین وضعیت و ایندکس‌گذاری (Windows 11 Fluent 2):</strong>
+      <ul>
+        <li><strong>نمایش دوسطحی و زنده وضعیت:</strong> کارت ایندکس و موتور جست‌وجو در پنجره وضعیت افزونه (ThemedStatusForm) ارتقا یافته و اکنون آمار دقیق را در دو سطح ارائه می‌دهد:
+          <ul>
+            <li><strong>آمار اصلی:</strong> نمایش دقیق تعداد ایمیل‌های ایندکس‌شده نسبت به کل صندوق (مانند <code>12,450 of 15,200 indexed</code> همراه با درصد پیشرفت یا <code>15,200 indexed • Up to date</code>).</li>
+            <li><strong>جزئیات زنده و پویا:</strong> نمایش نام پوشه در حال پردازش (مانند <code>Folder: Inbox (120 of 300)</code>)، حجم صف نویسنده (<code>Queue: 140</code>) و علت دقیق مکث ایندکس (مانند <code>Paused: Outlook is in use (resumes in 2.5s)</code>).</li>
+          </ul>
+        </li>
+        <li><strong>نشان‌های رنگی هوشمند (Badge Pills):</strong> نمایش وضعیت ایندکس با کپسول‌های رنگی استاندارد فلوئنت شامل سبز (<code>Ready</code>)، نارنجی (<code>Indexing</code>)، آبی (<code>Paused</code>) و خاکستری (<code>Unavailable</code>).</li>
+      </ul>
+    </li>
+    <li><strong>نوار جست‌وجوی تطبیق‌پذیر با تم‌های اوت‌لوک و کلیدهای طلایی:</strong>
+      <ul>
+        <li><strong>پالت رنگ پویا:</strong> زمینه کپسولی نوار جست‌وجو، کادرها و آیکون‌ها به‌صورت خودکار با تم فعال اوت‌لوک همگام می‌شوند: پالت نوک‌مدادی عمیق در تم مشکی (Black)، خاکستری تیره در Dark Gray، و روشن فلوئنت در تم سفید (White).</li>
+        <li><strong>کلیدهای میانبر برجسته طلایی:</strong> دکمه‌های تاکتیل <code>[ Ctrl ] + [ F3 ]</code> با لبه برجسته فیزیکی و کنتراست کرم-طلایی در تمام تم‌ها حفظ شده‌اند.</li>
       </ul>
     </li>
     <li><strong>بسته‌بندی رسمی، امضای دیجیتال Authenticode و اعتبارسنجی تولید:</strong>
