@@ -3,14 +3,14 @@
   <p><img src="assets/logo.png" alt="لوگوی Email Tools" width="128"></p>
   <h1 align="center" style="text-align: center;" dir="rtl">ابزارهای ایمیل برای مایکروسافت اوت‌لوک</h1>
   <p align="center" style="text-align: center;" dir="rtl">
-    <strong>جست‌وجوی زیر ۱۰ میلی‌ثانیه &bull; ردیابی خودکار وظایف &bull; بایگانی فصلی هوشمند &bull; همگام‌سازی نام‌های سازمانی GAL</strong><br>
-    <em>مجموعه ابزارهای حرفه‌ای، با کارایی فوق‌العاده بالا و کاملاً محلی (حفظ ۱۰۰٪ حریم خصوصی) برای مایکروسافت اوت‌لوک.</em>
+    <strong>جست‌وجوی سریع نمایه‌شده &bull; ردیابی خودکار وظایف &bull; بایگانی فصلی هوشمند &bull; همگام‌سازی نام‌های سازمانی GAL</strong><br>
+    <em>مجموعه‌ای یکپارچه برای جست‌وجو، پیگیری کارها و مدیریت بایگانی در اوت‌لوک، با پردازش محلی داده‌ها.</em>
   </p>
   <p align="center" style="text-align: center;">
-    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="دانلود بسته نصب (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="یادداشت‌های نسخه v1.1.9" src="https://img.shields.io/badge/Release%20Notes-v1.1.9-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="تعداد دانلود" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="ویندوز ۱۰ و ۱۱" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="اوت‌لوک ۲۰۱۶ تا ۳۶۵" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="امضای دیجیتال معتبر" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
+    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="دانلود بسته نصب (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="یادداشت‌های نسخه v1.1.9" src="https://img.shields.io/badge/Release%20Notes-v1.1.9-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="تعداد دانلود" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="ویندوز ۱۰ و ۱۱" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="اوت‌لوک ۲۰۱۶ تا ۳۶۵" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="امضای دیجیتال" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
   </p>
   <p align="center" style="text-align: center;" dir="rtl">
-    <sub><strong>نصب اختصاصی برای هر کاربر</strong> &bull; بدون نیاز به دسترسی ادمین (Administrator) &bull; ۱۰۰٪ آفلاین و محلی &bull; به‌روزرسانی هوشمند و بدون اختلال</sub>
+    <sub><strong>نصب اختصاصی برای هر کاربر</strong> &bull; بدون نیاز به دسترسی ادمین (Administrator) &bull; پردازش محلی ایمیل‌ها &bull; بررسی خودکار به‌روزرسانی‌ها</sub>
   </p>
 </div>
 
@@ -19,85 +19,33 @@
 <h2 dir="rtl" align="right">🚀 معرفی افزونه</h2>
 
 <p dir="rtl" align="right">
-اوت‌لوک بستر اصلی مکاتبات اداری و سازمانی است، اما مدیریت صندوق‌های بزرگ و پر رفت‌وآمد همواره با چالش‌هایی جدی همراه است: جست‌وجوی پیش‌فرض ویندوز در میان سال‌ها تاریخچهٔ ایمیل کند و ناقص عمل می‌کند؛ پیگیری اقدام‌های فوری و تعهدات کاری در میان انبوه پیام‌ها گم می‌شود؛ هشدارهای سهمیهٔ مجاز صندوق (Quota) مدام کار را متوقف می‌کند؛ در پاسخ دادن (Reply) فایل‌های ضمیمهٔ قبلی حذف می‌شوند؛ و با تغییر سمت یا نام همکاران، نام‌های قدیمی در دیدگاه‌ها و قوانین باقی می‌مانند.
+در صندوق‌های پستی بزرگ، پیدا کردن پیام‌ها، پیگیری کارها و مدیریت فضای ذخیره‌سازی دشوارتر می‌شود. افزونهٔ Email Tools این کارها را در اوت‌لوک کلاسیک ویندوز یک‌جا در دسترس قرار می‌دهد.
 </p>
 
 <p dir="rtl" align="right">
-افزونهٔ <strong>Email Tools</strong> مستقیماً در نوار ابزار اوت‌لوک ادغام شده و تمام این چالش‌ها را بدون نیاز به سرورهای خارجی، دسترسی مدیر سیستم (IT Admin) یا تحمیل بار اضافه به رایانه برطرف می‌سازد. همهٔ پردازش‌ها به صورت کاملاً محلی انجام شده و <strong>سرعت جست‌وجوی زیر ۱۰ میلی‌ثانیه</strong>، <strong>سیستم هوشمند ردیابی وظایف کاری</strong>، <strong>بایگانی فصلی خودکار</strong>، و <strong>همگام‌سازی بی‌درنگ نام‌ها با GAL</strong> را برای شما به ارمغان می‌آورد.
+<strong>Email Tools</strong> یک افزونهٔ VSTO با نصب اختصاصی برای هر کاربر است که <strong>جست‌وجوی نمایه‌شدهٔ محلی</strong>، <strong>تبدیل ایمیل به وظیفه</strong>، <strong>بایگانی فصلی PST</strong>، <strong>ابزارهای پیوست</strong> و <strong>همگام‌سازی نام‌ها با GAL</strong> را فراهم می‌کند. پایگاه‌های دادهٔ جست‌وجو و وظایف روی رایانهٔ شما می‌مانند و همگام‌سازی حساب ایمیل همچنان از طریق اوت‌لوک انجام می‌شود.
 </p>
 
 <p align="center">
-  <img src="assets/outlook-ribbon-tab.png" alt="زبانهٔ Email Tools در ریبون اوت‌لوک" width="260">
+  <img src="assets/outlook-ribbon-tab.png" alt="زبانهٔ Email Tools در ریبون اوت‌لوک" width="220">
 </p>
 
 ---
 
-<h2 dir="rtl" align="right">✨ جدول مقایسه قابلیت‌ها</h2>
+<h2 dir="rtl" align="right">✨ امکانات در یک نگاه</h2>
 
-<table dir="rtl" align="right" width="100%">
-  <thead>
-    <tr>
-      <th align="right" width="25%">قابلیت</th>
-      <th align="right" width="35%">اوت‌لوک پیش‌فرض</th>
-      <th align="right" width="40%">اوت‌لوک همراه با Email Tools</th>
-    </tr>
-  </thead>
+<table dir="rtl" width="100%">
+  <thead><tr><th align="right">قابلیت</th><th align="right">امکانات Email Tools</th></tr></thead>
   <tbody>
-    <tr>
-      <td><strong>جست‌وجوی متن ایمیل‌ها</strong></td>
-      <td>کند و ناقص در آرشیوهای متصل یا فایل‌های ایندکس‌نشده</td>
-      <td><strong>آنی (زیر ۱۰ میلی‌ثانیه)</strong> با موتور محلی SQLite FTS5 در تمام صندوق‌ها و PSTها</td>
-    </tr>
-    <tr>
-      <td><strong>ردیابی وظایف و پیگیری‌ها</strong></td>
-      <td>پرچم‌گذاری دستی بدون دسته‌بندی و وضعیت‌بندی پویا</td>
-      <td><strong>ردیاب هوشمند وظایف (Task Tracker)</strong> با قوانین خودکار، کارت‌های کانبان و تشخیص خودکار پاسخ</td>
-    </tr>
-    <tr>
-      <td><strong>فیلتر فایل‌های پیوست</strong></td>
-      <td>جست‌وجوی سطحی بدون امکان تفکیک بر اساس پسوند فایل</td>
-      <td><strong>جست‌وجوی پیشرفته با حروف عام</strong> (مانند <code>*.pdf</code> و <code>*.xlsx</code>) و حذف نویز تصاویر امضا</td>
-    </tr>
-    <tr>
-      <td><strong>مدیریت سهمیه (Quota)</strong></td>
-      <td>هشدارهای مداوم پر شدن صندوق و نیاز به حذف دستی</td>
-      <td><strong>بایگانی هوشمند فصلی</strong> در فایل‌های PST با چرخش خودکار در سقف ۴۵ گیگابایت</td>
-    </tr>
-    <tr>
-      <td><strong>پایش وضعیت ذخیره‌سازی</strong></td>
-      <td>مدفون در بخش تنظیمات عمیق حساب کاربری</td>
-      <td><strong>نمایشگر مدرن وضعیت Fluent 2</strong> با گیج‌های گرافیکی سهمیه و وضعیت فضای درایو</td>
-    </tr>
-    <tr>
-      <td><strong>پاسخ همراه با پیوست</strong></td>
-      <td>پیوست‌ها حذف شده و باید دوباره دستی اضافه شوند</td>
-      <td><strong>یک کلیک روی Reply / Reply All with Attachments</strong> در نوار ابزار اصلی Home</td>
-    </tr>
-    <tr>
-      <td><strong>فوروارد بدون فایل‌های حجیم</strong></td>
-      <td>حذف دستی و تک‌به‌تک فایل‌های پیوست پیش از ارسال</td>
-      <td><strong>یک کلیک روی Forward without Attachments</strong> با حفظ هوشمند تصاویر امضا</td>
-    </tr>
-    <tr>
-      <td><strong>به‌روزرسانی نام‌ها با GAL</strong></td>
-      <td>باقی ماندن نام‌های قدیمی افراد در مکاتبات پیشین و Ruleها</td>
-      <td><strong>همگام‌سازی خودکار با دفترچه تلفن سازمانی (GAL)</strong> در زمان بی‌کاری سیستم در پس‌زمینه</td>
-    </tr>
-    <tr>
-      <td><strong>خلوت‌سازی قبل از مرخصی</strong></td>
-      <td>انتقال دستی و زمان‌بر پوشه‌ها</td>
-      <td><strong>حالت مرخصی (Vacation Mode)</strong> با یک کلیک ایمیل‌های اخیر را نگه داشته و مابقی را آرشیو می‌کند</td>
-    </tr>
-    <tr>
-      <td><strong>یادآورهای جلسات گذشته</strong></td>
-      <td>تجمع پنجره‌های یادآور برای جلساتی که تمام شده‌اند</td>
-      <td><strong>بستن خودکار و بی‌صدا</strong>ی یادآورهای جلسات سپری‌شده</td>
-    </tr>
-    <tr>
-      <td><strong>حریم خصوصی داده‌ها</strong></td>
-      <td>وابسته به تنظیمات سرویس‌های ابری</td>
-      <td><strong>۱۰۰٪ محلی و آفلاین</strong>؛ بدون ارسال حتی یک بایت داده به بیرون</td>
-    </tr>
+    <tr><td><strong>جست‌وجوی پیشرفته</strong></td><td>نمایهٔ محلی متن و اطلاعات پیام‌ها در صندوق‌ها و آرشیوهای PST متصل</td></tr>
+    <tr><td><strong>ردیاب وظایف</strong></td><td>تبدیل ایمیل به وظیفه، قوانین خودکار، کارت‌های وضعیت، سررسید و یادداشت</td></tr>
+    <tr><td><strong>فیلتر پیوست</strong></td><td>جست‌وجوی وجود فایل پیوست، نام فایل و پسوندهایی مانند <code dir="ltr">*.pdf</code> و <code dir="ltr">*.xlsx</code></td></tr>
+    <tr><td><strong>بایگانی هوشمند</strong></td><td>آرشیو فصلی PST، پایش ظرفیت و آغاز فایل جدید در سقف ۴۵ گیگابایت</td></tr>
+    <tr><td><strong>ابزارهای پیوست</strong></td><td>پاسخ یا پاسخ به همه همراه با فایل‌های پیوست؛ فوروارد بدون فایل‌های پیوست</td></tr>
+    <tr><td><strong>همگام‌سازی نام‌ها</strong></td><td>تطبیق نام‌های نمایشی پیام‌های گذشته با دفترچهٔ سازمانی GAL در پس‌زمینه</td></tr>
+    <tr><td><strong>حالت مرخصی</strong></td><td>نگه‌داشتن درصد دلخواهی از پیام‌های جدید صندوق ورودی و بایگانی باقی پیام‌ها</td></tr>
+    <tr><td><strong>پاک‌سازی یادآورها</strong></td><td>بستن یادآورهای جلساتی که پایان یافته‌اند</td></tr>
+    <tr><td><strong>ذخیره‌سازی محلی</strong></td><td>نگه‌داری نمایهٔ جست‌وجو، پایگاه دادهٔ وظایف و آرشیوها روی رایانهٔ شما</td></tr>
   </tbody>
 </table>
 
@@ -105,33 +53,35 @@
 
 <h2 dir="rtl" align="right">🔍 راهنمای بخش‌های کلیدی</h2>
 
-<h3 dir="rtl" align="right">۱. جست‌وجوی پیشرفته (Advanced Search با سرعت زیر ۱۰ میلی‌ثانیه)</h3>
+<h3 dir="rtl" align="right">۱. جست‌وجوی پیشرفته (Advanced Search با نمایهٔ محلی)</h3>
 
 <p dir="rtl" align="right">
-یک پنجرهٔ مستقل با سرعت پردازش فوق‌العاده، نوار فیلترهای جامع، مرتب‌سازی آنی، جدول نتایج با پشتیبانی تا ۱۰۰,۰۰۰ ردیف بدون افت فریم، و پیش‌نمایش کاملاً امن به سبک اوت‌لوک.
+پنجره‌ای مستقل با فیلترهای ترکیبی، نتایج قابل مرتب‌سازی، جدول مجازی و پیش‌نمایش یکپارچهٔ پیام‌ها.
 </p>
 
 <p align="center">
   <img src="assets/advanced-search-results.png" alt="نتایج جست‌وجوی پیشرفته و پیش‌نمایش پیام" width="940">
   <br>
-  <em>اجرای آنی کوئری‌ها در سراسر صندوق‌های پستی، فایل‌های آرشیو PST متصل و تاریخچهٔ گفت‌وگوها.</em>
+  <em>جست‌وجوی پیام‌های نمایه‌شده در صندوق‌های پستی، آرشیوهای PST متصل و پوشه‌های گفت‌وگو.</em>
 </p>
 
 <ul dir="rtl" align="right">
-  <li><strong>موتور ایندکس SQLite FTS5 Trigram:</strong> ایندکس متنی محلی با حجم بسیار کم که متن کامل پیام‌ها را بدون دانلود یا بازکردن مجدد در چند میلی‌ثانیه می‌یابد.</li>
-  <li><strong>فیلتر اختصاصی نام و پسوند پیوست:</strong> جست‌وجوی مستقیم در نام فایل‌های ضمیمه با الگوهای Wildcard (مانند <code>*.pdf</code> یا <code>*.xlsx</code>) همراه با فیلتر خودکار تصاویر امضا.</li>
-  <li><strong>پیش‌نمایش امن ایزوله‌شده (Sandboxed Preview):</strong> دارای برچسب Mark-of-the-Web جهت مسدودسازی اجرای اسکریپت‌ها، تله‌متری و درخواست‌های مشکوک شبکه.</li>
+  <li><strong>موتور ایندکس SQLite FTS5 Trigram:</strong> جست‌وجوی متن پیام‌های نمایه‌شده با نمایهٔ محلی، مستقل از Windows Search. نمایه‌سازی اولیه و همگام‌سازی بعدی در پس‌زمینه انجام می‌شود؛ سرعت جست‌وجو به عبارت، پوشش نمایه و رایانه بستگی دارد.</li>
+  <li><strong>فیلتر اختصاصی نام و پسوند پیوست:</strong> جست‌وجوی مستقیم در نام فایل‌های ضمیمه با الگوهای Wildcard (مانند <code dir="ltr">*.pdf</code> یا <code dir="ltr">*.xlsx</code>) همراه با فیلتر خودکار تصاویر امضا.</li>
+  <li><strong>پیش‌نمایش امن ایزوله‌شده (Sandboxed Preview):</strong> استفاده از Mark-of-the-Web و مسدودسازی اسکریپت‌ها، تصاویر ردگیر و درخواست‌های خارجی در پیش‌نمایش.</li>
   <li><strong>برجسته‌سازی و کلیدهای پرش:</strong> هایلایت واژه‌های جست‌وجوشده در پیش‌نمایش و جابه‌جایی سریع میان تطابق‌ها با دکمه‌های Previous / Next.</li>
   <li><strong>ترکیب فیلترها:</strong> امکان جست‌وجوی همزمان بر اساس فرستنده، گیرنده، رونوشت، موضوع، متن، نام پیوست، بازهٔ تاریخ و ساعات مشخص روز.</li>
   <li><strong>منوی راست‌کلیک کامل:</strong> باز کردن، پاسخ، فوروارد، پرچم‌گذاری، دسته‌بندی رنگی، انتقال، حذف، نمایش گفت‌وگوهای مرتبط و خروجی اکسل (CSV) با محافظت ضدتزریق فرمول.</li>
 </ul>
+
+<p dir="rtl" align="right"><strong>راهنمای جست‌وجو:</strong> منتظر پایان نمایه‌سازی اولیه بمانید و آرشیوهای PST موردنیاز را در اوت‌لوک متصل نگه دارید. برای جست‌وجوی پسوند، گزینهٔ <strong dir="ltr">Attachment → Yes</strong> را انتخاب کرده و <code dir="ltr">*.txt</code>، <code dir="ltr">*.pdf</code> یا <code dir="ltr">*.xlsx</code> را در کادر نام فایل وارد کنید. فیلترهای ساعات کاری و غیرکاری از تنظیمات تقویم اوت‌لوک شما استفاده می‌کنند.</p>
 
 ---
 
 <h3 dir="rtl" align="right">۲. ردیاب هوشمند وظایف و خودکارسازی کارها (Task Tracker)</h3>
 
 <p dir="rtl" align="right">
-تبدیل ایمیل‌های کاری به وظایف مشخص با موعد مقرر، اولویت‌بندی و پایش وضعیت پیگیری‌ها. این ابزار از فراموش شدن درخواست‌های حیاتی یا پاسخ‌های معلق جلوگیری می‌کند.
+تبدیل ایمیل‌ها به وظایف دارای سررسید، اولویت، یادداشت و وضعیت پیگیری. جست‌وجوی Task Tracker در وظایف ثبت‌شده انجام می‌شود؛ جست‌وجوی پیشرفته پیام‌های نمایه‌شده را جست‌وجو می‌کند.
 </p>
 
 <p align="center">
@@ -159,20 +109,20 @@
 <h3 dir="rtl" align="right">۳. بایگانی هوشمند (Smart Archive) و مدیریت ظرفیت</h3>
 
 <p dir="rtl" align="right">
-پایان قطعی اخطارهای پر شدن سهمیهٔ صندوق. ایمیل‌های قدیمی به طور منظم و خودکار به فایل‌های آرشیو فصلی محلی (مانند <code>2026-Season1.pst</code>) منتقل می‌شوند.
+بایگانی هوشمند با انتقال پیام‌های قدیمی به فایل‌های PST فصلی محلی، مانند <code dir="ltr">2026-Season1.pst</code>، به مدیریت فضای صندوق کمک می‌کند.
 </p>
 
 <p align="center">
-  <img src="assets/smart-archive-menu.png" alt="منوی بایگانی هوشمند در ریبون" width="280">
+  <img src="assets/smart-archive-menu.png" alt="منوی بایگانی هوشمند در ریبون" width="260">
 </p>
 
 <ul dir="rtl" align="right">
   <li><strong>داشبورد مدرن وضعیت و سلامت (Fluent 2):</strong> گیج‌های تصویری پیشرفت، نمایش سهمیهٔ فعال با رنگ‌های هشداردهندهٔ سبز/نارنجی/قرمز و نوار ظرفیت آزاد درایو آرشیو.</li>
   <li><strong>شتاب‌بخشی هوشمند به چرخه بایگانی:</strong> بررسی سن قدیمی‌ترین ایمیل‌ها و پرش از بازه‌های زمانی خالی، همراه با اولویت‌بندی از قدیمی‌ترین تاریخ در زمان پر شدن صندوق.</li>
-  <li><strong>حفاظت اضطراری از سهمیه (Emergency Quota):</strong> آغاز فوری عملیات بایگانی در صورت رسیدن حجم صندوق به ۹۰٪ سهمیه مجاز، تا بازگشت به زیر آستانهٔ امن تنظیمی.</li>
-  <li><strong>بخش‌بندی فصلی و سقف ۴۵ گیگابایت:</strong> تفکیک آرشیو هر سال به ۴ فصل و جابه‌جایی خودکار به فایل جدید در سقف ۴۵ گیگابایت برای پیشگیری از آسیب به فایل‌های PST.</li>
+  <li><strong>حفاظت اضطراری از سهمیه (Emergency Quota):</strong> اولویت‌بندی پیام‌های قدیمی برای بایگانی با توجه به میزان مصرف صندوق و آستانه‌های تنظیم‌شده.</li>
+  <li><strong>بخش‌بندی فصلی و سقف ۴۵ گیگابایت:</strong> تفکیک آرشیو هر سال به چهار فصل و آغاز فایل جدید در سقف ۴۵ گیگابایت، برای حفظ فاصله از محدودیت اندازهٔ PST.</li>
   <li><strong>وقفهٔ ایمن ۲ ساعته:</strong> توقف کامل اسکن‌های مداوم پس از رسیدن صندوق به حجم ایمن تنظیمی جهت جلوگیری از درگیری بیهودهٔ دیسک و پردازنده.</li>
-  <li><strong>پنجره‌های با گوشه‌های گرد و سبک:</strong> باز شدن آنی بدون ایجاد وقفه یا فریز در عملکرد اصلی اوت‌لوک.</li>
+  <li><strong>پنجره‌های با گوشه‌های گرد و سبک:</strong> هماهنگی پنجره‌های وضعیت، تنظیمات و بایگانی با پوستهٔ اوت‌لوک.</li>
 </ul>
 
 <p align="center">
@@ -194,8 +144,8 @@
 </p>
 
 <ul dir="rtl" align="right">
-  <li><strong>پاسخ با پیوست‌ها (Reply with Attachment):</strong> ایجاد ایمیل پاسخ در حالی که تمام فایل‌های پیوست پیام اصلی عینا تکثیر و حفظ می‌شوند.</li>
-  <li><strong>پاسخ به همه با پیوست‌ها (Reply All with Attachment):</strong> ارسال پاسخ برای تمام افراد حاضر در رونوشت همراه با فایل‌های اصلی.</li>
+  <li><strong>پاسخ با پیوست‌ها (Reply with Attachment):</strong> ایجاد پاسخ و کپی کردن فایل‌های پیوست پیام اصلی در پیش‌نویس پاسخ.</li>
+  <li><strong>پاسخ به همه با پیوست‌ها (Reply All with Attachment):</strong> ایجاد پیش‌نویس پاسخ به همهٔ شرکت‌کنندگان، همراه با فایل‌های پیوست پیام اصلی.</li>
   <li><strong>فوروارد بدون پیوست (Forward without Attachment):</strong> حذف فایل‌های حجیم برای صرفه‌جویی در پهنای باند با حفظ هوشمندانهٔ تصاویر امضای شرکتی.</li>
   <li><strong>ثبت سریع به عنوان وظیفه (Track as Task):</strong> تبدیل یک‌کلیکی ایمیل به وظیفه و همگام‌سازی فوری با پنل مدیریت وظایف (Task Tracker).</li>
 </ul>
@@ -233,36 +183,36 @@
 
 <h3 dir="rtl" align="right">نصب اولیه</h3>
 <ol dir="rtl" align="right">
-  <li>فایل <strong><code>EmailTools_Setup.rar</code></strong> را از بخش <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar">آخرین نسخه (Latest Release)</a> دانلود کنید.</li>
-  <li>فایل را استخراج کرده و <strong><code>EmailTools_Setup.exe</code></strong> را اجرا نمایید.</li>
+  <li>فایل <strong><code dir="ltr">EmailTools_Setup.rar</code></strong> را از بخش <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar">آخرین نسخه (Latest Release)</a> دانلود کنید.</li>
+  <li>بسته را استخراج کنید، پیش‌نویس‌ها را ذخیره کرده و اوت‌لوک را ببندید؛ سپس <strong><code dir="ltr">EmailTools_Setup.exe</code></strong> را اجرا کنید.</li>
   <li>مایکروسافت اوت‌لوک را باز کنید؛ زبانهٔ <strong>Email Tools</strong> آمادهٔ استفاده است.</li>
 </ol>
 
 <h3 dir="rtl" align="right">ارتقا از نسخه‌های پیشین</h3>
 <ul dir="rtl" align="right">
-  <li><strong>نیازی به حذف نسخهٔ قبلی نیست.</strong> اجرای فایل نصب جدید به صورت خودکار اوت‌لوک را بسته، فایل‌های برنامه را ارتقا داده و پایگاه‌داده و تنظیمات قبلی شما را بدون کوچک‌ترین تغییری حفظ می‌کند.</li>
-  <li><strong>مهاجرت خودکار ساختار داده‌ها:</strong> ساختار ایندکس و جداول به صورت خودکار و زیر ۱۵ میلی‌ثانیه به نسخهٔ جدید ارتقا می‌یابد.</li>
+  <li><strong>نیازی به حذف نسخهٔ قبلی نیست.</strong> پیش‌نویس‌ها را ذخیره کنید، اوت‌لوک را ببندید و فایل نصب جدید را اجرا کنید. تنظیمات و پایگاه‌های دادهٔ موجود حفظ شده و در صورت نیاز ارتقا می‌یابند.</li>
+  <li><strong>مهاجرت خودکار ساختار داده‌ها:</strong> ساختار پایگاه‌های دادهٔ جست‌وجو و وظایف در صورت نیاز به‌روز می‌شود. زمان ارتقا و نمایه‌سازی به داده‌ها و تغییرات نسخه بستگی دارد.</li>
 </ul>
 
 ---
 
 <h2 id="requirements" dir="rtl" align="right">💻 پیش‌نیازهای سیستم</h2>
 
-<table dir="rtl" align="right" width="100%">
+<table dir="rtl" width="100%">
   <thead>
     <tr>
-      <th align="right" width="30%">مشخصه</th>
-      <th align="right" width="70%">حداقل نیازمندی</th>
+      <th align="right" width="35%">مشخصه</th>
+      <th align="right" width="65%">حداقل نیازمندی</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>سیستم‌عامل</strong></td>
-      <td>ویندوز ۱۰ یا ویندوز ۱۱ (نسخه‌های ۳۲ بیتی و ۶۴ بیتی)</td>
+      <td>ویندوز ۱۰ یا ویندوز ۱۱؛ ویندوز ۱۱ به سیستم ۶۴ بیتی نیاز دارد</td>
     </tr>
     <tr>
       <td><strong>مایکروسافت اوت‌لوک</strong></td>
-      <td>اوت‌لوک ۲۰۱۶، ۲۰۱۹، ۲۰۲۱ یا کلاینت دسکتاپ مایکروسافت ۳۶۵</td>
+      <td>اوت‌لوک کلاسیک ویندوز: ۲۰۱۶، ۲۰۱۹، ۲۰۲۱ یا مایکروسافت ۳۶۵؛ آفیس ۳۲ یا ۶۴ بیتی</td>
     </tr>
     <tr>
       <td><strong>بستر اجرایی</strong></td>
@@ -275,19 +225,21 @@
   </tbody>
 </table>
 
+<p dir="rtl" align="right"><strong>سازگاری:</strong> این افزونهٔ VSTO در New Outlook، نسخهٔ وب اوت‌لوک و اوت‌لوک مک اجرا نمی‌شود. نصب پیش‌نیازهای ویندوز، دات‌نت یا آفیس در رایانه‌های سازمانی ممکن است به کمک واحد فناوری اطلاعات نیاز داشته باشد.</p>
+
 ---
 
 <h2 id="security" dir="rtl" align="right">🛡️ حریم خصوصی، امنیت و معماری</h2>
 
 <p dir="rtl" align="right">
-مجموعهٔ Email Tools با تعهد کامل به حاکمیت داده‌ها و بالاترین استانداردهای امنیتی سازمانی طراحی شده است:
+پردازش جست‌وجو، وظایف و بایگانی در Email Tools به صورت محلی انجام می‌شود. ارتباط با حساب ایمیل و دفترچهٔ سازمانی همچنان از طریق اوت‌لوک و سرویس‌های سازمان شما برقرار است.
 </p>
 
 <ul dir="rtl" align="right">
   <li><strong>اجرای ۱۰۰٪ محلی (On-Premise / Local):</strong> تمامی کوئری‌های دیتابیس، ایندکس‌گذاری متن پیام‌ها و عملیات بایگانی صرفاً بر روی رایانهٔ محلی شما انجام می‌شود.</li>
-  <li><strong>عدم نشت داده به ابَر:</strong> هیچ بخشی از متن ایمیل‌ها، پیوست‌ها یا اطلاعات آماری به هیچ سرور خارجی یا ابری ارسال نمی‌گردد.</li>
+  <li><strong>بدون تحلیل خارجی محتوای ایمیل:</strong> افزونه محتوای ایمیل را برای تحلیل به سرویس شخص ثالث ارسال نمی‌کند. بررسی و دریافت به‌روزرسانی‌ها با GitHub ارتباط دارد.</li>
   <li><strong>موتور پیش‌نمایش ایزوله‌شده:</strong> پیش‌نمایش ایمیل‌ها تحت سیاست Mark-of-the-Web و با مهار اسکریپت‌ها، تصاویر ردگیر (Web Beacons) و درخواست‌های نامطمئن شبکه نمایش داده می‌شود.</li>
-  <li><strong>امضای دیجیتال معتبر (Authenticode):</strong> تمامی باینری‌های اجرایی (از جمله <code>EmailTools.dll</code>، <code>EmailTools.NameRepairWorker.exe</code> و فایل نصبی) دارای امضای دیجیتال معتبر با گواهی Authenticode و تایم‌استمپ رسمی RFC 3161 هستند.</li>
+  <li><strong>امضای دیجیتال (Authenticode):</strong> فایل‌های اجرایی محصول و نصب‌کننده دارای امضای Authenticode و مهر زمانی RFC 3161 هستند. گواهی ناشر خودامضا است؛ وضعیت اعتماد ویندوز و هشدارهای SmartScreen به سیاست رایانه یا سازمان بستگی دارد.</li>
 </ul>
 
 ---
@@ -300,7 +252,7 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/ParhamGhafouri">
+    <a href="https://github.com/ParhamGhafouri/EmailTools">
       <img src="https://img.shields.io/github/stars/ParhamGhafouri/EmailTools?style=for-the-badge&label=Star%20on%20GitHub&color=yellow&logo=github" alt="Star on GitHub">
     </a>
   </p>
@@ -310,6 +262,6 @@
   <p align="center" style="text-align: center;">
     <strong>معماری و توسعه توسط پرهام غفوری</strong><br>
     <a href="https://github.com/ParhamGhafouri"><img alt="GitHub: ParhamGhafouri" src="https://img.shields.io/badge/GitHub-ParhamGhafouri-24292e?style=flat-square&logo=github"></a>&nbsp;<a href="https://www.linkedin.com/in/parhaam/"><img alt="LinkedIn: parhaam" src="https://img.shields.io/badge/LinkedIn-parhaam-0A66C2?style=flat-square&logo=linkedin"></a><br>
-    <span dir="ltr" style="display: inline-block;">&copy; Parham Ghafouri. Released as Freeware under the MIT-compatible open software license.</span>
+    <span dir="rtl">&copy; پرهام غفوری. استفادهٔ شخصی و درون‌سازمانی رایگان است؛ <a href="https://github.com/ParhamGhafouri/EmailTools/blob/main/LICENSE">شرایط مجوز</a> را ببینید.</span>
   </p>
 </div>

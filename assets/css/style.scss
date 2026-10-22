@@ -107,6 +107,8 @@ body {
 
 /* Modern tables */
 .main-content table {
+  float: none;
+  clear: both;
   display: table;
   width: 100%;
   max-width: 100%;
