@@ -23,7 +23,7 @@ Large mailboxes make it harder to find messages, track follow-ups, and manage st
 **Email Tools** is a per-user VSTO add-in with **local indexed search**, **email-to-task tracking**, **seasonal PST archiving**, **attachment actions**, and **GAL display-name synchronization**. Search and task databases stay on your PC; Outlook continues to handle your mail account normally.
 
 <p align="center">
-  <img src="assets/outlook-ribbon-tab.png" alt="Email Tools Ribbon Tab in Microsoft Outlook" width="220">
+  <img src="assets/outlook-ribbon-tab.png" alt="Email Tools Ribbon Tab in Microsoft Outlook" width="219">
 </p>
 
 ---
@@ -84,7 +84,7 @@ Turn messages into tasks with due dates, priorities, notes, and status tracking.
 * **Modern Windows 11 Design:** Designed with Windows 11 DWM rounded corners, anti-aliased card borders, and automatic Office theme synchronization across Light, Dark Gray, and Black.
 
 <p align="center">
-  <img src="assets/task-rule-editor.png" alt="Task Automation Rule Editor" width="800">
+  <img src="assets/task-rule-editor.png" alt="Task Automation Rule Editor" width="940">
   <br>
   <em>Visual rule editor supporting multi-field condition logic, exclusions, priority assignment, and default due date offsets.</em>
 </p>
@@ -96,7 +96,7 @@ Turn messages into tasks with due dates, priorities, notes, and status tracking.
 Smart Archive helps manage mailbox capacity by moving older messages from your mailbox to seasonal local PST files, such as `2026-Season1.pst`.
 
 <p align="center">
-  <img src="assets/smart-archive-menu.png" alt="Smart Archive Ribbon Menu" width="260">
+  <img src="assets/smart-archive-menu.png" alt="Smart Archive Ribbon Menu" width="258">
 </p>
 
 * **Fluent 2 Status & Health Cockpit:** Visual progress gauges showing live Exchange mailbox quota usage (with dynamic green/orange/red capacity thresholds) and archive drive free/total capacity meters.
@@ -119,7 +119,7 @@ Smart Archive helps manage mailbox capacity by moving older messages from your m
 Eliminate repetitive attachment and workflow steps directly from Outlook's main **Home** tab.
 
 <p align="center">
-  <img src="assets/attachment-actions.png" alt="Attachment and Workflow Actions in Outlook Home Tab" width="420">
+  <img src="assets/attachment-actions.png" alt="Attachment and Workflow Actions in Outlook Home Tab" width="413">
 </p>
 
 * **Reply with Attachment(s):** Creates a reply and copies the original message’s file attachments.

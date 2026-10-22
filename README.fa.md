@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/outlook-ribbon-tab.png" alt="زبانهٔ Email Tools در ریبون اوت‌لوک" width="220">
+  <img src="assets/outlook-ribbon-tab.png" alt="زبانهٔ Email Tools در ریبون اوت‌لوک" width="219">
 </p>
 
 ---
@@ -99,7 +99,7 @@
 </ul>
 
 <p align="center">
-  <img src="assets/task-rule-editor.png" alt="ویرایشگر قوانین خودکارسازی وظایف" width="800">
+  <img src="assets/task-rule-editor.png" alt="ویرایشگر قوانین خودکارسازی وظایف" width="940">
   <br>
   <em>پنجرهٔ طراحی قوانین با پشتیبانی از شروط ترکیبی، استثناها، تعیین اولویت و تنظیم بازه‌های سررسید پیش‌فرض.</em>
 </p>
@@ -113,7 +113,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/smart-archive-menu.png" alt="منوی بایگانی هوشمند در ریبون" width="260">
+  <img src="assets/smart-archive-menu.png" alt="منوی بایگانی هوشمند در ریبون" width="258">
 </p>
 
 <ul dir="rtl" align="right">
@@ -140,7 +140,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/attachment-actions.png" alt="دکمه‌های مدیریت پیوست و گردش کار در زبانهٔ Home" width="420">
+  <img src="assets/attachment-actions.png" alt="دکمه‌های مدیریت پیوست و گردش کار در زبانهٔ Home" width="413">
 </p>
 
 <ul dir="rtl" align="right">
