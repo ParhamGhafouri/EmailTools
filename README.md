@@ -1,5 +1,5 @@
 <div align="center" style="text-align: center;">
-  <p><a href="https://parhamghafouri.github.io/EmailTools/guide.html"><strong>English</strong></a> &nbsp;|&nbsp; <a href="https://parhamghafouri.github.io/EmailTools/guide.fa.html"><strong>فارسی</strong></a></p>
+  <p><a href="https://parhamghafouri.github.io/EmailTools/"><strong>English</strong></a> &nbsp;|&nbsp; <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html"><strong>فارسی</strong></a></p>
   <p><img src="assets/logo.png" alt="Email Tools Logo" width="128"></p>
   <h1 align="center" style="text-align: center;">Email Tools for Microsoft Outlook</h1>
   <p align="center" style="text-align: center;">

@@ -1,5 +1,5 @@
 <div align="center" style="text-align: center;">
-  <p><a href="https://parhamghafouri.github.io/EmailTools/guide.html">English</a> &nbsp;|&nbsp; <a href="https://parhamghafouri.github.io/EmailTools/guide.fa.html"><strong>فارسی</strong></a></p>
+  <p><a href="https://parhamghafouri.github.io/EmailTools/">English</a> &nbsp;|&nbsp; <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html"><strong>فارسی</strong></a></p>
   <p><img src="assets/logo.png" alt="لوگوی Email Tools" width="128"></p>
   <h1 align="center" style="text-align: center;" dir="rtl">ابزارهای ایمیل برای مایکروسافت اوت‌لوک</h1>
   <p align="center" style="text-align: center;" dir="rtl">
