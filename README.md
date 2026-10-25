@@ -1,22 +1,22 @@
 <div align="center" style="text-align: center;">
-  <p><a href="https://parhamghafouri.github.io/EmailTools/"><strong>English</strong></a> &nbsp;|&nbsp; <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html"><strong>فارسی</strong></a></p>
+  <p><a href="https://parhamghafouri.github.io/EmailTools/guide.html"><strong>English</strong></a> &nbsp;|&nbsp; <a href="https://parhamghafouri.github.io/EmailTools/guide.fa.html"><strong>فارسی</strong></a></p>
   <p><img src="assets/logo.png" alt="Email Tools Logo" width="128"></p>
   <h1 align="center" style="text-align: center;">Email Tools for Microsoft Outlook</h1>
   <p align="center" style="text-align: center;">
     <strong>Fast Indexed Search &bull; Automated Task Tracking &bull; Smart Seasonal Archiving &bull; GAL Name Sync</strong><br>
-    <em>The high-performance, privacy-first productivity suite built natively for Microsoft Outlook.</em>
+    <em>Find messages, follow up on work, and manage mailbox space in classic Outlook for Windows.</em>
   </p>
   <p align="center" style="text-align: center;">
-    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="Download Installer (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Release Notes v1.1.9" src="https://img.shields.io/badge/Release%20Notes-v1.1.9-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Total Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="Windows 10 / 11" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="Outlook 2016-365" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="Signed Authenticode" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
+    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="Download Installer (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Release Notes v1.2.0" src="https://img.shields.io/badge/Release%20Notes-v1.2.0-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Total Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="Windows 10 / 11" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="Outlook 2016-365" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="Signed Authenticode" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
   </p>
   <p align="center" style="text-align: center;">
-    <sub><strong>Per-User Installation</strong> &bull; No administrator privileges required &bull; Local Mail Processing &bull; Built-in update checks</sub>
+    <sub><strong>Per-User Installation</strong> &bull; No administrator privileges required &bull; Local Mail Processing &bull; GitHub update checks</sub>
   </p>
 </div>
 
 ---
 
-## 🚀 Overview
+## Overview
 
 Large mailboxes make it harder to find messages, track follow-ups, and manage storage. Email Tools brings these workflows together inside classic Outlook for Windows.
 
@@ -28,7 +28,18 @@ Large mailboxes make it harder to find messages, track follow-ups, and manage st
 
 ---
 
-## ✨ Key Capabilities at a Glance
+## What's new in 1.2.0
+
+- **Choose how archiving runs:** Auto Archive, Manual Only, or Disabled (Search & Tasks Only). Returning to Auto resumes the automatic workflow without restarting Outlook.
+- **More accurate search:** Better person and domain-qualified address matching, preserved long recipient lists, and header verification that retries failed reads without clearing indexed text.
+- **Clearer message context:** Reply/forward history and **Find related messages** in the preview, plus consistent attachment menus and left-to-right attachment layouts.
+- **More efficient index maintenance:** Fewer redundant writes and folder lookups, with improved database upgrade cleanup.
+
+[Read the full 1.2.0 release notes](https://github.com/ParhamGhafouri/EmailTools/releases/tag/v1.2.0) · [Download 1.2.0](https://github.com/ParhamGhafouri/EmailTools/releases/tag/v1.2.0)
+
+**Explore:** [Search](#1-advanced-search-local-index) · [Tasks](#2-task-tracker--workflow-automation) · [Archiving](#3-smart-archive--capacity-management) · [Install](#installation) · [Compatibility](#requirements) · [Privacy](#security)
+
+## Key capabilities
 
 | Feature | What Email Tools provides |
 | :--- | :--- |
@@ -44,7 +55,7 @@ Large mailboxes make it harder to find messages, track follow-ups, and manage st
 
 ---
 
-## 🔍 Feature Tour
+## Feature tour
 
 ### 1. Advanced Search (Local Index)
 
@@ -65,6 +76,8 @@ A dedicated search window with combined filters, sortable results, a virtualized
 
 **Search tips:** Wait for initial indexing to finish, and keep the PST archives you want to search mounted in Outlook. For an extension filter, select **Attachment → Yes** and enter `*.txt`, `*.pdf`, or `*.xlsx` in the filename field. Use **Any Hours**, **Working Hours**, or **Outside Working Hours**; work-hour filters use your Outlook calendar settings.
 
+**After upgrading:** A one-time header recheck may show **Message headers awaiting verification**. It reads full headers in the background; **Ready** returns after required work completes. Searches involving unverified fields may be marked partial until then.
+
 ---
 
 ### 2. Task Tracker & Workflow Automation
@@ -74,10 +87,10 @@ Turn messages into tasks with due dates, priorities, notes, and status tracking.
 <p align="center">
   <img src="assets/task-tracker.png" alt="Task Tracker Dashboard" width="940">
   <br>
-  <em>High-contrast Kanban status summary cards, real-time filtering, and full thread context inspection.</em>
+  <em>An email-linked task list with status, due dates, notes, and an integrated message preview.</em>
 </p>
 
-* **Kanban-Style Status Summary Cards:** Review tasks categorized as **To Do**, **In Progress**, **Waiting for Reply**, **Completed**, and **Overdue** with live counters and color-coded indicators.
+* **Status & Due-Date Tracking:** Filter tracked tasks by view, category and priority, review overdue work, and update the selected task without losing its source-message context.
 * **Granular Automation Rule Builder:** Create powerful automation rules matching Incoming or Outgoing mail, specific senders/recipients, subject/body keywords, file attachment extensions, and urgency categories.
 * **Auto-Resolve on Reply:** When you receive a reply to an email where you were waiting on feedback, Task Tracker automatically transitions the task state, keeping your workflow synchronized without manual upkeep.
 * **Full Thread Inspection:** Inspect subject, sender, all direct (`To`) and copied (`Cc`) recipients, due dates, reminder deadlines, and custom task notes in an integrated side pane.
@@ -99,7 +112,13 @@ Smart Archive helps manage mailbox capacity by moving older messages from your m
   <img src="assets/smart-archive-menu.png" alt="Smart Archive Ribbon Menu" width="258">
 </p>
 
-* **Fluent 2 Status & Health Cockpit:** Visual progress gauges showing live Exchange mailbox quota usage (with dynamic green/orange/red capacity thresholds) and archive drive free/total capacity meters.
+* **Mailbox & Index Status:** Review mailbox capacity, archive drive space, managed PSTs, and search-index readiness in one dialog.
+| Archive mode | Behavior |
+| :--- | :--- |
+| **Auto Archive** | Automatic capacity protection, scheduled archiving and Flag Recovery |
+| **Manual Only** | Automatic archiving is off; use Archive Now or Vacation Mode when needed |
+| **Disabled** | Archive operations and archive maintenance are off; Search and Task Tracker remain available |
+
 * **Dynamic Ladder Acceleration:** Automatically identifies mailbox age distribution and skips empty date brackets to archive oldest mail first under pressure.
 * **Quota-Based Archiving:** Uses mailbox capacity and configured thresholds to prioritize older messages when space is low.
 * **Seasonal 45 GB Rollover:** Organizes archives as `YYYY-Season1` through `Season4` and starts another volume at 45 GB to leave headroom below the PST size limit.
@@ -129,7 +148,7 @@ Eliminate repetitive attachment and workflow steps directly from Outlook's main 
 
 ---
 
-### 5. Zero-Disruption GAL Display-Name Synchronization
+### 5. GAL Display-Name Synchronization
 
 When colleagues change roles, departments, or surnames in the corporate Active Directory / Exchange Global Address List (GAL), Outlook often preserves obsolete names in historical emails, rules, views, and search folders.
 
@@ -150,7 +169,7 @@ When colleagues change roles, departments, or surnames in the corporate Active D
 
 ---
 
-## 📦 Installation & Upgrades
+<h2 id="installation">Installation & upgrades</h2>
 
 ### Fresh Installation
 
@@ -173,6 +192,8 @@ When colleagues change roles, departments, or surnames in the corporate Active D
 | **Microsoft Outlook** | Classic Outlook for Windows: 2016, 2019, 2021, or Microsoft 365; 32-bit or 64-bit Office |
 | **Runtime** | Microsoft .NET Framework 4.8 or later |
 | **User Privileges** | **Standard User** (Zero administrator privileges required) |
+
+**Storage:** Keep a backup of important PST files. An archive on your PC is not a replacement for a backup. Search covers connected stores and mounted PSTs; an unmounted archive is not included.
 
 **Compatibility:** New Outlook for Windows, Outlook on the web, and Outlook for Mac do not support this VSTO add-in. Windows, .NET, or Office prerequisites may require IT assistance on a managed PC.
 

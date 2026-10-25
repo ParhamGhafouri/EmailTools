@@ -1,0 +1,9 @@
+---
+layout: default
+title: "Email Tools — User guide"
+---
+<nav aria-label="Guide navigation" style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:32px;font-size:.9rem"><a href="./">Home</a><a href="index.fa.html">صفحهٔ اصلی</a><a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">Download / دریافت</a></nav>
+<article lang="en">
+{% capture guide %}{% include_relative README.md %}{% endcapture %}
+{{ guide | markdownify }}
+</article>

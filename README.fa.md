@@ -1,5 +1,5 @@
 <div align="center" style="text-align: center;">
-  <p><a href="https://parhamghafouri.github.io/EmailTools/">English</a> &nbsp;|&nbsp; <a href="https://parhamghafouri.github.io/EmailTools/README.fa.html"><strong>فارسی</strong></a></p>
+  <p><a href="https://parhamghafouri.github.io/EmailTools/guide.html">English</a> &nbsp;|&nbsp; <a href="https://parhamghafouri.github.io/EmailTools/guide.fa.html"><strong>فارسی</strong></a></p>
   <p><img src="assets/logo.png" alt="لوگوی Email Tools" width="128"></p>
   <h1 align="center" style="text-align: center;" dir="rtl">ابزارهای ایمیل برای مایکروسافت اوت‌لوک</h1>
   <p align="center" style="text-align: center;" dir="rtl">
@@ -7,7 +7,7 @@
     <em>مجموعه‌ای یکپارچه برای جست‌وجو، پیگیری کارها و مدیریت بایگانی در اوت‌لوک، با پردازش محلی داده‌ها.</em>
   </p>
   <p align="center" style="text-align: center;">
-    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="دانلود بسته نصب (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="یادداشت‌های نسخه v1.1.9" src="https://img.shields.io/badge/Release%20Notes-v1.1.9-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="تعداد دانلود" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="ویندوز ۱۰ و ۱۱" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="اوت‌لوک ۲۰۱۶ تا ۳۶۵" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="امضای دیجیتال" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
+    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="دانلود بسته نصب (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="یادداشت‌های نسخه v1.2.0" src="https://img.shields.io/badge/Release%20Notes-v1.2.0-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="تعداد دانلود" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="ویندوز ۱۰ و ۱۱" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="اوت‌لوک ۲۰۱۶ تا ۳۶۵" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="امضای دیجیتال" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
   </p>
   <p align="center" style="text-align: center;" dir="rtl">
     <sub><strong>نصب اختصاصی برای هر کاربر</strong> &bull; بدون نیاز به دسترسی ادمین (Administrator) &bull; پردازش محلی ایمیل‌ها &bull; بررسی خودکار به‌روزرسانی‌ها</sub>
@@ -32,7 +32,16 @@
 
 ---
 
-<h2 dir="rtl" align="right">✨ امکانات در یک نگاه</h2>
+<h2 dir="rtl" align="right">تازه‌های نسخهٔ ۱.۲.۰</h2>
+<ul dir="rtl">
+  <li><strong>انتخاب روش بایگانی:</strong> سه حالت خودکار، فقط دستی و غیرفعال (فقط جست‌وجو و وظایف). بازگشت به حالت خودکار، چرخهٔ خودکار را بدون راه‌اندازی مجدد اوت‌لوک از سر می‌گیرد.</li>
+  <li><strong>جست‌وجوی دقیق‌تر:</strong> بهبود تطبیق نام و آدرس دارای دامنه، حفظ فهرست‌های بلند گیرندگان و تلاش مجدد برای خواندن سربرگ‌ها بدون پاک شدن متن ایندکس‌شده.</li>
+  <li><strong>پیش‌نمایش روشن‌تر:</strong> نمایش سابقهٔ پاسخ و فوروارد، یافتن پیام‌های مرتبط، منوهای یکسان پیوست و چیدمان صحیح پیوست‌ها در پیام‌های فارسی.</li>
+  <li><strong>بهبود کارایی ایندکس:</strong> کاهش نوشتن‌های تکراری و خواندن اطلاعات پوشه، همراه با اصلاح پاک‌سازی پایگاه‌داده هنگام ارتقا.</li>
+</ul>
+<p dir="rtl"><a href="https://github.com/ParhamGhafouri/EmailTools/releases/tag/v1.2.0#farsi">یادداشت کامل نسخهٔ ۱.۲.۰</a> · <a href="https://github.com/ParhamGhafouri/EmailTools/releases/tag/v1.2.0">دریافت نسخهٔ ۱.۲.۰</a></p>
+
+<h2 dir="rtl" align="right">امکانات در یک نگاه</h2>
 
 <table dir="rtl" width="100%">
   <thead><tr><th align="right">قابلیت</th><th align="right">امکانات Email Tools</th></tr></thead>
@@ -78,6 +87,8 @@
 
 ---
 
+<p dir="rtl"><strong>پس از ارتقا:</strong> ممکن است هنگام بررسی مجدد یک‌بارهٔ سربرگ‌ها پیام <code dir="ltr">Message headers awaiting verification</code> نمایش داده شود. این بررسی در پس‌زمینه انجام می‌شود و پس از تکمیل کارهای لازم، وضعیت به <strong>Ready</strong> برمی‌گردد. تا آن زمان، نتایج جست‌وجوی فیلدهای تأییدنشده ممکن است ناقص علامت‌گذاری شوند.</p>
+
 <h3 dir="rtl" align="right">۲. ردیاب هوشمند وظایف و خودکارسازی کارها (Task Tracker)</h3>
 
 <p dir="rtl" align="right">
@@ -87,11 +98,11 @@
 <p align="center">
   <img src="assets/task-tracker.png" alt="داشبورد مدیریت وظایف Task Tracker" width="940">
   <br>
-  <em>کارت‌های خلاصه وضعیت به سبک کانبان، جدول شفاف وظایف و پنل جانبی بررسی زمینهٔ کامل مکاتبه.</em>
+  <em>فهرست وظایف متصل به ایمیل، همراه با وضعیت، سررسید، یادداشت و پیش‌نمایش پیام اصلی.</em>
 </p>
 
 <ul dir="rtl" align="right">
-  <li><strong>کارت‌های آماری وضعیت به سبک کانبان:</strong> دسته‌بندی بصری وظایف در وضعیت‌های <strong>برای انجام (To Do)</strong>، <strong>در حال انجام (In Progress)</strong>، <strong>در انتظار پاسخ (Waiting for Reply)</strong>، <strong>انجام‌شده (Completed)</strong> و <strong>معوق/سررسیدگذشته (Overdue)</strong> با شمارنده‌های زنده.</li>
+  <li><strong>پیگیری وضعیت و سررسید:</strong> فیلتر وظایف بر اساس نما، دسته‌بندی و اولویت، مشاهدهٔ کارهای سررسیدگذشته و ویرایش وظیفه در کنار پیش‌نمایش پیام مرتبط.</li>
   <li><strong>ویرایشگر پیشرفتهٔ قوانین خودکارسازی:</strong> تعریف قوانین دقیق برای تبدیل خودکار ایمیل‌های دریافتی یا ارسالی به وظیفه، بر اساس فرستنده، گیرنده، کلمات کلیدی موضوع یا متن، پسوند فایل‌های پیوست و مهلت انجام.</li>
   <li><strong>تغییر وضعیت خودکار با دریافت پاسخ (Auto-Resolve on Reply):</strong> با رسیدن پاسخ به ایمیلی که منتظر بازخورد آن بوده‌اید، وظیفه به صورت خودکار از حالت «در انتظار» خارج شده و به گردش کار فعال بازمی‌گردد.</li>
   <li><strong>پنل جامع بررسی جزئیات:</strong> مشاهدهٔ دقیق موضوع، فرستنده، گیرندگان اصلی و رونوشت، مهلت انجام، یادداشت‌های شخصی و امکان پرش مستقیم به ایمیل در اوت‌لوک.</li>
@@ -117,7 +128,7 @@
 </p>
 
 <ul dir="rtl" align="right">
-  <li><strong>داشبورد مدرن وضعیت و سلامت (Fluent 2):</strong> گیج‌های تصویری پیشرفت، نمایش سهمیهٔ فعال با رنگ‌های هشداردهندهٔ سبز/نارنجی/قرمز و نوار ظرفیت آزاد درایو آرشیو.</li>
+  <li><strong>وضعیت صندوق و ایندکس:</strong> مشاهدهٔ ظرفیت صندوق، فضای دیسک آرشیو، تعداد PSTهای مدیریت‌شده و آمادگی ایندکس جست‌وجو در یک پنجره.</li>
   <li><strong>شتاب‌بخشی هوشمند به چرخه بایگانی:</strong> بررسی سن قدیمی‌ترین ایمیل‌ها و پرش از بازه‌های زمانی خالی، همراه با اولویت‌بندی از قدیمی‌ترین تاریخ در زمان پر شدن صندوق.</li>
   <li><strong>حفاظت اضطراری از سهمیه (Emergency Quota):</strong> اولویت‌بندی پیام‌های قدیمی برای بایگانی با توجه به میزان مصرف صندوق و آستانه‌های تنظیم‌شده.</li>
   <li><strong>بخش‌بندی فصلی و سقف ۴۵ گیگابایت:</strong> تفکیک آرشیو هر سال به چهار فصل و آغاز فایل جدید در سقف ۴۵ گیگابایت، برای حفظ فاصله از محدودیت اندازهٔ PST.</li>
@@ -132,6 +143,15 @@
 </p>
 
 ---
+
+<table dir="rtl">
+  <thead><tr><th>حالت بایگانی</th><th>عملکرد</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Auto Archive</strong></td><td>حفاظت خودکار ظرفیت، بایگانی زمان‌بندی‌شده و بازیابی پیام‌های پرچم‌دار</td></tr>
+    <tr><td><strong>Manual Only</strong></td><td>بایگانی خودکار خاموش است؛ اجرای Archive Now و Vacation Mode در اختیار کاربر است</td></tr>
+    <tr><td><strong>Disabled</strong></td><td>بایگانی و نگهداری آرشیو خاموش است؛ جست‌وجو و ردیاب وظایف در دسترس می‌مانند</td></tr>
+  </tbody>
+</table>
 
 <h3 dir="rtl" align="right">۴. عملیات یک‌کلیکی فایل‌های پیوست و گردش کار در ریبون Home</h3>
 
@@ -195,6 +215,8 @@
 </ul>
 
 ---
+
+<p dir="rtl"><strong>ذخیره‌سازی:</strong> از فایل‌های مهم PST نسخهٔ پشتیبان بگیرید؛ آرشیو محلی جایگزین پشتیبان نیست. جست‌وجو شامل مخازن متصل و PSTهای بازشده در اوت‌لوک است، نه آرشیوهای قطع‌شده.</p>
 
 <h2 id="requirements" dir="rtl" align="right">💻 پیش‌نیازهای سیستم</h2>
 
