@@ -28,17 +28,6 @@ Large mailboxes make it harder to find messages, track follow-ups, and manage st
 
 ---
 
-## What's new in 1.2.0
-
-- **Choose how archiving runs:** Auto Archive, Manual Only, or Disabled (Search & Tasks Only). Returning to Auto resumes the automatic workflow without restarting Outlook.
-- **More accurate search:** Better person and domain-qualified address matching, preserved long recipient lists, and header verification that retries failed reads without clearing indexed text.
-- **Clearer message context:** Reply/forward history and **Find related messages** in the preview, plus consistent attachment menus and left-to-right attachment layouts.
-- **More efficient index maintenance:** Fewer redundant writes and folder lookups, with improved database upgrade cleanup.
-
-[Read the full 1.2.0 release notes](https://github.com/ParhamGhafouri/EmailTools/releases/tag/v1.2.0) · [Download 1.2.0](https://github.com/ParhamGhafouri/EmailTools/releases/tag/v1.2.0)
-
-**Explore:** [Search](#1-advanced-search-local-index) · [Tasks](#2-task-tracker--workflow-automation) · [Archiving](#3-smart-archive--capacity-management) · [Install](#installation) · [Compatibility](#requirements) · [Privacy](#security)
-
 ## Key capabilities
 
 | Feature | What Email Tools provides |
@@ -76,8 +65,6 @@ A dedicated search window with combined filters, sortable results, a virtualized
 
 **Search tips:** Wait for initial indexing to finish, and keep the PST archives you want to search mounted in Outlook. For an extension filter, select **Attachment → Yes** and enter `*.txt`, `*.pdf`, or `*.xlsx` in the filename field. Use **Any Hours**, **Working Hours**, or **Outside Working Hours**; work-hour filters use your Outlook calendar settings.
 
-**After upgrading:** A one-time header recheck may show **Message headers awaiting verification**. It reads full headers in the background; **Ready** returns after required work completes. Searches involving unverified fields may be marked partial until then.
-
 ---
 
 ### 2. Task Tracker & Workflow Automation
@@ -108,17 +95,18 @@ Turn messages into tasks with due dates, priorities, notes, and status tracking.
 
 Smart Archive helps manage mailbox capacity by moving older messages from your mailbox to seasonal local PST files, such as `2026-Season1.pst`.
 
-<p align="center">
-  <img src="assets/smart-archive-menu.png" alt="Smart Archive Ribbon Menu" width="258">
-</p>
-
-* **Mailbox & Index Status:** Review mailbox capacity, archive drive space, managed PSTs, and search-index readiness in one dialog.
 | Archive mode | Behavior |
 | :--- | :--- |
 | **Auto Archive** | Automatic capacity protection, scheduled archiving and Flag Recovery |
 | **Manual Only** | Automatic archiving is off; use Archive Now or Vacation Mode when needed |
 | **Disabled** | Archive operations and archive maintenance are off; Search and Task Tracker remain available |
 
+
+<p align="center">
+  <img src="assets/smart-archive-menu.png" alt="Smart Archive Ribbon Menu" width="258">
+</p>
+
+* **Mailbox & Index Status:** Review mailbox capacity, archive drive space, managed PSTs, and search-index readiness in one dialog.
 * **Dynamic Ladder Acceleration:** Automatically identifies mailbox age distribution and skips empty date brackets to archive oldest mail first under pressure.
 * **Quota-Based Archiving:** Uses mailbox capacity and configured thresholds to prioritize older messages when space is low.
 * **Seasonal 45 GB Rollover:** Organizes archives as `YYYY-Season1` through `Season4` and starts another volume at 45 GB to leave headroom below the PST size limit.
