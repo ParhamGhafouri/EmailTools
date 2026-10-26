@@ -17,7 +17,7 @@ This release introduces dynamic working hours filtering natively integrated with
 
 1. **Working Hours Filter:** Replaced the manual time spinners with a new smart drop-down filter for "Working Hours" and "Outside Working Hours" in the Advanced Search UI.
 2. **Native Outlook Integration:** The working hours filter now dynamically reads your actual working days and start/end times directly from your Outlook Calendar settings (File > Options > Calendar). It correctly accounts for weekends and customized schedules.
-3. **RTL Calendar Auto-Correction:** Added an intelligent auto-correction layer for Iranian timezones that automatically bypasses a known Microsoft Outlook bug where Right-To-Left (RTL) calendar UI selections (like Sat-Wed) are incorrectly saved in the registry. 
+3. **RTL Calendar Auto-Correction:** Added an intelligent auto-correction layer for Iranian timezones that automatically bypasses a known Microsoft Outlook bug where Right-To-Left (RTL) calendar UI selections (like Sat-Wed) are incorrectly saved in the registry.
 4. **Search Preview Fix:** Fixed a critical issue where the text-highlighting engine (TreeWalker) would occasionally crash the reading pane. The rendering engine now strictly forces modern IE11 Edge emulation.
 5. **UI Layout Fixes:** Fixed a layout glitch in the Advanced Search panel where the body-match navigation capsule (e.g. < 1/2 >) would push the search text box completely out of view when the Exclude field was also visible. The fields now resize gracefully with guaranteed minimum widths.
 

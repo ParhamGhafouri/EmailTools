@@ -17,7 +17,7 @@ This release introduces powerful new exclusion filters, significant improvements
 
 1. **Exclude Filters:** Advanced Search now fully supports excluding specific words or phrases. You can use the newly added dedicated exclusion textboxes in the UI to precisely filter out unwanted results across the From, To, Subject, and Body fields.
 2. **Body Search Improvements:** The live full-text indexing engine has been upgraded to properly process complex exclusions, drastically improving the precision of body text searches.
-3. **UI & Layout Fixes:** 
+3. **UI & Layout Fixes:**
   - **Responsive Grid:** The "Subject" column in the search results now automatically stretches to fill empty space when the window is maximized.
   - **Modernized Preview:** The empty reading pane has been redesigned with a crisp SVG envelope matching Outlook's native design, with improved vertical spacing.
   - **Alignment:** The "Saved Searches" dropdown label was realigned to perfectly match the padding of the other search fields.
@@ -41,7 +41,7 @@ This release introduces powerful new exclusion filters, significant improvements
   <ul>
     <li><strong>فیلترهای استثنا (Exclude):</strong> جستجوی پیشرفته اکنون به طور کامل از حذف کلمات یا عبارات خاص پشتیبانی می‌کند. می‌توانید از فیلدهای اختصاصی Exclude در رابط کاربری استفاده کنید تا نتایج نامطلوب از فیلدهای گیرنده، فرستنده، موضوع و متن ایمیل با دقت بالا فیلتر شوند.</li>
     <li><strong>بهبود جستجوی متن ایمیل (Body Search):</strong> موتور جستجوی متن‌کامل (FTS) ارتقا یافته است تا کلمات استثنا را به درستی پردازش کند که دقت جستجو در محتوای ایمیل‌ها را به شدت افزایش می‌دهد.</li>
-    <li><strong>اصلاحات رابط کاربری و چیدمان:</strong> 
+    <li><strong>اصلاحات رابط کاربری و چیدمان:</strong>
       <ul>
         <li><strong>گرید ریسپانسیو:</strong> ستون «موضوع» (Subject) در لیست نتایج اکنون به صورت خودکار تغییر اندازه می‌دهد تا در صورت تمام‌صفحه کردن پنجره، فضای خالی را پر کند.</li>
         <li><strong>مدرن‌سازی پنل پیش‌نمایش:</strong> ظاهر صفحه خالی در پنل پیش‌نمایش کاملاً بازطراحی شده و اکنون از یک آیکون SVG پاکت‌نامه کاملاً هماهنگ با ظاهر مدرن Outlook استفاده می‌کند.</li>
