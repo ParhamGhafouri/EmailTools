@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
   <a href="#english"><strong>English</strong></a>
   <span> | </span>
   <a href="#farsi"><strong>فارسی</strong></a>
@@ -10,6 +10,8 @@
 # Email Tools v1.1.4
 
 Version 1.1.4 delivers lightning-fast **sub-50ms Advanced Search** across indexed mailboxes, an upgrade to **Microsoft.Data.Sqlite 10.0.12** and native **SQLite 3.53.4**, full **High-DPI & multi-monitor responsive layout** across Advanced Search and Task Tracker, rock-solid **Outlook startup resiliency** eliminating splash screen freezes, and **graceful legacy archive rule cleanup**.
+
+> This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
 
 ### Highlights (Ordered by Priority)
 
@@ -50,6 +52,8 @@ Version 1.1.4 delivers lightning-fast **sub-50ms Advanced Search** across indexe
 
 <div dir="rtl" align="right">
   <p>نسخه ۱.۱.۴ شامل ارتقای چشمگیر سرعت <strong>جست‌وجوی پیشرفته به کمتر از ۵۰ میلی‌ثانیه</strong>، به‌روزرسانی پایگاه‌داده به <strong>Microsoft.Data.Sqlite 10.0.12</strong> و موتور بومی <strong>SQLite 3.53.4</strong>، سازگاری کامل رابط کاربری با <strong>نمایشگرهای High-DPI و بزرگ‌نمایی چندگانه</strong> در جست‌وجو و ردیاب وظایف، <strong>رفع کامل توقف و فریز در صفحه لودینگ اوت‌لوک</strong>، و <strong>پایداری کامل فرآیند تخلیه آرشیوهای فصلی قدیمی</strong> است.</p>
+
+  <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
 
   <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>

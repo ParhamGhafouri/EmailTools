@@ -11,6 +11,8 @@
 
 Version 1.1.3 delivers the full public release of the intelligent **Task Tracker & Workflow Automation** system, a modern **Fluent 2 redesign** for Settings and Storage Health dashboards, universal **Windows 11 rounded window geometry** across all dialogs, seamless **search banner positioning** with zero white space, and robust **subject/recipient data reliability**.
 
+> This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
+
 ### Highlights (Ordered by Priority)
 
 1. **Full Release of Task Tracker & Workflow Automation:**
@@ -43,6 +45,8 @@ Version 1.1.3 delivers the full public release of the intelligent **Task Tracker
 
 <div dir="rtl" align="right">
   <p>نسخه ۱.۱.۳ شامل انتشار کامل سیستم هوشمند <strong>ردیابی وظایف و خودکارسازی گردش کار (Task Tracker)</strong>، <strong>بازطراحی مدرن Fluent 2</strong> برای پنجره‌های تنظیمات و سلامت فضای ذخیره‌سازی، <strong>گوشه‌های گرد ویندوز ۱۱</strong> برای تمامی پنجره‌ها، <strong>تراز بدون فاصله بنر جست‌وجو</strong>، و <strong>اصلاح کامل نمایش موضوع و گیرندگان ایمیل‌ها</strong> است.</p>
+
+  <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
 
   <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>

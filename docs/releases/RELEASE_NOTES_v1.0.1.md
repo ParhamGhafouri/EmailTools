@@ -13,12 +13,12 @@ This release adds GAL display-name synchronization and improves search, recovery
 
 > This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
 
-### Highlights
+### Highlights (Ordered by Priority)
 
-- Synchronizes cached sender and recipient display names with the Global Address List.
-- Recovers follow-up flagged mail from seasonal archives and displays search dates in local time.
-- Speeds up body indexing, adds clearer live status, improves DPI handling, and preserves complex HTML previews.
-- Coordinates Smart Archive, GAL, indexing, and verified updates through one background work lane.
+1. Synchronizes cached sender and recipient display names with the Global Address List.
+2. Recovers follow-up flagged mail from seasonal archives and displays search dates in local time.
+3. Speeds up body indexing, adds clearer live status, improves DPI handling, and preserves complex HTML previews.
+4. Coordinates Smart Archive, GAL, indexing, and verified updates through one background work lane.
 
 **Install:** Download **EmailTools_Setup.rar**, extract it, then run **EmailTools_Setup.exe**. Setup is per-user and needs no administrator rights.
 
@@ -36,7 +36,7 @@ This release adds GAL display-name synchronization and improves search, recovery
 
   <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
 
-  <h3>ویژگی‌های اصلی</h3>
+  <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>
     <li>نام نمایشی ذخیره‌شده فرستنده‌ها و گیرنده‌ها را با Global Address List هماهنگ می‌کند.</li>
     <li>ایمیل‌های Follow-up پرچم‌دار را از آرشیوهای فصلی بازیابی می‌کند و زمان جست‌وجو را به‌صورت محلی نشان می‌دهد.</li>

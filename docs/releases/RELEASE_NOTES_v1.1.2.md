@@ -11,6 +11,8 @@
 
 This major update brings comprehensive stability, search accuracy, and performance optimizations across the entire Email Tools suite—delivering unified attachment search, eliminating indexing bottlenecks, resolving endless archiving loops, and hardening COM memory management and legacy storage cleanup.
 
+> This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
+
 ### Highlights (Ordered by Priority)
 
 1. **Attachment Search & Database Join Unification:** Resolved a critical discrepancy where historical attachment entries were keyed by MAPI StoreID rather than the store path. Search queries now join transparently across both identifiers, accompanied by an automatic startup self-healing database migration that normalizes and deduplicates all existing attachment records.
@@ -33,6 +35,8 @@ This major update brings comprehensive stability, search accuracy, and performan
 
 <div dir="rtl" align="right">
   <p>این به‌روزرسانی جامع شامل ارتقای اساسی در دقت جستجو، رفع گلوگاه‌های عملکردی، پایداری آرشیو خودکار و مدیریت بهینه حافظه در سراسر افزونه ابزارهای ایمیل است.</p>
+
+  <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
 
   <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>

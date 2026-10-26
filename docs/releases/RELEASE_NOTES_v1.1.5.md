@@ -11,6 +11,8 @@
 
 Version 1.1.5 delivers the new **"Track as Task" Ribbon & Inspector integration**, an **ultra-fast 1-column Reconcile engine** eliminating post-indexing write storms and disk spikes, **multi-conditional search acceleration** with sub-50ms execution, **seamless Deleted Items native Recovery banner compatibility**, a revamped **Fluent 2 Visual Status Dashboard** with live items counts and queue metrics, and a **theme-adaptive SearchBand** across all Outlook themes.
 
+> This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
+
 ### Highlights (Ordered by Priority)
 
 1. **Intelligent "Track as Task" Ribbon & Inspector Integration:**
@@ -62,6 +64,8 @@ Version 1.1.5 delivers the new **"Track as Task" Ribbon & Inspector integration*
 
 <div dir="rtl" align="right">
   <p>نسخه ۱.۱.۵ شامل <strong>قابلیت جدید پیگیری ایمیل‌ها به عنوان وظیفه (Track as Task) در ریبون و پنجره پیام اوت‌لوک</strong>، موتور بهینه‌سازی‌شده <strong>همگام‌سازی تک‌ستونه (Reconcile) جهت حذف کامل فشار دیسک و پردازش‌های سنگین پس از ایندکس</strong>، <strong>شتاب‌بخشی به جست‌وجوهای چندشرطی زیر ۵۰ میلی‌ثانیه و رفع هرگونه مکث</strong>، <strong>سازگاری کامل با بنر بازیابی آیتم‌های حذف‌شده (Recover Items)</strong>، <strong>داشبورد نوین وضعیت و نمایش زنده جزئیات ایندکس‌گذاری فلوئنت ۲</strong>، و <strong>نوار جست‌وجوی هماهنگ با تم‌های تیره و روشن اوت‌لوک</strong> است.</p>
+
+  <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
 
   <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>

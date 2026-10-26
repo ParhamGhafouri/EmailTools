@@ -11,19 +11,21 @@
 
 This release fixes the complete legacy-PST migration lifecycle, startup maintenance stalls, search-index readiness reporting, and update/worker coordination found after v1.0.4.
 
-### Highlights
+> This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
 
-- Legacy PSTs now remain mounted and visible while they are processed one at a time in chronological order. Their full folder hierarchy is reproduced in the exact managed account and seasonal destination.
-- Copy verification is occurrence-aware, so duplicate message identities cannot collapse into one destination proof. Only exact proven source identities are hard-deleted through the PST provider; migrated mail never passes through Outlook's Deleted Items.
-- A legacy source is detached only after recursive exact-zero verification. After Outlook exits, the signed worker removes and verifies the exact Outlook profile service, search, navigation, cache, and orphaned provider references without launching or remounting Outlook, then invokes the signed cleanup runner.
-- Outlook may compact an empty PST after detachment. v1.0.5 accepts that final header flush only when the creation identity is unchanged and the proof-origin Outlook session has exited. The delete proof is retained until the path remains physically absent across repeated checks; a lock, reappearance, malformed record, or identity mismatch cannot be reported as cleanup success.
-- Smart Archive and maintenance-only legacy migration use the same guarded legacy move, destination-proof, detach, and shutdown-cleanup chain. Emergency Archive keeps live-mailbox priority first; normal startup maintenance resumes any legacy sources afterward.
-- Startup mailbox-metric readiness is bounded, so unavailable or slow quota data can no longer block legacy maintenance, GAL synchronization, or body indexing indefinitely.
-- Search indexing now advances after maintenance and reports the real persisted count instead of remaining at a misleading `ready (0 indexed)` state. Priority pauses name the task they are waiting for and resume immediately when that pass finishes.
-- Completed archive scans no longer repeat in a zero-progress loop, and deferred legacy work no longer causes the mailbox to be drained again.
-- A staged verified update has priority over shutdown maintenance. The signed updater waits for the worker lane, validates SHA-256 and the pinned publisher, and retains a bounded recovery retry if installer handoff fails.
-- The close-time maintenance worker no longer mistakes an invisible Outlook object for the user reopening Outlook. It keeps ownership until the exact hidden Outlook process has exited, so a leftover background Outlook process cannot block the updater or the next visible launch.
-- The signed v1.0.5 candidate completed an installed end-to-end test with three mounted legacy PSTs: 2025-Season4, 2026-Season1, and 2026-Season2 were processed in order; destinations matched the original PST allocations; sources reached recursive exact zero and detached; all three exact orphaned profile registrations were retired and all three physical sources were deleted after shutdown; and the local index was ready with 10,549 searchable messages.
+### Highlights (Ordered by Priority)
+
+1. Legacy PSTs now remain mounted and visible while they are processed one at a time in chronological order. Their full folder hierarchy is reproduced in the exact managed account and seasonal destination.
+2. Copy verification is occurrence-aware, so duplicate message identities cannot collapse into one destination proof. Only exact proven source identities are hard-deleted through the PST provider; migrated mail never passes through Outlook's Deleted Items.
+3. A legacy source is detached only after recursive exact-zero verification. After Outlook exits, the signed worker removes and verifies the exact Outlook profile service, search, navigation, cache, and orphaned provider references without launching or remounting Outlook, then invokes the signed cleanup runner.
+4. Outlook may compact an empty PST after detachment. v1.0.5 accepts that final header flush only when the creation identity is unchanged and the proof-origin Outlook session has exited. The delete proof is retained until the path remains physically absent across repeated checks; a lock, reappearance, malformed record, or identity mismatch cannot be reported as cleanup success.
+5. Smart Archive and maintenance-only legacy migration use the same guarded legacy move, destination-proof, detach, and shutdown-cleanup chain. Emergency Archive keeps live-mailbox priority first; normal startup maintenance resumes any legacy sources afterward.
+6. Startup mailbox-metric readiness is bounded, so unavailable or slow quota data can no longer block legacy maintenance, GAL synchronization, or body indexing indefinitely.
+7. Search indexing now advances after maintenance and reports the real persisted count instead of remaining at a misleading `ready (0 indexed)` state. Priority pauses name the task they are waiting for and resume immediately when that pass finishes.
+8. Completed archive scans no longer repeat in a zero-progress loop, and deferred legacy work no longer causes the mailbox to be drained again.
+9. A staged verified update has priority over shutdown maintenance. The signed updater waits for the worker lane, validates SHA-256 and the pinned publisher, and retains a bounded recovery retry if installer handoff fails.
+10. The close-time maintenance worker no longer mistakes an invisible Outlook object for the user reopening Outlook. It keeps ownership until the exact hidden Outlook process has exited, so a leftover background Outlook process cannot block the updater or the next visible launch.
+11. The signed v1.0.5 candidate completed an installed end-to-end test with three mounted legacy PSTs: 2025-Season4, 2026-Season1, and 2026-Season2 were processed in order; destinations matched the original PST allocations; sources reached recursive exact zero and detached; all three exact orphaned profile registrations were retired and all three physical sources were deleted after shutdown; and the local index was ready with 10,549 searchable messages.
 
 **Install:** Download **EmailTools_Setup.rar**, extract it, then run **EmailTools_Setup.exe**. Setup is per-user and needs no administrator rights. Existing users should install v1.0.5 over the current version without uninstalling first.
 
@@ -39,7 +41,9 @@ This release fixes the complete legacy-PST migration lifecycle, startup maintena
 <div dir="rtl" align="right">
   <p>این نسخه چرخهٔ کامل انتقال PSTهای قدیمی، توقف‌های نگهداری هنگام شروع Outlook، نمایش وضعیت Search Index و هماهنگی Update با Worker را که پس از نسخهٔ 1.0.4 دیده شده بود اصلاح می‌کند.</p>
 
-  <h3>ویژگی‌های اصلی</h3>
+  <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
+
+  <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>
     <li>PSTهای قدیمی هنگام پردازش داخل Outlook متصل و قابل مشاهده می‌مانند، به‌ترتیب زمانی و یکی‌یکی انجام می‌شوند و ساختار کامل پوشه‌ها در Account و آرشیو فصلی دقیق حفظ می‌شود.</li>
     <li>تأیید Copy تعداد تکرارها را نیز در نظر می‌گیرد تا هویت‌های تکراری در یک Proof ادغام نشوند. فقط هویت دقیقاً تأییدشدهٔ منبع با Hard Delete خود PST حذف می‌شود و ایمیل منتقل‌شده هرگز وارد Deleted Items نمی‌شود.</li>

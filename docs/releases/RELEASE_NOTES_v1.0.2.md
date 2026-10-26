@@ -13,13 +13,13 @@ This release strengthens archive maintenance, legacy PST migration, index coordi
 
 > This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
 
-### Highlights
+### Highlights (Ordered by Priority)
 
-- Uses verified mailbox metrics for Emergency Archive and runs maintenance tasks through one coordinated lane.
-- Drains legacy PST files to the correct managed archive and removes a source only after exact-zero verification.
-- Repairs seasonal archive placement and reports the real maintenance stage in Status.
-- Prevents indexing, GAL maintenance, and archive work from restarting or blocking one another.
-- Tightens dependency, package, signature, repair, and downgrade validation.
+1. Uses verified mailbox metrics for Emergency Archive and runs maintenance tasks through one coordinated lane.
+2. Drains legacy PST files to the correct managed archive and removes a source only after exact-zero verification.
+3. Repairs seasonal archive placement and reports the real maintenance stage in Status.
+4. Prevents indexing, GAL maintenance, and archive work from restarting or blocking one another.
+5. Tightens dependency, package, signature, repair, and downgrade validation.
 
 **Install:** Download **EmailTools_Setup.rar**, extract it, then run **EmailTools_Setup.exe**. Setup is per-user and needs no administrator rights.
 
@@ -37,7 +37,7 @@ This release strengthens archive maintenance, legacy PST migration, index coordi
 
   <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
 
-  <h3>ویژگی‌های اصلی</h3>
+  <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>
     <li>برای Emergency Archive از اندازه تأییدشده صندوق استفاده می‌کند و کارهای نگهداری را در یک مسیر هماهنگ اجرا می‌کند.</li>
     <li>PSTهای قدیمی را به آرشیو مدیریت‌شده درست منتقل می‌کند و منبع را فقط پس از تأیید صفر دقیق حذف می‌کند.</li>

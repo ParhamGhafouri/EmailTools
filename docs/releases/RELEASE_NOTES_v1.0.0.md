@@ -13,12 +13,12 @@ The first public release of **Email Tools for Microsoft Outlook**.
 
 > This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
 
-### Highlights
+### Highlights (Ordered by Priority)
 
-- Independent indexed body search across mailboxes and mounted PST archives, with a live Outlook-style preview.
-- Bulk actions, CSV export, and attachment-aware Reply, Reply All, and Forward commands.
-- Smart Archive, Vacation Mode, reminder cleanup, and a dedicated Email Tools ribbon.
-- Verified automatic updates using SHA-256 and a pinned Email Tools signing identity.
+1. Independent indexed body search across mailboxes and mounted PST archives, with a live Outlook-style preview.
+2. Bulk actions, CSV export, and attachment-aware Reply, Reply All, and Forward commands.
+3. Smart Archive, Vacation Mode, reminder cleanup, and a dedicated Email Tools ribbon.
+4. Verified automatic updates using SHA-256 and a pinned Email Tools signing identity.
 
 **Install:** Download **EmailTools_Setup.rar**, extract it, then run **EmailTools_Setup.exe**. Setup is per-user and needs no administrator rights.
 
@@ -36,7 +36,7 @@ The first public release of **Email Tools for Microsoft Outlook**.
 
   <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
 
-  <h3>ویژگی‌های اصلی</h3>
+  <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>
     <li>جست‌وجوی مستقل و ایندکس‌شده در متن ایمیل‌های صندوق‌ها و آرشیوهای PST، همراه با پیش‌نمایش زنده شبیه Outlook.</li>
     <li>عملیات گروهی، خروجی CSV و دستورهای Reply، Reply All و Forward با مدیریت هوشمند پیوست‌ها.</li>

@@ -11,14 +11,16 @@
 
 This release hardens Smart Archive, Emergency Archive, GAL rule repair, protected mail handling, and large-mailbox search.
 
-### Highlights
+> This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
 
-- Smart Archive now follows the configured mailbox target, increases pressure through 30/20/10/8/6/4/2/1-day passes, and protects the newest 24 hours.
-- Emergency Archive and Vacation Mode use verified destinations and stop at their intended target instead of over-draining the mailbox.
-- Legacy PST migration uses exact destination checks and exact-zero source verification; protected mail is queued for the signed closed-Outlook worker.
-- GAL rule repair changes only the cached display label, saves in place, and fails closed if identity or destination checks do not match.
-- Conversation History repair is bounded, while Advanced Search uses cached sender data, local time, and a virtual grid for large result sets.
-- Verified updates are staged in the background and handed to the signed runner after Outlook exits.
+### Highlights (Ordered by Priority)
+
+1. Smart Archive now follows the configured mailbox target, increases pressure through 30/20/10/8/6/4/2/1-day passes, and protects the newest 24 hours.
+2. Emergency Archive and Vacation Mode use verified destinations and stop at their intended target instead of over-draining the mailbox.
+3. Legacy PST migration uses exact destination checks and exact-zero source verification; protected mail is queued for the signed closed-Outlook worker.
+4. GAL rule repair changes only the cached display label, saves in place, and fails closed if identity or destination checks do not match.
+5. Conversation History repair is bounded, while Advanced Search uses cached sender data, local time, and a virtual grid for large result sets.
+6. Verified updates are staged in the background and handed to the signed runner after Outlook exits.
 
 **Install:** Download **EmailTools_Setup.rar**, extract it, then run **EmailTools_Setup.exe**. Setup is per-user and needs no administrator rights.
 
@@ -34,7 +36,9 @@ This release hardens Smart Archive, Emergency Archive, GAL rule repair, protecte
 <div dir="rtl" align="right">
   <p>این نسخه Smart Archive، Emergency Archive، اصلاح Ruleهای GAL، مدیریت پیام‌های محافظت‌شده و جست‌وجو در صندوق‌های بزرگ را پایدارتر می‌کند.</p>
 
-  <h3>ویژگی‌های اصلی</h3>
+  <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
+
+  <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>
     <li>Smart Archive از هدف تنظیم‌شده صندوق پیروی می‌کند، فشار را در بازه‌های 30/20/10/8/6/4/2/1 روز افزایش می‌دهد و ایمیل‌های 24 ساعت اخیر را حفظ می‌کند.</li>
     <li>Emergency Archive و Vacation Mode مقصد را تأیید می‌کنند و در هدف موردنظر متوقف می‌شوند تا صندوق بیش از حد تخلیه نشود.</li>

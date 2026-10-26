@@ -11,13 +11,15 @@
 
 This maintenance release includes comprehensive add-in resiliency and anti-deactivation hardening across all Microsoft Outlook versions, automated cleanup of stale disabled registry items, and package dependency verification.
 
-### Highlights
+> This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
 
-- **Comprehensive Add-in Resiliency & Anti-Deactivation:** Setup now automatically purges all historical `DisabledItems`, `CrashingAddinList`, and `NotificationReminderAddinData` records across Outlook 2013, 2016, 2019, 2021, and Office 365, instantly resolving issues where Outlook kept the add-in unchecked in the COM Add-ins list.
-- **Runtime Self-Healing:** The add-in automatically verifies and restores its `DoNotDisableAddinList = 1` and `LoadBehavior = 3` registry policies during startup to ensure it stays permanently active.
-- **Enhanced VSTO Trust Registration:** Expanded the VSTO Inclusion List registration with multi-variant URI normalization, guaranteeing seamless trust validation across various Windows locales and drive casing formats.
-- **Instant Search & Attachment Search:** Includes all high-speed indexed search features from v1.1.0 (sub-10ms query times and dedicated attachment filename / wildcard extension search).
-- **Verified Clean Code Protection:** Fully compliant with Microsoft Defender and enterprise EDR heuristics with zero false-positive alerts and seamless silent GPO deployment support.
+### Highlights (Ordered by Priority)
+
+1. **Comprehensive Add-in Resiliency & Anti-Deactivation:** Setup now automatically purges all historical `DisabledItems`, `CrashingAddinList`, and `NotificationReminderAddinData` records across Outlook 2013, 2016, 2019, 2021, and Office 365, instantly resolving issues where Outlook kept the add-in unchecked in the COM Add-ins list.
+2. **Runtime Self-Healing:** The add-in automatically verifies and restores its `DoNotDisableAddinList = 1` and `LoadBehavior = 3` registry policies during startup to ensure it stays permanently active.
+3. **Enhanced VSTO Trust Registration:** Expanded the VSTO Inclusion List registration with multi-variant URI normalization, guaranteeing seamless trust validation across various Windows locales and drive casing formats.
+4. **Instant Search & Attachment Search:** Includes all high-speed indexed search features from v1.1.0 (sub-10ms query times and dedicated attachment filename / wildcard extension search).
+5. **Verified Clean Code Protection:** Fully compliant with Microsoft Defender and enterprise EDR heuristics with zero false-positive alerts and seamless silent GPO deployment support.
 
 **Install:** Download **EmailTools_Setup.rar**, extract it, then run **EmailTools_Setup.exe**. Setup is per-user and needs no administrator rights. Existing users should install v1.1.1 over the current version without uninstalling first.
 
@@ -29,7 +31,9 @@ This maintenance release includes comprehensive add-in resiliency and anti-deact
 <div dir="rtl" align="right">
   <p>این نسخه شامل بهبودهای جامع پایداری افزونه، رفع قطعی مشکل غیرفعال شدن خودکار توسط اوت‌لوک، پاک‌سازی کامل سوابق غیرفعال‌سازی در رجیستری و به‌روزرسانی وابستگی‌های برنامه است.</p>
 
-  <h3>ویژگی‌های کلیدی</h3>
+  <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
+
+  <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>
     <li><strong>پایداری کامل و جلوگیری از غیرفعال‌سازی افزونه:</strong> نصاب برنامه اکنون تمامی سوابق قدیمی موجود در <code>DisabledItems</code>، <code>CrashingAddinList</code> و هشدارهای تأخیری را در تمام نسخه‌های اوت‌لوک (۲۰۱۳، ۲۰۱۶، ۲۰۱۹، ۲۰۲۱ و آفیس ۳۶۵) پاک‌سازی کرده و مشکل تیک نخوردن افزونه در بخش COM Add-ins را به طور خودکار و قطعی برطرف می‌کند.</li>
     <li><strong>بازیابی و تثبیت خودکار در حین اجرا (Self-Healing):</strong> افزونه هنگام اجرا وضعیت کلیدهای رجیستری <code>DoNotDisableAddinList = 1</code> و <code>LoadBehavior = 3</code> را به طور خودکار بررسی و تثبیت می‌کند تا از هرگونه غیرفعال شدن احتمالی در آینده جلوگیری شود.</li>

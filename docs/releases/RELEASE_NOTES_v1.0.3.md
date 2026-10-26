@@ -11,12 +11,14 @@
 
 This release introduces Smart Archive for automatic PST quota management, improves Vacation Mode, and hardens background worker coordination.
 
-### Highlights
+> This is an older release. Install the [latest version](https://github.com/ParhamGhafouri/EmailTools/releases/latest) for current fixes and safety improvements.
 
-- Smart Archive automatically creates and manages quarterly PST archives based on mailbox pressure and size limits.
-- Vacation Mode moves recent email to the current quarterly archive before extended absences.
-- Background worker handles offline registry updates and profile maintenance safely after Outlook exits.
-- Enhanced search indexing reliability and responsive UI during background indexing passes.
+### Highlights (Ordered by Priority)
+
+1. Smart Archive automatically creates and manages quarterly PST archives based on mailbox pressure and size limits.
+2. Vacation Mode moves recent email to the current quarterly archive before extended absences.
+3. Background worker handles offline registry updates and profile maintenance safely after Outlook exits.
+4. Enhanced search indexing reliability and responsive UI during background indexing passes.
 
 **Install:** Download **EmailTools_Setup.rar**, extract it, then run **EmailTools_Setup.exe**. Setup is per-user and needs no administrator rights.
 
@@ -34,7 +36,7 @@ This release introduces Smart Archive for automatic PST quota management, improv
 
   <blockquote>این نسخه قدیمی است. برای دریافت اصلاحات و بهبودهای ایمنی فعلی، <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest">جدیدترین نسخه</a> را نصب کنید.</blockquote>
 
-  <h3>ویژگی‌های اصلی</h3>
+  <h3>ویژگی‌ها و تغییرات کلیدی (به ترتیب اولویت و اهمیت)</h3>
   <ul>
     <li>تغییر فیلترها و نمایش مجموعه‌های بزرگ نتیجه در Advanced Search را سریع‌تر می‌کند.</li>
     <li>جابجایی بین تطابق‌های Body، زمان محلی، نام پوشه خواناتر و پیش‌نمایش دقیق‌تر HTML را اضافه می‌کند.</li>
