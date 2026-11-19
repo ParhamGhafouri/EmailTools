@@ -7,7 +7,7 @@
     <em>مجموعه‌ای یکپارچه برای جست‌وجو، پیگیری کارها و مدیریت بایگانی در اوت‌لوک، با پردازش محلی داده‌ها.</em>
   </p>
   <p align="center" style="text-align: center;">
-    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="دانلود بسته نصب (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="یادداشت‌های نسخه v1.2.1" src="https://img.shields.io/badge/Release%20Notes-v1.2.1-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="تعداد دانلود" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="ویندوز ۱۰ و ۱۱" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="اوت‌لوک ۲۰۱۶ تا ۳۶۵" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="امضای دیجیتال" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
+    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="دانلود بسته نصب (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="یادداشت‌های نسخه v1.2.2" src="https://img.shields.io/badge/Release%20Notes-v1.2.2-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="تعداد دانلود" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="ویندوز ۱۰ و ۱۱" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="اوت‌لوک ۲۰۱۶ تا ۳۶۵" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="امضای دیجیتال" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
   </p>
   <p align="center" style="text-align: center;" dir="rtl">
     <sub><strong>نصب اختصاصی برای هر کاربر</strong> &bull; بدون نیاز به دسترسی ادمین (Administrator) &bull; پردازش محلی ایمیل‌ها &bull; بررسی خودکار به‌روزرسانی‌ها</sub>
@@ -37,10 +37,10 @@
 <table dir="rtl" width="100%">
   <thead><tr><th align="right">قابلیت</th><th align="right">امکانات Email Tools</th></tr></thead>
   <tbody>
-    <tr><td><strong>جست‌وجوی پیشرفته</strong></td><td>نمایهٔ محلی متن و اطلاعات پیام‌ها در صندوق‌ها و آرشیوهای PST متصل</td></tr>
-    <tr><td><strong>ردیاب وظایف</strong></td><td>تبدیل ایمیل به وظیفه، قوانین خودکار، کارت‌های وضعیت، سررسید و یادداشت</td></tr>
-    <tr><td><strong>فیلتر پیوست</strong></td><td>جست‌وجوی وجود فایل پیوست، نام فایل و پسوندهایی مانند <code dir="ltr">*.pdf</code> و <code dir="ltr">*.xlsx</code></td></tr>
-    <tr><td><strong>بایگانی هوشمند</strong></td><td>آرشیو فصلی PST، پایش ظرفیت و آغاز فایل جدید در سقف ۴۵ گیگابایت</td></tr>
+    <tr><td><strong>جست‌وجوی پیشرفته</strong></td><td>نمایهٔ محلی متن، مشخصات و محتوای اسناد پیوست با تفکیک صندوق‌های اشتراکی و آرشیوهای PST</td></tr>
+    <tr><td><strong>ردیاب وظایف</strong></td><td>تبدیل ایمیل به وظیفه، وضعیت «در انتظار پاسخ»، قوانین خودکار دوزبانه، کارت‌های وضعیت، سررسید و یادداشت</td></tr>
+    <tr><td><strong>فیلتر و ایندکس پیوست</strong></td><td>جست‌وجوی وجود پیوست، نام/الگوی فایل (<code dir="ltr">*.pdf</code>، <code dir="ltr">*.xlsx</code>) و متن داخل اسناد آفیس، PDF، ایمیل‌های <code dir="ltr">.msg</code> و فایل‌های متنی</td></tr>
+    <tr><td><strong>بایگانی هوشمند</strong></td><td>آرشیو فصلی PST، پیش‌نمایش آزمایشی <strong>Preview Eligible...</strong> روی صندوق اصلی، پایش ظرفیت و سقف ۴۵ گیگابایت</td></tr>
     <tr><td><strong>ابزارهای پیوست</strong></td><td>پاسخ یا پاسخ به همه همراه با فایل‌های پیوست؛ فوروارد بدون فایل‌های پیوست</td></tr>
     <tr><td><strong>همگام‌سازی نام‌ها</strong></td><td>تطبیق نام‌های نمایشی پیام‌های گذشته با دفترچهٔ سازمانی GAL در پس‌زمینه</td></tr>
     <tr><td><strong>حالت مرخصی</strong></td><td>نگه‌داشتن درصد دلخواهی از پیام‌های جدید صندوق ورودی و بایگانی باقی پیام‌ها</td></tr>
@@ -66,15 +66,30 @@
 </p>
 
 <ul dir="rtl" align="right">
-  <li><strong>موتور ایندکس SQLite FTS5 Trigram:</strong> جست‌وجوی متن پیام‌های نمایه‌شده با نمایهٔ محلی، مستقل از Windows Search. نمایه‌سازی اولیه و همگام‌سازی بعدی در پس‌زمینه انجام می‌شود؛ سرعت جست‌وجو به عبارت، پوشش نمایه و رایانه بستگی دارد.</li>
-  <li><strong>فیلتر اختصاصی نام و پسوند پیوست:</strong> جست‌وجوی مستقیم در نام فایل‌های ضمیمه با الگوهای Wildcard (مانند <code dir="ltr">*.pdf</code> یا <code dir="ltr">*.xlsx</code>) همراه با فیلتر خودکار تصاویر امضا.</li>
+  <li><strong>موتور ایندکس SQLite FTS5 و ایزوله‌سازی صندوق‌های اشتراکی:</strong> جست‌وجوی متن پیام‌ها مستقل از Windows Search با جداسازی دقیق صندوق‌های اشتراکی/دوم و پاک‌سازی خودکار ردیف‌های قدیمی پس از حذف مخزن یا لغو دسترسی—با حفظ کامل فایل‌های آرشیو محلی PST.</li>
+  <li><strong>جست‌وجوی نام فایل و متن داخل اسناد پیوست (<code dir="ltr">attachment_fts</code>):</strong> نمایه‌سازی متن داخل فایل‌های پیوست با FTS5 <code dir="ltr">trigram</code> برای اسناد <code dir="ltr">.docx</code>/<code dir="ltr">.docm</code>/<code dir="ltr">.doc</code>، <code dir="ltr">.xlsx</code>/<code dir="ltr">.xlsm</code>/<code dir="ltr">.xls</code> (همراه با نام شیت‌ها)، <code dir="ltr">.pptx</code>/<code dir="ltr">.pptm</code>، <code dir="ltr">.pdf</code>، <code dir="ltr">.msg</code> (شامل پیوست‌های تودرتو)، <code dir="ltr">.rtf</code> و فایل‌های متنی/ساختاری/اسکریپت (<code dir="ltr">.txt</code>، <code dir="ltr">.csv</code>، <code dir="ltr">.log</code>، <code dir="ltr">.json</code>، <code dir="ltr">.xml</code>، <code dir="ltr">.html</code>، <code dir="ltr">.md</code>، <code dir="ltr">.sql</code>، <code dir="ltr">.yaml</code>، <code dir="ltr">.ps1</code>، <code dir="ltr">.sh</code>، <code dir="ltr">.py</code>، <code dir="ltr">.bat</code>) که مستقیماً از هر دو کادر <strong>Body</strong> و <strong>Attachment</strong> (در کنار جست‌وجوی نام/الگوی فایل مثل <code dir="ltr">*.pdf</code> و <code dir="ltr">*.xlsx</code>) قابل جست‌وجو هستند، همراه با فیلتر خودکار تصاویر امضا.</li>
   <li><strong>پیش‌نمایش امن ایزوله‌شده و همگام‌سازی ساختار پنجره:</strong> استفاده از Mark-of-the-Web و مسدودسازی اسکریپت‌ها، تصاویر ردگیر و درخواست‌های خارجی، همراه با همگام‌سازی کامل سلسله‌مراتب پنجره‌های بومی اکتیوایکس ویندوز (Shell Embedding تا Internet Explorer_Server) جهت جلوگیری از رندر نصفه پیش‌نمایش یا فریز شدن بخش سمت راست هنگام جابه‌جایی میان پنجره‌ها یا تغییر اندازه ستون‌ها.</li>
-  <li><strong>برجسته‌سازی و کلیدهای پرش:</strong> هایلایت واژه‌های جست‌وجوشده در پیش‌نمایش و جابه‌جایی سریع میان تطابق‌ها با دکمه‌های Previous / Next.</li>
-  <li><strong>ترکیب فیلترها:</strong> امکان جست‌وجوی همزمان بر اساس فرستنده، گیرنده، رونوشت، موضوع، متن، نام پیوست، بازهٔ تاریخ و ساعات مشخص روز.</li>
+  <li><strong>برجسته‌سازی، کلیدهای پرش و منوی انتخاب پیوست‌های منطبق:</strong> هایلایت واژه‌های جست‌وجوشده در پیش‌نمایش با کلیدهای Previous / Next (<code dir="ltr">F3</code> / <code dir="ltr">Shift+F3</code>)، نمایش نشانگرهای فشرده و بدون پرش تعداد تطبیق پیوست (<code dir="ltr">📎 N</code>، <code dir="ltr">📎 N ▾</code>، <code dir="ltr">+N</code> یا <code dir="ltr">N files</code>) مستقیماً داخل کادرهای <strong>Body</strong> و <strong>Attachment</strong> (و همچنین کادر جست‌وجوی <strong>Task Tracker</strong>) و باز شدن منوی کشویی دارای آیکون فایل هنگام تطبیق در چند پیوست برای پیش‌نمایش مستقیم فایل‌های <code dir="ltr">.msg</code>/<code dir="ltr">.txt</code> یا باز کردن مستقیم فایل‌های <code dir="ltr">.xlsx</code>/<code dir="ltr">.pdf</code>/<code dir="ltr">.docx</code> در کنار نشانگر تعداد تطبیق هر تراشه.</li>
+</ul>
+
+<p align="center">
+  <img src="assets/attachment-content-search.png" alt="جست‌وجوی محتوای فایل‌های پیوست در کادرهای Body و Attachment همراه با منوی انتخاب" width="940">
+  <br>
+  <em>جست‌وجوی متن داخل اسناد آفیس، PDF و ایمیل‌های پیوست‌شدهٔ <code dir="ltr">.msg</code> از هر دو کادر <strong>Attachment</strong> و <strong>Body</strong> همراه با نشانگر تعداد تطبیق در کادر جست‌وجو و روی هر فایل پیوست.</em>
+</p>
+
+<p align="center">
+  <img src="assets/attachment-match-picker.png" alt="منوی کشویی انتخاب فایل‌های پیوست منطبق" width="760">
+  <br>
+  <em>کلیک روی نشانگر چندفایلی (<code dir="ltr">📎 17 ▾</code>) برای انتخاب، پیش‌نمایش درجا یا باز کردن مستقیم هر یک از پیوست‌های منطبق.</em>
+</p>
+
+<ul dir="rtl" align="right">
+  <li><strong>ترکیب فیلترها:</strong> امکان جست‌وجوی همزمان بر اساس فرستنده، گیرنده، رونوشت، موضوع، متن، نام یا محتوای پیوست، بازهٔ تاریخ و ساعات مشخص روز.</li>
   <li><strong>پشتیبانی هوشمند از نام‌های سازمانی دارای براکت و آدرس‌های دایرکتوری:</strong> تشخیص و جست‌وجوی یکپارچه فرستندگان و گیرندگان دارای تگ‌های سازمانی (مانند <code dir="ltr">Name [ Company - Dept ]</code>)، پاک‌سازی علائم نگارشی، تطبیق با آدرس‌های سازمانی Exchange X500 و نام‌های کاربری، و ارتباط خودکار میان نام‌های ساده و نام‌های دارای مشخصات سازمانی در تمام دامنه‌های جست‌وجو.</li>
   <li><strong>پشتیبانی از گروه‌های هشتگ‌دار و ترکیب نام و آدرس مخاطب:</strong> جست‌وجوی دقیق گروه‌ها و فهرست‌های توزیع هشتگ‌دار (مانند <code dir="ltr">#Operations Team</code> یا <code dir="ltr">#operations@company.com</code>)، تطبیق علامت <code dir="ltr">#</code> به عنوان پیشوند یا توکن تنها، و تفکیک خودکار ترکیب نام و ایمیل (<code dir="ltr">DisplayName &lt;email@domain&gt;</code>) جهت تطبیق هر یک از آنها.</li>
   <li><strong>تحلیلگر پرس‌وجوی دقیق:</strong> تشخیص عملگرهای منطقی صرفاً با حروف بزرگ (<code dir="ltr">NOT</code>)، امکان جست‌وجوی کلمات متنی عادی مانند <code dir="ltr">not</code> در عناوین ایمیل، و حفظ تطبیق مثبت عناوین چندکلمه‌ای دارای خط‌تیره.</li>
-  <li><strong>منوی راست‌کلیک کامل:</strong> باز کردن، پاسخ، فوروارد، پرچم‌گذاری، دسته‌بندی رنگی، انتقال، حذف، نمایش گفت‌وگوهای مرتبط و خروجی اکسل (CSV) با محافظت ضدتزریق فرمول.</li>
+  <li><strong>عملیات گروهی و منوی راست‌کلیک (<code dir="ltr">Ctrl+T</code>):</strong> انتخاب یک یا چند ایمیل برای باز کردن، پاسخ، فوروارد، پرچم‌گذاری، دسته‌بندی رنگی، انتقال، حذف، <strong>ذخیره گروهی پیوست‌ها (Save Attachments...)</strong>، <strong>ثبت به عنوان وظیفه (Track as Task)</strong>، نمایش تمام ایمیل‌های رشته گفت‌وگو (<code dir="ltr">Ctrl+T</code>) و خروجی اکسل (CSV) با محافظت ضدتزریق فرمول.</li>
 </ul>
 
 <p dir="rtl" align="right"><strong>راهنمای جست‌وجو:</strong> منتظر پایان نمایه‌سازی اولیه بمانید و آرشیوهای PST موردنیاز را در اوت‌لوک متصل نگه دارید. برای جست‌وجوی پسوند، گزینهٔ <strong dir="ltr">Attachment → Yes</strong> را انتخاب کرده و <code dir="ltr">*.txt</code>، <code dir="ltr">*.pdf</code> یا <code dir="ltr">*.xlsx</code> را در کادر نام فایل وارد کنید. فیلترهای ساعات کاری و غیرکاری از تنظیمات تقویم اوت‌لوک شما استفاده می‌کنند.</p>
@@ -97,8 +112,8 @@
 
 <ul dir="rtl" align="right">
   <li><strong>پیگیری وضعیت و سررسید:</strong> فیلتر وظایف بر اساس نما، دسته‌بندی و اولویت، مشاهدهٔ کارهای سررسیدگذشته و ویرایش وظیفه در کنار پیش‌نمایش پیام مرتبط.</li>
-  <li><strong>ویرایشگر پیشرفتهٔ قوانین خودکارسازی:</strong> تعریف قوانین دقیق برای تبدیل خودکار ایمیل‌های دریافتی یا ارسالی به وظیفه، بر اساس فرستنده، گیرنده، کلمات کلیدی موضوع یا متن، پسوند فایل‌های پیوست و مهلت انجام، همراه با تفکیک مستقل گیرندگان در فهرست‌های چندنفره دارای سمی‌کالن جهت جلوگیری از تداخل قوانین.</li>
-  <li><strong>تغییر وضعیت خودکار با دریافت پاسخ (Auto-Resolve on Reply):</strong> با رسیدن پاسخ به ایمیلی که منتظر بازخورد آن بوده‌اید، وظیفه به صورت خودکار از حالت «در انتظار» خارج شده و به گردش کار فعال بازمی‌گردد.</li>
+  <li><strong>ویرایشگر پیشرفتهٔ قوانین خودکارسازی:</strong> تعریف قوانین دقیق برای تبدیل خودکار ایمیل‌های دریافتی یا ارسالی به وظیفه، بر اساس فرستنده، گیرنده، کلمات کلیدی موضوع یا متن، نام/پسوند فایل‌های پیوست و یا متن داخل اسناد پیوست (<code dir="ltr">attachment_fts</code>)، همراه با تفکیک مستقل گیرندگان در فهرست‌های چندنفره دارای سمی‌کالن جهت جلوگیری از تداخل قوانین.</li>
+  <li><strong>تغییر وضعیت خودکار و وضعیت «در انتظار پاسخ» (<code dir="ltr">Waiting for Reply</code>):</strong> با ثبت ایمیل‌های ارسالی، وظیفه با وضعیت در انتظار پاسخ و سررسید ۳ روزه ثبت می‌شود و با رسیدن پاسخ در تمام مخازن (با تشخیص پیشوندهای انگلیسی و فارسی)، وظیفه به‌صورت خودکار به‌روزرسانی می‌گردد.</li>
   <li><strong>پنل جامع بررسی جزئیات و پیش‌نمایش همگام:</strong> مشاهدهٔ دقیق موضوع، فرستنده، گیرندگان اصلی و رونوشت، مهلت انجام، یادداشت‌های شخصی و امکان پرش مستقیم به ایمیل در اوت‌لوک همراه با رندر کاملاً همگام پیش‌نمایش.</li>
   <li><strong>طراحی مدرن ویندوز ۱۱:</strong> هماهنگ با زبان طراحی Fluent 2 مایکروسافت، گوشه‌های کاملاً گرد، حاشیه‌های نرم آنتی‌الیاس و سازگاری کامل با تم‌های روشن، خاکستری و مشکی.</li>
 </ul>
@@ -126,7 +141,8 @@
   <li><strong>شتاب‌بخشی هوشمند به چرخه بایگانی:</strong> بررسی سن قدیمی‌ترین ایمیل‌ها و پرش از بازه‌های زمانی خالی، همراه با اولویت‌بندی از قدیمی‌ترین تاریخ در زمان پر شدن صندوق.</li>
   <li><strong>حفاظت اضطراری از سهمیه (Emergency Quota):</strong> اولویت‌بندی پیام‌های قدیمی برای بایگانی با توجه به میزان مصرف صندوق و آستانه‌های تنظیم‌شده.</li>
   <li><strong>بخش‌بندی فصلی و سقف ۴۵ گیگابایت:</strong> تفکیک آرشیو هر سال به چهار فصل و آغاز فایل جدید در سقف ۴۵ گیگابایت، برای حفظ فاصله از محدودیت اندازهٔ PST.</li>
-  <li><strong>اتصال پایدار و انتقال خودکار به فایل بعدی در صورت بروز خطا:</strong> مدیریت هوشمند خطای بارگذاری PST (خطای <code dir="ltr">0x80004005</code>) در فایل‌های قفل‌شده یا آسیب‌دیده، و ساخت یا انتقال خودکار به جلد بعدی (مانند <code dir="ltr">&lt;Season&gt;-2.pst</code>) بدون متوقف شدن چرخه آماده‌سازی بایگانی.</li>
+  <li><strong>پیش‌نمایش آزمایشی صندوق اصلی (<code dir="ltr">Preview Eligible...</code>):</strong> مشاهده فوری آمار ایمیل‌های واجد شرایط به تفکیک پوشه و فایل PST مقصد پیش از انتقال واقعی، محدود به صندوق پستی اصلی و با حذف خودکار آرشیوهای PST و صندوق‌های اشتراکی.</li>
+  <li><strong>اتصال پایدار و انتقال خودکار به فایل بعدی در صورت بروز خطا:</strong> مدیریت هوشمند خطای بارگذاری PST (خطای <code dir="ltr">0x80004005</code>) در فایل‌های قفل‌شده یا آسیب‌دیده، تحمل خطاهای موقت پیش از ساخت جلد بعدی (مانند <code dir="ltr">&lt;Season&gt;-2.pst</code>) و حفظ ایمن آرشیوهای محلی.</li>
   <li><strong>اعتبارسنجی غیرمسدودکننده سربرگ‌ها:</strong> پردازش و تکمیل اعتبارسنجی سربرگ‌های پیام در پس‌زمینه بدون معلق ماندن دائمی وضعیت «Verification pending»، و بازگشت سریع به وضعیت <strong>Ready</strong>.</li>
   <li><strong>وقفهٔ ایمن ۲ ساعته:</strong> توقف کامل اسکن‌های مداوم پس از رسیدن صندوق به حجم ایمن تنظیمی جهت جلوگیری از درگیری بیهودهٔ دیسک و پردازنده.</li>
   <li><strong>پنجره‌های با گوشه‌های گرد و سبک:</strong> هماهنگی پنجره‌های وضعیت، تنظیمات و بایگانی با پوستهٔ اوت‌لوک.</li>

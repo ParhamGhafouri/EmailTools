@@ -7,7 +7,7 @@
     <em>Find messages, follow up on work, and manage mailbox space in classic Outlook for Windows.</em>
   </p>
   <p align="center" style="text-align: center;">
-    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="Download Installer (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Release Notes v1.2.1" src="https://img.shields.io/badge/Release%20Notes-v1.2.1-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Total Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="Windows 10 / 11" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="Outlook 2016-365" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="Signed Authenticode" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
+    <a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest/download/EmailTools_Setup.rar"><img alt="Download Installer (.rar)" src="https://img.shields.io/badge/Download-Installer%20(.rar)-0078D4?style=flat-square&logo=windows&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases/latest"><img alt="Release Notes v1.2.2" src="https://img.shields.io/badge/Release%20Notes-v1.2.2-555555?style=flat-square&logo=github&logoColor=white"></a>&nbsp;<a href="https://github.com/ParhamGhafouri/EmailTools/releases"><img alt="Total Downloads" src="https://img.shields.io/github/downloads/ParhamGhafouri/EmailTools/total?label=downloads&color=0078D4&style=flat-square"></a><br><a href="#requirements"><img alt="Windows 10 / 11" src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=flat-square&logo=windows"></a>&nbsp;<a href="#requirements"><img alt="Outlook 2016-365" src="https://img.shields.io/badge/Outlook-2016--365-0072C6?style=flat-square&logo=microsoftoutlook"></a>&nbsp;<a href="#security"><img alt="Signed Authenticode" src="https://img.shields.io/badge/Signed-Authenticode-success?style=flat-square"></a>
   </p>
   <p align="center" style="text-align: center;">
     <sub><strong>Per-User Installation</strong> &bull; No administrator privileges required &bull; Local Mail Processing &bull; GitHub update checks</sub>
@@ -32,10 +32,10 @@ Large mailboxes make it harder to find messages, track follow-ups, and manage st
 
 | Feature | What Email Tools provides |
 | :--- | :--- |
-| **Advanced Search** | Local indexed body and metadata search across connected mailboxes and mounted PSTs |
-| **Task Tracker** | Email-to-task conversion, automation rules, status cards, due dates, and notes |
-| **Attachment Filters** | File-attachment presence, filename, and extension filters such as `*.pdf` and `*.xlsx` |
-| **Smart Archive** | Seasonal PST archives, capacity monitoring, and automatic volume rollover at 45 GB |
+| **Advanced Search** | Local indexed body, metadata, and document-attachment content search across isolated mailboxes and mounted PSTs |
+| **Task Tracker** | Email-to-task conversion, `"Waiting for Reply"` sent-mail tracking, bilingual auto-resolve rules, status cards, due dates, and notes |
+| **Attachment Filters** | File-attachment presence, filename/wildcard filters (`*.pdf`, `*.xlsx`), and full-text content indexing inside Office, PDF, `.msg`, and text documents |
+| **Smart Archive** | Seasonal PST archives, capacity monitoring, index-backed **Preview Eligible...** dry runs, and automatic volume rollover at 45 GB |
 | **Attachment Actions** | Reply / Reply All with file attachments; Forward without file attachments |
 | **GAL Name Sync** | Background reconciliation of historical display names with the corporate directory |
 | **Vacation Mode** | Keep a chosen percentage of recent Inbox messages and archive the rest |
@@ -56,15 +56,28 @@ A dedicated search window with combined filters, sortable results, a virtualized
   <em>Search indexed messages in connected mailboxes, mounted PST archives, and conversation folders.</em>
 </p>
 
-* **Independent Local Index:** Uses SQLite FTS5 trigrams to search indexed message bodies without depending on Windows Search. Initial indexing and later synchronization run in the background; search speed depends on the query, index coverage, and PC.
-* **Dedicated Attachment Filename & Wildcard Filter:** Search specifically for attached filenames or extensions (e.g. `*.pdf`, `invoice`, `*.xlsx`) with smart inline signature noise filtering.
+* **Independent Local Index & Mailbox Isolation:** Uses SQLite FTS5 trigrams to search indexed message bodies without depending on Windows Search, isolating shared and secondary Exchange mailboxes with distinct store keys and automatically purging stale rows if a secondary store is removed or loses access—while keeping local PST seasonal archives intact.
+* **Dedicated Attachment Filename & Document Content Search (`attachment_fts`):** Uses SQLite FTS5 `trigram` indexing to extract full-text contents inside attached `.docx`/`.docm`/`.doc`, `.xlsx`/`.xlsm`/`.xls` (including worksheet tab names), `.pptx`/`.pptm`, `.pdf`, `.msg` (including nested attachments), `.rtf`, and plain-text/script/data files (`.txt`, `.csv`, `.log`, `.json`, `.xml`, `.html`, `.md`, `.sql`, `.yaml`, `.ps1`, `.sh`, `.py`, `.bat`)—searchable directly from both the **Body** and **Attachment** fields (alongside filenames and wildcards such as `*.pdf` or `*.xlsx`), with smart inline signature noise filtering.
 * **Protected HTML Preview & Layout Synchronization:** Uses Mark-of-the-Web isolation, blocks scripts and tracking images, and synchronizes the underlying Win32 ActiveX control hierarchy (`Shell Embedding` → `Internet Explorer_Server`) to ensure preview panes never render half-height or freeze unpainted canvas when switching windows or resizing splitters.
-* **Match Highlighting & Navigation:** Highlights matching body terms in the preview, with **Previous / Next** navigation.
-* **Multi-Criteria Queries:** Seamlessly combine **From**, **To**, **Cc**, **Subject**, **Body**, **Attachment Name**, **Date Range**, and **Hourly Windows**.
+* **Match Highlighting, Navigation & Multi-Attachment Picker:** Highlights matching terms in the preview with **Previous / Next** (`F3` / `Shift+F3`) navigation, displays flicker-free clickable inline match pills (`📎 N`, `📎 N ▾`, `+N`, or `N files`) directly inside the active **Body** and **Attachment** search boxes (as well as Task Tracker's **Search tasks** bar), and opens an Office-styled file-icon dropdown menu when multiple attachments match so you can preview `.msg`/`.txt` items in-pane or open `.xlsx`/`.pdf`/`.docx` files directly alongside per-chip match count badges.
+
+<p align="center">
+  <img src="assets/attachment-content-search.png" alt="Unified Body and Attachment Content Search with Multi-File Match Menu" width="940">
+  <br>
+  <em>Search inside Office, PDF, and embedded <code>.msg</code> attachments from either the <strong>Attachment</strong> or <strong>Body</strong> box, with inline match pills and per-file match badges.</em>
+</p>
+
+<p align="center">
+  <img src="assets/attachment-match-picker.png" alt="Multi-Attachment Match Picker Menu" width="760">
+  <br>
+  <em>Click a multi-file match pill (<code>📎 17 ▾</code>) to pick and preview or open any matching attached file directly.</em>
+</p>
+
+* **Multi-Criteria Queries:** Seamlessly combine **From**, **To**, **Cc**, **Subject**, **Body**, **Attachment Name / Content**, **Date Range**, and **Hourly Windows**.
 * **Corporate Bracketed Names & Directory Aliases:** Seamlessly matches sender and recipient names with corporate or department tags (e.g. `Name [ Company - Dept ]`), strips punctuation noise, resolves Exchange X500 directory addresses and usernames, and cross-matches bare names with bracketed metadata across all search scopes.
 * **Hashtag Groups & Composite Contact Queries:** Seamlessly searches hashtag distribution lists and teams (e.g. `#Operations Team` or `#operations@company.com`), accurately matches `#` prefixes, and parses composite contact strings (`DisplayName <email@domain>`) so either the name or email address matches.
 * **Smart Query Parser:** Evaluates boolean operators accurately—treating only uppercase `NOT` as negation while searching lowercase `not` in subjects as ordinary text, and preserving hyphenated titles with space-dash patterns (e.g. `Project-ABC -Subgroup`).
-* **Rich Context Actions:** Right-click any result to Open, Reply, Reply All, Forward, Flag, Categorize, Move, Delete, Find Conversation, or Export to CSV (with formula-injection protection).
+* **Bulk & Rich Context Actions (`Ctrl+T`):** Right-click or multi-select results to Open, Reply, Reply All, Forward, Flag, Categorize, Move, Delete, **Save Attachments...**, **Track as Task** (defaulting sent mail to `"Waiting for Reply"`), jump to the full conversation thread (**`Ctrl+T`**), or Export to CSV (with formula-injection protection).
 
 **Search tips:** Wait for initial indexing to finish, and keep the PST archives you want to search mounted in Outlook. For an extension filter, select **Attachment → Yes** and enter `*.txt`, `*.pdf`, or `*.xlsx` in the filename field. Use **Any Hours**, **Working Hours**, or **Outside Working Hours**; work-hour filters use your Outlook calendar settings.
 
@@ -81,8 +94,8 @@ Turn messages into tasks with due dates, priorities, notes, and status tracking.
 </p>
 
 * **Status & Due-Date Tracking:** Filter tracked tasks by view, category and priority, review overdue work, and update the selected task without losing its source-message context.
-* **Granular Automation Rule Builder:** Create powerful automation rules matching Incoming or Outgoing mail, specific senders/recipients, subject/body keywords, file attachment extensions, and urgency categories. Semicolon-delimited recipient lists are evaluated independently per individual person to prevent rule collisions.
-* **Auto-Resolve on Reply:** When you receive a reply to an email where you were waiting on feedback, Task Tracker automatically transitions the task state, keeping your workflow synchronized without manual upkeep.
+* **Granular Automation Rule Builder:** Create powerful automation rules matching Incoming or Outgoing mail, specific senders/recipients, subject/body keywords, and attachment filenames, extensions (`*.pdf`, `*.xlsx`), or extracted document text (`attachment_fts`). Semicolon-delimited recipient lists are evaluated independently per individual person to prevent rule collisions.
+* **Auto-Resolve & `"Waiting for Reply"` Tracking:** Tracking sent emails automatically assigns **Waiting for Reply** with a 3-day follow-up due date, and bilingual cross-store reconciliation (`RE:`, `FW:`, `پاسخ:`, `عطف:`) automatically transitions tasks once a reply arrives—keeping your workflow synchronized without manual upkeep.
 * **Full Thread Inspection & Synchronized Preview:** Inspect subject, sender, all direct (`To`) and copied (`Cc`) recipients, due dates, reminder deadlines, and custom task notes in an integrated side pane with fully synchronized preview rendering.
 * **Modern Windows 11 Design:** Designed with Windows 11 DWM rounded corners, anti-aliased card borders, and automatic Office theme synchronization across Light, Dark Gray, and Black.
 
@@ -113,7 +126,8 @@ Smart Archive helps manage mailbox capacity by moving older messages from your m
 * **Dynamic Ladder Acceleration:** Automatically identifies mailbox age distribution and skips empty date brackets to archive oldest mail first under pressure.
 * **Quota-Based Archiving:** Uses mailbox capacity and configured thresholds to prioritize older messages when space is low.
 * **Seasonal 45 GB Rollover:** Organizes archives as `YYYY-Season1` through `Season4` and starts another volume at 45 GB to leave headroom below the PST size limit.
-* **Resilient Archive Mounting & Rollover:** Gracefully handles locked or unmountable PST headers (`0x80004005` errors) without aborting archive preparation passes, automatically rolling over to `<Season>-2.pst` when an existing volume cannot be mounted.
+* **Primary-Mailbox Dry-Run Preview (`Preview Eligible...`):** Inspect an instant index-backed summary of eligible counts by folder and target Season PST right inside Archive Settings—strictly scoped to the primary mailbox (excluding `.pst` archives and shared stores) before moving any mail.
+* **Resilient Archive Mounting & Rollover:** Gracefully handles locked or unmountable PST headers (`0x80004005` errors) without aborting archive preparation passes, tolerates transient mount errors before creating rollover volumes (`<Season>-2.pst`), and preserves offline local archives.
 * **Non-Blocking Background Header Verification:** Verifies message headers and clears completed candidates asynchronously without stalling search-index readiness in persistent "Verification pending" states, returning promptly to **Ready**.
 * **2-Hour Safety Floor Cooldown:** Prevents continuous background disk churning once the mailbox is safe.
 * **Theme-Aware Dialogs:** Storage, settings, and archive dialogs follow the Outlook theme.
