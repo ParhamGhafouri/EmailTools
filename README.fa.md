@@ -30,9 +30,20 @@
   <img src="assets/outlook-ribbon-tab.png" alt="زبانهٔ Email Tools در ریبون اوت‌لوک" width="219">
 </p>
 
+<p align="center" dir="rtl">
+  <strong>دسترسی سریع:</strong>&nbsp;
+  <a href="#adv-search">جست‌وجوی پیشرفته</a> &bull;
+  <a href="#task-tracker">ردیاب وظایف</a> &bull;
+  <a href="#smart-archive">بایگانی هوشمند</a> &bull;
+  <a href="#att-actions">ابزارهای پیوست</a> &bull;
+  <a href="#shortcuts">کلیدهای میانبر</a> &bull;
+  <a href="#installation">راهنمای نصب</a> &bull;
+  <a href="#security">امنیت و معماری</a>
+</p>
+
 ---
 
-<h2 dir="rtl" align="right">امکانات در یک نگاه</h2>
+<h2 dir="rtl" align="right">✨ امکانات در یک نگاه</h2>
 
 <table dir="rtl" width="100%">
   <thead><tr><th align="right">قابلیت</th><th align="right">امکانات Email Tools</th></tr></thead>
@@ -53,7 +64,7 @@
 
 <h2 dir="rtl" align="right">🔍 راهنمای بخش‌های کلیدی</h2>
 
-<h3 dir="rtl" align="right">۱. جست‌وجوی پیشرفته (Advanced Search با نمایهٔ محلی)</h3>
+<h3 id="adv-search" dir="rtl" align="right">۱. جست‌وجوی پیشرفته (Advanced Search با نمایهٔ محلی)</h3>
 
 <p dir="rtl" align="right">
 پنجره‌ای مستقل با فیلترهای ترکیبی، نتایج قابل مرتب‌سازی، جدول مجازی و پیش‌نمایش یکپارچهٔ پیام‌ها.
@@ -96,9 +107,7 @@
 
 ---
 
-
-
-<h3 dir="rtl" align="right">۲. ردیاب هوشمند وظایف و خودکارسازی کارها (Task Tracker)</h3>
+<h3 id="task-tracker" dir="rtl" align="right">۲. ردیاب هوشمند وظایف و خودکارسازی کارها (Task Tracker)</h3>
 
 <p dir="rtl" align="right">
 تبدیل ایمیل‌ها به وظایف دارای سررسید، اولویت، یادداشت و وضعیت پیگیری. جست‌وجوی Task Tracker در وظایف ثبت‌شده انجام می‌شود؛ جست‌وجوی پیشرفته پیام‌های نمایه‌شده را جست‌وجو می‌کند.
@@ -126,18 +135,27 @@
 
 ---
 
-<h3 dir="rtl" align="right">۳. بایگانی هوشمند (Smart Archive) و مدیریت ظرفیت</h3>
+<h3 id="smart-archive" dir="rtl" align="right">۳. بایگانی هوشمند (Smart Archive) و مدیریت ظرفیت</h3>
 
 <p dir="rtl" align="right">
 بایگانی هوشمند با انتقال پیام‌های قدیمی به فایل‌های PST فصلی محلی، مانند <code dir="ltr">2026-Season1.pst</code>، به مدیریت فضای صندوق کمک می‌کند.
 </p>
+
+<table dir="rtl" width="100%">
+  <thead><tr><th align="right">حالت بایگانی</th><th align="right">عملکرد</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Auto Archive</strong></td><td>حفاظت خودکار ظرفیت، بایگانی زمان‌بندی‌شده و بازیابی پیام‌های پرچم‌دار</td></tr>
+    <tr><td><strong>Manual Only</strong></td><td>بایگانی خودکار خاموش است؛ اجرای Archive Now و Vacation Mode در اختیار کاربر است</td></tr>
+    <tr><td><strong>Disabled</strong></td><td>بایگانی و نگهداری آرشیو خاموش است؛ جست‌وجو و ردیاب وظایف در دسترس می‌مانند</td></tr>
+  </tbody>
+</table>
 
 <p align="center">
   <img src="assets/smart-archive-menu.png" alt="منوی بایگانی هوشمند در ریبون" width="258">
 </p>
 
 <ul dir="rtl" align="right">
-  <li><strong>وضعیت صندوق و ایندکس:</strong> مشاهدهٔ ظرفیت صندوق، فضای دیسک آرشیو، تعداد PSTهای مدیریت‌شده و آمادگی ایندکس جست‌وجو در یک پنجره.</li>
+  <li><strong>وضعیت صندوق و ایندکس:</strong> مشاهدهٔ ظرفیت صندوق، فضای دیسک آرشیو، تعداد PSTهای مدیریت‌شده، تعداد ایمیل‌ها و فایل‌های پیوست ایندکس‌شده و آمادگی ایندکس جست‌وجو در یک پنجره.</li>
   <li><strong>شتاب‌بخشی هوشمند به چرخه بایگانی:</strong> بررسی سن قدیمی‌ترین ایمیل‌ها و پرش از بازه‌های زمانی خالی، همراه با اولویت‌بندی از قدیمی‌ترین تاریخ در زمان پر شدن صندوق.</li>
   <li><strong>حفاظت اضطراری از سهمیه (Emergency Quota):</strong> اولویت‌بندی پیام‌های قدیمی برای بایگانی با توجه به میزان مصرف صندوق و آستانه‌های تنظیم‌شده.</li>
   <li><strong>بخش‌بندی فصلی و سقف ۴۵ گیگابایت:</strong> تفکیک آرشیو هر سال به چهار فصل و آغاز فایل جدید در سقف ۴۵ گیگابایت، برای حفظ فاصله از محدودیت اندازهٔ PST.</li>
@@ -156,16 +174,7 @@
 
 ---
 
-<table dir="rtl">
-  <thead><tr><th>حالت بایگانی</th><th>عملکرد</th></tr></thead>
-  <tbody>
-    <tr><td><strong>Auto Archive</strong></td><td>حفاظت خودکار ظرفیت، بایگانی زمان‌بندی‌شده و بازیابی پیام‌های پرچم‌دار</td></tr>
-    <tr><td><strong>Manual Only</strong></td><td>بایگانی خودکار خاموش است؛ اجرای Archive Now و Vacation Mode در اختیار کاربر است</td></tr>
-    <tr><td><strong>Disabled</strong></td><td>بایگانی و نگهداری آرشیو خاموش است؛ جست‌وجو و ردیاب وظایف در دسترس می‌مانند</td></tr>
-  </tbody>
-</table>
-
-<h3 dir="rtl" align="right">۴. عملیات یک‌کلیکی فایل‌های پیوست و گردش کار در ریبون Home</h3>
+<h3 id="att-actions" dir="rtl" align="right">۴. عملیات یک‌کلیکی فایل‌های پیوست و گردش کار در ریبون Home</h3>
 
 <p dir="rtl" align="right">
 دکمه‌های پرکاربرد مستقیماً در زبانهٔ اصلی اوت‌لوک برای افزایش سرعت مکاتبات و پیگیری وظایف روزمره:
@@ -211,7 +220,63 @@
 
 ---
 
-<h2 dir="rtl" align="right">📦 راهنمای نصب و ارتقا</h2>
+<h2 id="shortcuts" dir="rtl" align="right">⌨️ کلیدهای میانبر (Keyboard Shortcuts)</h2>
+
+<table dir="rtl" width="100%">
+  <thead>
+    <tr>
+      <th align="right" width="28%">کلید میانبر</th>
+      <th align="right" width="24%">بخش</th>
+      <th align="right" width="48%">عملکرد</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong dir="ltr"><code>Ctrl + F3</code></strong></td>
+      <td>اوت‌لوک / جست‌وجو</td>
+      <td>باز کردن پنجرهٔ <strong>جست‌وجوی پیشرفته</strong> (یا فوکوس روی فیلترها در صورت باز بودن)</td>
+    </tr>
+    <tr>
+      <td><strong dir="ltr"><code>Ctrl + F4</code></strong></td>
+      <td>اوت‌لوک / جست‌وجو</td>
+      <td>باز کردن پنجرهٔ <strong>ردیاب وظایف (Task Tracker)</strong> (یا فوکوس روی کادر جست‌وجوی وظایف)</td>
+    </tr>
+    <tr>
+      <td><strong dir="ltr"><code>F3</code> / <code>Shift + F3</code></strong></td>
+      <td>جست‌وجو و وظایف</td>
+      <td>پرش به تطبیق بعدی / قبلی در متن ایمیل یا پیمایش بین فایل‌های پیوست منطبق</td>
+    </tr>
+    <tr>
+      <td><strong dir="ltr"><code>Ctrl + T</code></strong></td>
+      <td>نتایج جست‌وجو</td>
+      <td>نمایش تمام ایمیل‌های مرتبط در همان رشتهٔ گفت‌وگو (Conversation Thread)</td>
+    </tr>
+    <tr>
+      <td><strong dir="ltr"><code>Ctrl + Alt + R</code></strong></td>
+      <td>جست‌وجو و وظایف</td>
+      <td>پاسخ همراه با فایل‌های پیوست اصلی پیام (Reply with Attachment)</td>
+    </tr>
+    <tr>
+      <td><strong dir="ltr"><code>Ctrl + Shift + Alt + R</code></strong></td>
+      <td>جست‌وجو و وظایف</td>
+      <td>پاسخ به همه همراه با فایل‌های پیوست اصلی پیام (Reply All with Attachment)</td>
+    </tr>
+    <tr>
+      <td><strong dir="ltr"><code>Ctrl + Alt + F</code></strong></td>
+      <td>جست‌وجو و وظایف</td>
+      <td>فوروارد بدون فایل‌های پیوست حجیم (Forward without Attachment)</td>
+    </tr>
+    <tr>
+      <td><strong dir="ltr"><code>Ctrl + Q</code> / <code>Ctrl + U</code></strong></td>
+      <td>جست‌وجو و وظایف</td>
+      <td>تغییر وضعیت ایمیل‌های انتخاب‌شده به خوانده‌شده / خوانده‌نشده (<code dir="ltr">Insert</code> در جست‌وجو)</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<h2 id="installation" dir="rtl" align="right">📦 راهنمای نصب و ارتقا</h2>
 
 <h3 dir="rtl" align="right">نصب اولیه</h3>
 <ol dir="rtl" align="right">
@@ -227,8 +292,6 @@
 </ul>
 
 ---
-
-<p dir="rtl"><strong>ذخیره‌سازی:</strong> از فایل‌های مهم PST نسخهٔ پشتیبان بگیرید؛ آرشیو محلی جایگزین پشتیبان نیست. جست‌وجو شامل مخازن متصل و PSTهای بازشده در اوت‌لوک است، نه آرشیوهای قطع‌شده.</p>
 
 <h2 id="requirements" dir="rtl" align="right">💻 پیش‌نیازهای سیستم</h2>
 
@@ -258,6 +321,8 @@
     </tr>
   </tbody>
 </table>
+
+<p dir="rtl" align="right"><strong>ذخیره‌سازی:</strong> از فایل‌های مهم PST نسخهٔ پشتیبان بگیرید؛ آرشیو محلی جایگزین پشتیبان نیست. جست‌وجو شامل مخازن متصل و PSTهای بازشده در اوت‌لوک است، نه آرشیوهای قطع‌شده.</p>
 
 <p dir="rtl" align="right"><strong>سازگاری:</strong> این افزونهٔ VSTO در New Outlook، نسخهٔ وب اوت‌لوک و اوت‌لوک مک اجرا نمی‌شود. نصب پیش‌نیازهای ویندوز، دات‌نت یا آفیس در رایانه‌های سازمانی ممکن است به کمک واحد فناوری اطلاعات نیاز داشته باشد.</p>
 

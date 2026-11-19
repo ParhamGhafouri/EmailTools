@@ -26,6 +26,17 @@ Large mailboxes make it harder to find messages, track follow-ups, and manage st
   <img src="assets/outlook-ribbon-tab.png" alt="Email Tools Ribbon Tab in Microsoft Outlook" width="219">
 </p>
 
+<p align="center">
+  <strong>Explore:</strong>&nbsp;
+  <a href="#1-advanced-search-local-index">Advanced Search</a> &bull;
+  <a href="#2-task-tracker--workflow-automation">Task Tracker</a> &bull;
+  <a href="#3-smart-archive--capacity-management">Smart Archive</a> &bull;
+  <a href="#4-attachment--quick-workflow-actions-on-the-home-ribbon">Attachment Actions</a> &bull;
+  <a href="#shortcuts">Shortcuts</a> &bull;
+  <a href="#installation">Install</a> &bull;
+  <a href="#security">Privacy &amp; Security</a>
+</p>
+
 ---
 
 ## Key capabilities
@@ -122,7 +133,7 @@ Smart Archive helps manage mailbox capacity by moving older messages from your m
   <img src="assets/smart-archive-menu.png" alt="Smart Archive Ribbon Menu" width="258">
 </p>
 
-* **Mailbox & Index Status:** Review mailbox capacity, archive drive space, managed PSTs, and search-index readiness in one dialog.
+* **Mailbox & Index Status:** Review mailbox capacity, archive drive space, managed PSTs, indexed message and attachment file counts, and search-index readiness in one dialog.
 * **Dynamic Ladder Acceleration:** Automatically identifies mailbox age distribution and skips empty date brackets to archive oldest mail first under pressure.
 * **Quota-Based Archiving:** Uses mailbox capacity and configured thresholds to prioritize older messages when space is low.
 * **Seasonal 45 GB Rollover:** Organizes archives as `YYYY-Season1` through `Season4` and starts another volume at 45 GB to leave headroom below the PST size limit.
@@ -176,7 +187,22 @@ When colleagues change roles, departments, or surnames in the corporate Active D
 
 ---
 
-<h2 id="installation">Installation & upgrades</h2>
+<h2 id="shortcuts">⌨️ Keyboard Shortcuts</h2>
+
+| Shortcut | Where | Action |
+| :--- | :--- | :--- |
+| **`Ctrl + F3`** | Outlook / Search | Open **Advanced Search** (or focus search criteria when open) |
+| **`Ctrl + F4`** | Outlook / Search | Open **Task Tracker** (or focus task search when open) |
+| **`F3` / `Shift + F3`** | Search & Task Tracker | Jump to next / previous body match or cycle matched attachments |
+| **`Ctrl + T`** | Search Results | Filter to all messages in the selected conversation thread |
+| **`Ctrl + Alt + R`** | Search & Task Tracker | Reply with original file attachment(s) |
+| **`Ctrl + Shift + Alt + R`** | Search & Task Tracker | Reply All with original file attachment(s) |
+| **`Ctrl + Alt + F`** | Search & Task Tracker | Forward without file attachment(s) |
+| **`Ctrl + Q` / `Ctrl + U`** | Search & Task Tracker | Mark selected message(s) as Read / Unread (`Insert` toggles in Search) |
+
+---
+
+<h2 id="installation">📦 Installation &amp; Upgrades</h2>
 
 ### Fresh Installation
 
