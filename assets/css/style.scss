@@ -21,11 +21,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: #24292f;
   background-color: #ffffff;
-  line-height: 1.65;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-.page-header {
-  display: none;
+.page-header,
+.site-footer {
+  display: none !important;
 }
 
 .project-name {
@@ -47,9 +49,32 @@ body {
 .main-content {
   width: 100%;
   max-width: 68rem;
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 1.75rem 3rem 1.75rem;
   margin: 0 auto;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+}
+
+/* Clean, smart prose justification for desktop reading */
+.main-content > p:not([align="center"]),
+.main-content > ul > li,
+.main-content > ol > li,
+.main-content div:not([align="center"]) > p:not([align="center"]),
+.main-content div:not([align="center"]) > ul > li,
+.main-content div:not([align="center"]) > ol > li,
+.main-content li > ul > li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.main-content li {
+  margin-bottom: 0.45rem;
+}
+
+.main-content hr {
+  height: 1px;
+  background-color: #e5e9f0;
+  border: 0;
+  margin: 2.25rem 0;
 }
 
 .main-content h1,
@@ -58,8 +83,9 @@ body {
 .main-content h4 {
   color: #004578;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 2.1rem;
   margin-bottom: 1rem;
+  scroll-margin-top: 1.25rem;
 }
 
 .main-content h1 {
@@ -71,14 +97,24 @@ body {
 .main-content h2 {
   font-size: 1.5rem;
   border-bottom: 1px solid #eaecef;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.45rem;
 }
 
 .main-content h3 {
   font-size: 1.25rem;
 }
 
-/* Image styling */
+/* Links */
+.main-content a {
+  color: #0067b8;
+  text-decoration: none;
+}
+
+.main-content a:hover {
+  text-decoration: underline;
+}
+
+/* Image & Screenshot styling */
 .main-content img {
   max-width: 100%;
   height: auto;
@@ -88,24 +124,40 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.main-content img:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+/* Centered figure screenshots keep their crisp frame & elevation */
+.main-content p[align="center"] > img {
+  border-radius: 8px;
+  box-shadow: 0 6px 22px rgba(15, 23, 42, 0.09);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  margin-bottom: 0.35rem;
 }
 
-/* Badges and button icons: clean display without shadows */
-.main-content p img,
-.main-content a img {
-  box-shadow: none;
-  border: none;
+.main-content p[align="center"] > img:hover {
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.13);
+}
+
+.main-content p[align="center"] > em {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 0.92rem;
+  color: #57606a;
+}
+
+/* Hero logo and linked badges stay shadow-free and borderless */
+.main-content div[align="center"] p > img,
+.main-content a > img {
+  box-shadow: none !important;
+  border: none !important;
   border-radius: 4px;
+  margin-bottom: 0;
 }
 
-.main-content a img:hover {
-  box-shadow: none;
+.main-content a > img:hover {
+  box-shadow: none !important;
   opacity: 0.92;
 }
 
-/* Modern tables */
+/* Modern tables (left-aligned / right-aligned, never justified) */
 .main-content table {
   float: none;
   clear: both;
@@ -119,6 +171,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  text-align: left;
 }
 
 .main-content th {
@@ -131,9 +184,10 @@ body {
 }
 
 .main-content td {
-  padding: 12px 16px;
+  padding: 11px 16px;
   border-bottom: 1px solid #eaecef;
-  vertical-align: top;
+  vertical-align: middle;
+  text-align: left;
 }
 
 .main-content tr:last-child td {
@@ -151,31 +205,15 @@ body {
   border: 1px solid #d0d7de;
   border-radius: 6px;
   padding: 1rem;
+  text-align: left;
 }
 
 .main-content code {
   unicode-bidi: isolate;
-  background-color: rgba(175, 184, 193, 0.2);
-  padding: 0.2em 0.4em;
+  background-color: rgba(175, 184, 193, 0.18);
+  padding: 0.18em 0.42em;
   border-radius: 4px;
   font-size: 85%;
-}
-
-.main-content .language-switch {
-  margin-block: 0 1.25rem;
-  text-align: center;
-  font-size: 1.05rem;
-}
-
-.main-content .language-switch a {
-  padding: 4px 10px;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #0078D4;
-}
-
-.main-content .language-switch a:hover {
-  background-color: rgba(0, 120, 212, 0.08);
 }
 
 /* RTL / Persian Typography */
@@ -184,6 +222,16 @@ body {
   line-height: 2;
   direction: rtl;
   text-align: right;
+}
+
+.main-content p[dir="rtl"]:not([align="center"]),
+.main-content [dir="rtl"]:not([align="center"]) > p:not([align="center"]),
+.main-content ul[dir="rtl"] > li,
+.main-content ol[dir="rtl"] > li,
+.main-content [dir="rtl"] ul > li,
+.main-content [dir="rtl"] ol > li {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .main-content h1,
@@ -197,13 +245,16 @@ body {
 
 .main-content [dir="rtl"] h1,
 .main-content [dir="rtl"] h2,
-.main-content [dir="rtl"] h3 {
+.main-content [dir="rtl"] h3,
+.main-content [dir="rtl"] h4 {
   font-family: 'Vazirmatn', Calibri, "Segoe UI", Tahoma, Arial, sans-serif;
   font-weight: 700;
 }
 
-.main-content [dir="rtl"] th {
-  text-align: right;
+.main-content [dir="rtl"] h2,
+.main-content [dir="rtl"] h3,
+.main-content [dir="rtl"] h4 {
+  text-align: right !important;
 }
 
 table[dir="rtl"],
@@ -213,10 +264,7 @@ table[dir="rtl"],
 }
 
 table[dir="rtl"] th,
-.main-content table[dir="rtl"] th {
-  text-align: right;
-}
-
+.main-content table[dir="rtl"] th,
 table[dir="rtl"] td,
 .main-content table[dir="rtl"] td {
   text-align: right;
@@ -234,20 +282,26 @@ table[dir="rtl"] td,
 }
 
 @media screen and (max-width: 48rem) {
-  .page-header {
-    padding: 2rem 1rem;
-  }
-
-  .project-name {
-    font-size: 1.85rem;
-  }
-
-  .project-tagline {
-    font-size: 1rem;
-  }
-
   .main-content {
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 1rem 2rem 1rem;
+  }
+
+  /* Avoid awkward word rivers on narrow phone screens */
+  .main-content > p:not([align="center"]),
+  .main-content > ul > li,
+  .main-content > ol > li,
+  .main-content div:not([align="center"]) > p:not([align="center"]),
+  .main-content div:not([align="center"]) > ul > li {
+    text-align: left;
+  }
+
+  .main-content p[dir="rtl"]:not([align="center"]),
+  .main-content [dir="rtl"]:not([align="center"]) > p:not([align="center"]),
+  .main-content ul[dir="rtl"] > li,
+  .main-content ol[dir="rtl"] > li,
+  .main-content [dir="rtl"] ul > li,
+  .main-content [dir="rtl"] ol > li {
+    text-align: right;
   }
 
   .main-content table {

@@ -16,14 +16,14 @@
 
 ---
 
-## Overview
+## 🚀 Overview
 
 Large mailboxes make it harder to find messages, track follow-ups, and manage storage. Email Tools brings these workflows together inside classic Outlook for Windows.
 
 **Email Tools** is a per-user VSTO add-in with **local indexed search**, **email-to-task tracking**, **seasonal PST archiving**, **attachment actions**, and **GAL display-name synchronization**. Search and task databases stay on your PC; Outlook continues to handle your mail account normally.
 
 <p align="center">
-  <img src="assets/outlook-ribbon-tab.png" alt="Email Tools Ribbon Tab in Microsoft Outlook" width="219">
+  <img src="assets/outlook-ribbon-tab.png" alt="Email Tools Ribbon Tab in Microsoft Outlook" width="214">
 </p>
 
 <p align="center">
@@ -39,7 +39,7 @@ Large mailboxes make it harder to find messages, track follow-ups, and manage st
 
 ---
 
-## Key capabilities
+## ✨ Key Capabilities
 
 | Feature | What Email Tools provides |
 | :--- | :--- |
@@ -55,7 +55,7 @@ Large mailboxes make it harder to find messages, track follow-ups, and manage st
 
 ---
 
-## Feature tour
+## 🔍 Feature Tour
 
 ### 1. Advanced Search (Local Index)
 
